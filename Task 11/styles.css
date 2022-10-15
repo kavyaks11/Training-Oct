@@ -1,3 +1,4 @@
+
 body, ul, li, h1, h2, a{
     margin: 0;
     padding: 0;
@@ -27,7 +28,7 @@ header h1{
     position:relative;
 }
 .banner img{
-    width: 100vw;
+    
     max-width: 100%;
 
 
@@ -39,6 +40,7 @@ header h1{
     padding: 30px;
     position: absolute;
     left: 0;
+    top: 200px;
     top: 30%;
     
 }
@@ -52,7 +54,7 @@ nav {
     background-color: #f4f4f4;
     padding: 20px;
     position: sticky;
-    top: 108px;
+    top: 90px;
 
 }
 nav ul{
@@ -100,10 +102,10 @@ article p{
 .images li img{
     max-width:100% ;
 }
-section.join{
+.join{
     background: #f4f4f4;
     text-align: center;
-    padding: 60px 20px;
+    padding: 0 20px;
     color: #4b4b4b;
 
 }
@@ -125,6 +127,7 @@ footer{
     padding: 10px;
     text-align: center;
 }
+/* psedo classes*/
 nav li a:hover{
     text-decoration: underline;
     
@@ -140,15 +143,14 @@ form input:focus{
 form input:valid{
     border: 4px solid rgb(15, 189, 15);
 }
-/* nav li:first-child{
-    border: 3px solid rgb(167, 49, 49);
-} */
- p::first-line{ 
+
+article p::first-line{ 
     font-weight: bold;
     font-size: 1.2em;
 } 
 section.join p::first-letter{
     font-size: 1.5em;
+    font-weight: bold;
 }
  p::selection{
     background-color: red;
@@ -157,60 +159,60 @@ section.join p::first-letter{
  p::after{ 
     content: '...';
 } 
-/* Responsive styles */
-@media screen  and (max-width: 1400px){
+
+
+/* responsive styles */
+
+@media screen and  (max-width: 1400px){
     .banner .welcome h2{
         font-size: 60px;
     }
     nav li{
         font-size: 18px;
     }
-
+    
 }
-@media  screen and (max-width: 960px){
+@media screen and (max-width: 960px) {
     .banner .welcome h2{
         font-size: 40px;
     }
     
 }
-@media  screen and (max-width: 700px){
+@media screen and (max-width: 700px) {
+    .banner .welcome{
+        position: relative;
+        text-align: center;
+        padding: 10px;
 
- .banner .welcome{
-    position: relative;
-    text-align: center;
-    padding: 10px;
- }  
-  .banner .welcome br{
-    display: none;
-
- }
- .banner .welcome h2{
-    font-size: 25px;
- }
- .banner .welcome span{
-    font-size: 1em;
- }
- .images li{
-    width: 100%;
-    margin: 20px auto;
-    display: block;
-
- }
-}
-@media screen and (max-width: 560px){
-
-nav li{
-    font-size: 20px;
-    position: relative;
-    display: block;
-    width: 100%;
-    margin: 12px 0;
-}
-header{
-    position:relative:
-}
-nav{
-    top: 0;
-}
-}
+    }
+    .banner .welcome br{
+        display: none;
+    }
+    .banner .welcome h2{
+        font-size: 25px;
+    }
+    .banner .welcome span{
+        font-size: 1em;
+    }
+    .images li{
+        width: 100%;
+        margin:20px auto;
+        display: block;
+    }
     
+}
+@media screen and (max-width: 560px) {
+    nav li{
+        font-size: 20px;
+        position: relative;
+        display: block;
+        width: 100%;
+        margin: 12px 0;
+    }
+    header{
+        position: relative;
+    }
+    nav{
+        top: 0;
+    }
+}
