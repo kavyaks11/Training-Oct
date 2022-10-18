@@ -3,7 +3,13 @@
     <head>
         <title>resto</title>
         <link rel="stylesheet" href="style.css" type="text/css">
-<!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+        <script>
+            // picture element HTML5 shiv
+            document.createElement( "picture" )
+        </script>
+        <script src="https://cdn.jsdelivr.net/gh/scottjehl/picturefill@3.0.2/dist/picturefill.js" async></script>
+
+
     </head>
     <body>
 <!--         
@@ -13,13 +19,14 @@
             <div class="wrapper">
                 <h1 class="logo">Resto</h1>
                 <nav>
+                    <a class="burger-nav"></a>
                     <h2>Main Navigation</h2>
-                    <u>
+                    <ul>
                         <li><a href="">Our story</a></li>
                         <li><a href="">menu</a></li>
                         <li><a href="">News</a></li>
                         <li><a href="">Reviews</a></li>
-                    </u>
+                    </ul>
                 </nav>
             </div>
         </header>
@@ -27,6 +34,12 @@
         <!-- start homepage content -->
 
         <div id="main-banner">
+
+            <!-- <picture>
+                <source srcset="images/banner-small.jpj" media="(max-width: 480px)">
+                <source srcset="images/banner-medium.jpg" media="(max-width 768px)">
+                <img srcset="images/banner.jpg" alt="pic">
+            </picture> -->
             <img src="images/banner.jpg" alt="Welcome to Resto">
         </div>
         <div class="wrapper">
@@ -107,6 +120,9 @@
                     </li>
                 </ul>
             </section>
+
+           
+            
         </div>
 <!-- 
         end homepage content -->
@@ -139,4 +155,7 @@
             </div>
         </footer>
     </body>
+
+    <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="menu.js"></script>
 </html>
