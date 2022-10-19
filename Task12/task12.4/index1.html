@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>The net ninja-CSS Flexbox</title>
+        <link rel="stylesheet"  type="text/css" href="style1.css">
+        <script src="https://code.jquery.com/jquer1.12.1.js"></script>
+    </head>
+    <body>
+        <div class="wrapper">
+        
+
+
+
+            <nav>
+                <ul>
+                  <li><a href="">Home</a></li>
+                  <li><a href="">About</a></li>
+                  <li><a href="">Store</a></li>
+                  <li><a href="">Contact</a></li>
+                </ul>
+                <ul class="social">
+                    <li><a href="" class="fb">Facebook</a></li>
+                    <li><a href="" class="tw">Twitter</a></li>
+
+                </ul>
+            </nav>
+
+            <div style="margin: 20px;">
+            <span>Layout: </span>
+            <a href="#" class="stack">stack</a>
+            <a href="#" class="grid">grid</a>
+            </div>
+
+            <section id="blocks">
+                <article>
+                    <h2>Humans...</h2>
+                    <p>Humans are the most abundant and widespread species
+                        of primate, characterized by bipedalism and large
+                        complex brains.this has enabled the development of
+                        advanced tools , culture, language.
+                        
+                        
+                    </p>
+                </article>
+                <article>
+                    <h2>Human intelligence</h2>
+                    <p>Human intelligence is a mental quality that consists
+                        of the abilities to learn from experince, adapt  to
+                        new situations understand and handle abstract concepts
+                        and use knowledge to manipulate one's environment.
+                        
+                    </p>
+                </article>
+                <article>
+                    <h2>Investigations</h2>
+                    <p>Much of the excitment amon investigators in the field of
+                        intelligence derives from their attempts to determine 
+                        exactly what intelligence is.different investigators 
+                        have emphasised different aspects of intelligents in
+                        their definitions.
+                        
+                        </p>
+                </article>
+                <article>
+                    <h2>Definitions</h2>
+                    <p>For example, in a 1921 symposium the American psycologists
+                        Lewis Terman and Edward L.Thorndike differed over the definition
+                         of intelligence, Terman stressing the ability to think abstractly
+                         and thorndike emphasising learning and the ability to give good response 
+                         to questions.
+
+
+                    </p>
+                </article>
+                <article>
+                    <h2>Theories</h2>
+                    <p>
+                        Theories of intelligence , as is the case with most
+                        scientific theories, have evolved through a succession 
+                        of models.For the most influential paradigms have been
+                        psycological measurement;cognitive psycology which concerns 
+                        itself with the process by wich the mind functions;cognitivism
+                        and contexualism, a combined approach that studies the interaction between
+                        the environment and mental processes.
+                    </p>
+                </article>
+                <article>
+                    <h2>psycometric theories</h2>
+                    <p>
+                        psycometric theories have generally sought
+                        to understand the structure of intelligence.
+                        what from does it take and what are its part,if any?
+                        such theories haave generally been based on and
+                        established by data obtained from tests of mental
+                        abilities.
+                    </p>
+                </article>
+            </section>
+
+        </div>
+
+        <script>
+             $("a.stack").on("click", function(){
+                $("article").addClass("stack");
+             });
+             $("a.grid").on("click", function(){
+                $("article").removeClass("stack");
+             });  
+        </script>
+    </body>
+</html>
