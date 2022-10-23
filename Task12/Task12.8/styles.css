@@ -102,7 +102,7 @@ h4{
     grid-column: 1/6;
 }
 .welcome-img{
-    grid-column: 6/9;
+        grid-column: 6/9;
 }
 .welcome-img img{
     width: 200%;
