@@ -1,49 +1,46 @@
 *{
     
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-family: Arial;
     font-weight: normal;
     cursor: pointer;
     text-decoration: none;
     box-sizing: border-box;
     color: black;
 }
-
-
 .site{
-    padding: 0 20px;
+    padding: 3px 20px;
 }
+
+
 .site ul{
-    
-    display: flex;
-    
-    justify-content: flex-end;
-    align-self: center;  
-}
+    font-size: 14px;
+     display: flex;
+     justify-content: flex-end; 
+    align-self: center; 
+     gap: 30px;
+     margin-top: 10px;
+} 
 
-.site a{
-    margin-left:  30px;
-
-}
 .site img{
-    margin-right: -20px;
+   
+    margin-right: -25px;
 }
 .site a:hover{
      color: #c00;
 }
 
 
+
  .icons{
-    
+
+    width:100%;
+    font-size: 16p;
     display: flex;
     flex-flow: row;
     justify-content: center;
     align-items: center;
-    margin-left: -5px;
-    margin-top: 200px;
-    white-space: nowrap;
-    
-   
+   margin-top: 200px;;
+    white-space: nowrap; 
 
 } 
 .icons a{
@@ -52,12 +49,9 @@
     list-style-type:none;
     margin: 20px;
     text-align: center;
-    
-    
-    
 }
-.icons img:hover{
-    transition: transform 2s ease-out;
+.icons a:hover img{
+    transform: translateY(-4px);
    
     
     
@@ -70,6 +64,7 @@
 }
 
 .search{
+     margin-top: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -83,17 +78,16 @@ form img{
 
 }
 
-
 .logo img{
     width:150px;
     
 }
 
 form{
-    font-size: 10px;
+    
     background:#ffcc00;
     border-radius: 20px;
-    width: 800px;
+    width: 1100px;
     height: 50px;
     display: flex;
 }
@@ -106,35 +100,35 @@ form input{
 
 }
 form button{
+    width: 100px;
     background: #ffcc00;
     border: none;
-    border-radius: 0 10px 10px 0;
-    
+    border-radius: 0 10px 10px 0;  
 
 }
  button:hover{
     background: rgb(245, 196, 0);
 
 } 
-
-
-
 .yandex{
     display: flex;
     flex-flow: row;
     justify-content: center;
     align-items: center;
     white-space: nowrap;
-    margin-top: 600px; 
+    margin-top: 600px;
+    font-size: 18px;
+
 
 }
 .yandex p{
-    margin: 10px;
+     margin: 10px;
 }
-div a{
+.flag{
     display: flex;
     flex-flow: row;
     justify-content: center;
+
 }
 .yandex span{
 font-weight: bold;
@@ -145,7 +139,7 @@ font-weight: bold;
 } 
  
 footer{
-    font-size: 10px;
+    font-size: 14px;
     display: flex;
     justify-content:center; 
     position:absolute;
@@ -159,6 +153,7 @@ footer a{
 }
 footer p{
     color: grey;
+    margin: 20px;
     cursor: auto;
 }
 footer a:hover{
