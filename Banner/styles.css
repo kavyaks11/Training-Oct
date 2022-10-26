@@ -1,0 +1,165 @@
+body{
+    font-size: 20px;
+    padding:  50px;
+}
+.banner{
+    display: flex;
+    justify-content: center;
+    background-image: url(img/School.jpg);
+    background-repeat: no-repeat;
+    background-size: 2500px 500px ;
+    width: 100%;
+}
+.class{
+    background-image: url(img/book.jpeg);
+    background-repeat: no-repeat;
+    background-size: 2200px 1000px ;
+}
+.main{
+    display: flex;
+    gap: 200px;
+    justify-content: center;
+    padding: 30px;
+    box-sizing: border-box;
+}
+#textboxid{
+    height: 200px;
+}
+.sudent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.submit{
+    text-align: right;
+    padding: 30px 200px;
+    box-sizing: border-box;    
+}
+
+input[type=text]{
+    box-sizing: border-box;
+    width: 100%;
+    height: 30px;
+}
+input[type=number]{
+    box-sizing: border-box;
+    width: 100%;
+    height: 30px;
+}
+input[type=email]{
+    box-sizing: border-box;
+    width: 100%;
+    height: 30px;
+}
+input[type=date]{
+    box-sizing: border-box;
+    width: 100%;
+    height:30px;
+}
+input[type=tel]{
+    box-sizing: border-box;
+    width: 100%;
+    height: 30px;
+}
+input[type=submit]{
+    box-sizing: border-box;
+    width: 100px;
+    height: 40px;
+    font-size: 18px;
+    cursor: pointer;
+}
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+   text-decoration: none;
+   background: rgb(158, 159, 161);
+   padding: 30px;
+}
+footer a{
+    color: black;
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1700px){
+    .banner{
+        background-size: 1700px 500px ;
+    }
+    .class{
+        background-size: 1600px 1000px ;
+    }
+}
+@media screen and (max-width: 1400px){
+    .banner{
+        background-size: 1300px 500px;
+    }
+    .class{
+        background-size: 1300px 1000px;
+    }
+}
+@media screen and (max-width: 1100px){
+    .banner{
+        background-size:1000px 500px ;
+    }
+    .class{
+        background-size: 980px 1000px ;
+    }
+    .submit{
+        padding: 10px 10px;
+    }
+}
+@media screen and (max-width: 960px){
+    .banner img{
+        width: 90%; 
+    }
+    .banner{
+        background-size: 1000px 380px;
+    }
+    .class{
+        background-size:900px 1500px ;
+    }
+    .main{
+        display:block ;
+    }
+    footer{
+        gap: 65px;
+    }   
+}
+@media screen and (max-width: 720px) {
+    .banner{
+        background-size: 700px 300px ;
+    }
+    .class{
+        background-size: 600px 1500px;
+    }
+    footer{
+        font-size: 19px;
+        gap: 15px;
+    }
+    }
+@media screen and (max-width: 560px){
+    body{
+        padding: 0;
+    }
+    .banner{
+        background-size: 500px 200px;
+    }
+    .class{
+        background-size: 500px 1700px;
+    }
+    footer{
+        
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    input[type=submit]{
+        width: 74px;
+        font-size: 15px;
+    }
+    textarea{
+        box-sizing: border-box;
+        width: 100%;
+    }
+    
+}
