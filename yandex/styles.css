@@ -7,13 +7,13 @@
     box-sizing: border-box;
     color: black;
 }
-.site{
+.head{
     padding: 3px 20px;
 }
 
 
-.site ul{
-    font-size: 14px;
+.head ul{
+    font-size: 10px;
      display: flex;
      justify-content: flex-end; 
     align-self: center; 
@@ -21,11 +21,12 @@
      margin-top: 10px;
 } 
 
-.site img{
+.head img{
    
     margin-right: -25px;
+    height: 15px;;
 }
-.site a:hover{
+.head a:hover{
      color: #c00;
 }
 
@@ -34,26 +35,28 @@
  .icons{
 
     width:100%;
-    font-size: 16p;
+    font-size: 12px;
     display: flex;
     flex-flow: row;
     justify-content: center;
     align-items: center;
-   margin-top: 200px;;
+
+     margin-top: 140px;
     white-space: nowrap; 
+    gap:45px;
+    margin-left: 30px;
 
 } 
 .icons a{
     
     display: inline-block;
     list-style-type:none;
-    margin: 20px;
+    gap:10px;
+    /* margin: 15px; */
     text-align: center;
 }
 .icons a:hover img{
-    transform: translateY(-4px);
-   
-    
+    transform: translateY(-4px);   
     
 }
 .icons h4:hover{
@@ -64,13 +67,13 @@
 }
 
 .search{
-     margin-top: 5px;
+     margin-top: 40px;
     display: flex;
     justify-content: center;
-    align-items: center;
     width: 100%;
     background: white;
     gap: 20px;
+    padding: 20px;
     
 }
 form img{
@@ -79,7 +82,9 @@ form img{
 }
 
 .logo img{
-    width:150px;
+    width:110px;
+    margin-left: 0;
+
     
 }
 
@@ -87,8 +92,8 @@ form{
     
     background:#ffcc00;
     border-radius: 20px;
-    width: 1100px;
-    height: 50px;
+    width: 850px;
+    height: 40px;
     display: flex;
 }
 form input{
@@ -100,7 +105,7 @@ form input{
 
 }
 form button{
-    width: 100px;
+    width: 84px;
     background: #ffcc00;
     border: none;
     border-radius: 0 10px 10px 0;  
@@ -116,10 +121,8 @@ form button{
     justify-content: center;
     align-items: center;
     white-space: nowrap;
-    margin-top: 600px;
-    font-size: 18px;
-
-
+    margin-top: 450px;
+    font-size: 12px;
 }
 .yandex p{
      margin: 10px;
@@ -128,6 +131,8 @@ form button{
     display: flex;
     flex-flow: row;
     justify-content: center;
+   
+    
 
 }
 .yandex span{
@@ -139,12 +144,13 @@ font-weight: bold;
 } 
  
 footer{
-    font-size: 14px;
+    font-size: 12px;
     display: flex;
     justify-content:center; 
     position:absolute;
     bottom: 0;
     width: 100%; 
+
     
 }
 footer a{
@@ -153,8 +159,9 @@ footer a{
 }
 footer p{
     color: grey;
-    margin: 20px;
+    padding: 10px;
     cursor: auto;
+    
 }
 footer a:hover{
     color: #c00;
@@ -163,7 +170,7 @@ footer a:hover{
 svg{
     background-color: white;
     
-    height: 50px;
+    height: 40px;
     width: 40px;
     display: flex;
     justify-content: center;
