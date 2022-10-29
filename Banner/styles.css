@@ -22,9 +22,9 @@ body{
     padding: 30px;
     box-sizing: border-box;
 }
-#textboxid{
+/* #textboxid{
     height: 200px;
-}
+} */
 .sudent{
     display: flex;
     justify-content: center;

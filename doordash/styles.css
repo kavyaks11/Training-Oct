@@ -26,52 +26,55 @@
 body{
     margin: 0;
     padding: 0;
+    font-family: DD-TTNorms;
 }
-.banner img{
-    width:54%;
 
-    min-height: 420px; 
-    position: relative; 
-     transform: scaleX(2.7);    
-  
+.banner{
+    background-image: url(img/banner.avif);
+    background-repeat:no-repeat ;
+    background-size: cover;
+    height: 450px;
+    width: 320px;
+    background-position-x: center;
     
 }
 .main{
-    position: absolute;
-    top: 0; 
     padding: 10px 0px;
 }
 .sign {
     box-sizing: border-box;
     display: flex;
     justify-content: flex-end; 
-    flex: 1 1 1 0%;
     align-items: center;  
+    padding-right: 20px;
+    margin-top: 2px;
+
+    
 }
 .sign span{
-    padding: 0 16px;
+    padding: 0 8px;
     font-size: 18px;
-    font-family: DD-TTnorms;
     line-height: 24px;
-    font-weight: 700;
+    font-weight: 600;
     color: #fff;
+    letter-spacing: -0.04ch;
 }
 .sign a{
     padding: 0 16px;
     text-decoration: none;
     font-size: 16px;
     color:#000;
-    
     display: inline-flex;
+    font-weight: 600;
     max-width: 100%;
     min-height: 40px;
     border: none;
     border-radius: 1000px;
     background: #fff;
-    border-width: 1000px;
-    box-shadow: transparent 0px 0px 0px 1px inset;
+    border-width: 100px;
     text-align: center;
     align-items: center;
+    letter-spacing: 0ch;
 }
 .inline{
     display: flex;
@@ -79,22 +82,23 @@ body{
     align-items: center;
     width: 100%;
     height: 100%;
-    z-index: 1;
     background-size: cover;
     background-repeat: no-repeat;
     padding-top: 40px;
    
 }
 .inline span{
-    font-family: DD-TTnorms;
-    font-size: 30px;
+    
+    font-size: 32px;
     max-width: 334px;
     color: #fff;
     display: block;
     letter-spacing: -0.04ch;
-    font-weight: 700;
-    padding-top:30px;
+    font-weight: 600;
+    padding-top:18px;
     padding-bottom: 30px;
+    text-align: center;
+    line-height: 40px;
     
 
 }
@@ -107,17 +111,16 @@ body{
     align-items: center;
 }
 .searchs{
-    padding: 8px 4px 4px 12px;
-    font-family: DD-TTnorms;
+    padding: 12px 4px 7px 6px;
+    font-size:16px;
     line-height: 22px;
     font-weight: 500;
-    color: #000;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100%;
     border-radius: 20px;
-    z-index: 1;
+    box-shadow: rgb(214 214 214) 0px 0px 0px 1px inset;
     border: none;
     background-color: #fff;
 }
@@ -126,22 +129,25 @@ body{
     max-width: 100%;
 }
 input{
-    padding: 0;
-    font-size: 16px;
     border: none;
+}
+input::placeholder{
+    font-family: DD-TTNorms;
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+    
 
 }
 .search a{
-    font-family: DD-TTnorms;
     font-size: 16px;
     margin: 16px;
     font-weight: 500;
     color: #fff; 
 }
 .app{
-    font-family: DD-TTnorms;
-    font-size: 14px;
-    font-weight: 700;
+    font-size: 16px;
+    font-weight: 600;
     letter-spacing: -0.04ch;
     line-height: 22px;
     padding: 30px 0;
@@ -157,7 +163,6 @@ input{
   .app button{
     position: relative;
     max-width: 100%;
-    font-family: DD-TTnorms ;
     font-size: 16px;
     font-weight: 700;
     align-items: center;
@@ -173,13 +178,12 @@ input{
     width: 122px;
 }
 .children{
-    font-family: DD-TTnorms;
     font-size: 16px;
     font-weight: 600;
     display: flex;
     max-width: 100%;
-    /* padding-left: 13px; */
     padding-top: 15px;
+    padding-left: 12px;
 }
 .dasher{
     padding:16px;
@@ -198,7 +202,6 @@ input{
 }
 .dasher h2{
     position: relative;
-    font-family: DD-TTnorms;
     font-size: 32px;
     line-height: 40px;
     text-align: left;
@@ -209,7 +212,6 @@ input{
 }
 .dasher p{
     position: relative;
-    font-family: DD-TTnorms;
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 0ch;
@@ -229,7 +231,7 @@ input{
     text-align: center;
     margin-left: 100px;
     color: rgb(235, 23, 0);
-    font-weight: 700;
+    font-weight: 600;
     text-decoration: none;
     top: -28px; 
 }
@@ -250,7 +252,6 @@ input{
 }
 .partner h2{
     position: relative;
-    font-family: DD-TTnorms;
     font-size: 32px;
     line-height: 40px;
     text-align: left;
@@ -260,7 +261,6 @@ input{
 }
 .partner p{
     position: relative;
-    font-family: DD-TTnorms;
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 0ch;
@@ -280,11 +280,10 @@ input{
     text-align: center;
     margin-left: 100px;
     color: rgb(235, 23, 0);
-    font-weight: 700;
+    font-weight: 600;
     text-decoration: none;
     top: -28px;
     left: 10px;
-    
 }
 .phone{
     padding:16px;
@@ -292,6 +291,7 @@ input{
     flex-flow: row;
     position: relative;
     top: -50px;
+   padding-bottom: 79px;
 }
 .phone img{
     position: relative;
@@ -303,7 +303,6 @@ input{
 }
 .phone h2{
     position: relative;
-    font-family: DD-TTnorms;
     font-size: 32px;
     line-height: 40px;
     text-align: left;
@@ -313,7 +312,6 @@ input{
 }
 .phone p{
     position: relative;
-    font-family: DD-TTnorms;
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 0ch;
@@ -333,56 +331,53 @@ input{
     text-align: center;
     margin-left: 96px;
     color: rgb(235, 23, 0);
-    font-weight: 700;
+    font-weight: 600;
     text-decoration: none;
-    top: -28px;
-    
+    top: -28px;  
 }
 .aa{
     background: rgb(255, 240, 237);
     position: relative;
-    width: 100%;  
-    
+    width: 100%;   
 }
 .allin{
     padding-left: 16px;
     padding-right: 81.6px;
     margin-left: auto ;
     margin-right: auto;
-    
-   
 }
 .allin img{
     width: 256px;
     height: 185px;
-    padding-left: 49px;
+    margin-left: 49px;
+    float:left;
+    margin-top: -118px;
+
 }
 .content1{
     margin: 20px 0px 0px;
-    padding: 0px 81.6px 0px 0px;
-     /* background: rgb(255, 240, 237);
-    width: 100%; */
-
+    position: relative;
+    top: 20px;
 }
 .content1 span{
     display: block;
-    width: 80vw;
-    font-family: DD-TTnorms;
+    position: relative;
+    width: 76vw;
     font-size: 24px;
     line-height: 32px;
     font-weight: 600; 
     letter-spacing: -0.04ch;  
 }
 .content1 p{
-    font-family: DD-TTnorms;
+    
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
     display: block;
     width: 66vw;
+    position: relative;
 }
 .content1 button{
-    font-family: DD-TTnorms;
     font-size: 14px;
     font-weight: 600;
     line-height: 16px;
@@ -400,8 +395,7 @@ input{
     color: #fff;
 }
 .welcome{
-    position: relative;
-    top: 46px;
+    margin-top: 65px;
 }
 .welcome img{
     width: 256px;
@@ -414,15 +408,12 @@ input{
 .content2 span{
     display: block;
     width: 70vw;
-    font-family: DD-TTnorms;
     font-size: 24px;
     line-height: 32px;
     font-weight: 600; 
     letter-spacing: -0.04ch;
-}
-    
+}  
 .content2 p{
-    font-family: DD-TTnorms;
     font-size: 14px;
     font-weight: 500;
     line-height: 20px;
@@ -430,7 +421,6 @@ input{
     width: 63vw;
 }
 .content2 button{
-    font-family: DD-TTnorms;
     font-size: 14px;
     font-weight: 600;
     line-height: 16px;
@@ -446,31 +436,30 @@ input{
     text-decoration: none;
     cursor: pointer;
     color: #fff; 
-    /* margin-bottom: 110px; */ 
+ 
 }
 footer{
-    background: #000;
-    padding: 0 20px;
-    position: relative;  
+    background: rgb(22, 20, 20);
+    background-size: cover;
+    Padding: 0 20px;
 }
 .place{
     display: flex;
+    flex-flow: row;
+    align-items: center;
     justify-content: center;
-    padding: 0 20px;
-    column-gap: 30px;
-    
-    
+    padding: 0px 20px;
+    column-gap: 25px;
+    margin-top: -15px;
 }
 .cities{
     display: flex;
     flex-flow: column;
     justify-content: center;
     padding: 32px 0px;
-    margin-top: -53px;
     
 }
 .cities h2{
-    font-family: DD-TTNorms;
     font-size: 16px ;
     font-weight: 500;
     color: #fff;
@@ -478,39 +467,133 @@ footer{
     line-height: 22px;
 }
 .cities a{
-    text-decoration: none;
-    color: rgb(196, 196, 196); 
-    text-align: center;
-    font-family: DD-TTNorms;
     font-size: 14px;
     font-weight: 500;
-    line-height: 24px;
-
+    line-height: 25px;
+    text-decoration: none;
+    color: rgb(196, 196, 196); 
+    text-align: center;  
+    letter-spacing: 0ch;
 }
 .cuisines{
     display: flex;
     flex-flow: column;
     justify-content: center;
     padding: 32px 0px;
-    /* margin-top: -100px; */
+    position: relative;
+    margin-top: -133px; 
 }
 .cuisines h2{
-    font-family: DD-TTNorms;
     font-size: 16px ;
     font-weight: 500;
     color: #fff;
     text-align: center;
-
 }
 .cuisines a{
-    font-family: DD-TTNorms;
     font-size: 14px;
     font-weight: 500;
-    line-height: 24px;
+    line-height: 25px;
     text-decoration: none;
     color: rgb(196, 196, 196);
     text-align: center;
-    gap: 20px;
+    width: 45vw;
+    letter-spacing: 0ch; 
+}
+.download{
+    padding: 32px 0px 0px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.7;
+    row-gap: 10px;
+}
+.appstoer span{
+    width: 144px;
+    height: 48px;
+}
+.appstore{
+   
+    border-radius: 8px;
+    background-color: rgb(73, 73, 73);
+    padding: 2px 8px;
+}
+.knowus{
+    padding: 32px 0px 0px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.knowus h2{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    color: rgb(255, 255, 255);
+}
+.knowus a{
+    display: block;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+    text-decoration: none;
+    color: rgb(196, 196, 196);
+}
+.media{
+    display: flex;
+    justify-content: center;
+    padding-top: 32px;
+    gap: 10px;
+}
+.bottom{
+    padding-bottom: 32px;
+    padding-top: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    column-gap: 20px;
+    row-gap: 1.5px; 
+}
+.bottom a{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-decoration: none;
+    color: rgb(196, 196, 196);
+}
+.img{
+    width:32px;
+    height: 18px;
+}
+.bottom span{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 18px;
+    text-decoration: none;
+    color: rgb(196, 196, 196);
+    bottom: 0;
+    margin-left: 16px;
+}
 
 
+@media screen and (min-width: 375px) {
+
+    .banner{
+        width: 375px;
+        
+    }
+    .sign span{ 
+        font-size: 19px;
+
+    }
+    .sign a{
+        font-size: 17px;
+    }
+    .inline span{
+        font-size: 34px;
+        width: 100%;
+        
+    
+    }
 }
