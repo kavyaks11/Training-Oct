@@ -1,0 +1,22 @@
+@font-face {
+    font-family:GTZirkon ;
+    src: url(font/GTZirkon-Book.woff2);
+}
+.top{
+    background-color:#ffe8dc ;
+    padding: 10px;
+} 
+.head span{
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    top:;
+}
+.top h2{
+    font-size: 24;
+    font-weight: normal;
+}
+.head p{
+    font-size: 20px;
+    font-weight: no;
+}
