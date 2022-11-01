@@ -35,8 +35,8 @@ body{
     background-repeat:no-repeat ;
     background-size: cover;
     height: 450px;
-    width: 320px;
-    padding: 0;
+    width: 351px;
+    /* padding: 0; */
     background-position-x: center;
     
 }
@@ -48,7 +48,7 @@ body{
     display: flex;
     justify-content: flex-end; 
     align-items: center;  
-    /* padding-right: 20px; */
+    padding-right: 20px;
     margin-top: 2px;
 
     
@@ -104,6 +104,9 @@ body{
     
 
 }
+.icon{
+    display: none;
+}
 .search{
      padding: 0 20px; 
     max-width: 315px;
@@ -129,6 +132,9 @@ body{
 .searchicon{
     margin-right: 8px;
     max-width: 100%;
+}
+.location{
+    display: none;
 }
 input{
     border: none;
@@ -189,12 +195,12 @@ input::placeholder{
     font-size: 16px;
     font-weight: 600;
     display: flex;
-    max-width: 100%;
+    width: 100vw;
     padding-top: 15px;
     padding-left: 12px;
 }
 .dasher{
-    padding:16px;
+    /* padding:16px; */
     width: 100%;
     flex-flow: row;
     position: relative;
@@ -205,44 +211,46 @@ input::placeholder{
     float: left;
     width: 88px;
     height: 88px;
-    left: -20px;
-    top: 20px;
+    left: -5px;
+    top: 4px;
 }
 .dasher h2{
-    position: relative;
+    /* position: relative; */
     font-size: 32px;
     line-height: 40px;
     text-align: left;
     letter-spacing: -0.04ch;
     display: block;
     font-weight: 600;
-    left: 10px;
+    margin-left: 106px;
 }
 .dasher p{
-    position: relative;
+    /* position: relative; */
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 0ch;
     text-align: left;
     line-height: 24px; 
     width:66vw;
-    top: -26px;
-    left: 100px;
+    margin-top: -26px;
+    /* left: 100px; */
+    margin-left: 107px;
 
 }
 .dasher a{
-    position: relative;
+    /* position: relative; */
     display: flex;
     align-items: center;
     cursor: pointer;
     background: none;
     font-size: 14px;
     text-align: center;
-    margin-left: 100px;
+    margin-left: 108px;
     color: rgb(235, 23, 0);
     font-weight: 600;
     text-decoration: none;
     top: -28px; 
+    padding-bottom: 20px;
 }
 .dasher svg{
     width: 12px;
@@ -250,11 +258,11 @@ input::placeholder{
 }
 
 .partner{
-    position: relative;
-    padding:1px;
+    /* position: relative; */
+    /* padding:1px; */
     width: 100%;
     flex-flow: row;
-    top: -15px;
+ margin-top: 40px;
 }
 .partner img{
     position: relative;
@@ -262,31 +270,31 @@ input::placeholder{
     width: 88px;
     height: 88px;
     left: -5px;
-    top: 20px;
+    top:3px;
 }
 .partner h2{
-    position: relative;
+    /* position: relative; */
     font-size: 32px;
     line-height: 40px;
     text-align: left;
     letter-spacing: -0.04ch;
     font-weight: 600;
-    left: 23px;
+    margin-left: 104px;
 }
 .partner p{
-    position: relative;
+    /* position: relative; */
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 0ch;
     text-align: left;
     line-height: 24px; 
     width: 62vw;
-    left: 110px;
-    top: -26px;
+    margin-left: 104px;
+    margin-top: -26px;
     
 }
 .partner a{
-    position: relative;
+    /* position: relative; */
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -298,7 +306,7 @@ input::placeholder{
     font-weight: 600;
     text-decoration: none;
     top: -28px;
-    left: 10px;
+    margin-left: 103px;
 }
 .partner svg{
     width: 12px;
@@ -308,9 +316,9 @@ input::placeholder{
     padding:16px;
     width: 100%;
     flex-flow: row;
-    position: relative;
+    /* position: relative; */
     top: -50px;
-   padding-bottom: 79px;
+   padding-bottom: 185px;
 }
 .phone img{
     position: relative;
@@ -318,10 +326,10 @@ input::placeholder{
     width: 88px;
     height: 88px;
     left: -20px;
-    top: 20px;
+    top:22px;
 }
 .phone h2{
-    position: relative;
+    /* position: relative; */
     font-size: 32px;
     line-height: 40px;
     text-align: left;
@@ -330,30 +338,30 @@ input::placeholder{
     left: 5px;
 }
 .phone p{
-    position: relative;
+    /* position: relative; */
     font-size: 18px;
     font-weight: 500;
     letter-spacing: 0ch;
     text-align: left;
     line-height: 24px; 
     width:64vw;
-    left: 96px;
-    top: -26px;
-    margin: 0;
+    margin-left: 91px;
+    margin-top: -26px;
+    
 }
 .phone a{
-    position: relative;
+    
     display: flex;
     align-items: center;
     cursor: pointer;
     background: none;
     font-size: 14px;
     text-align: center;
-    margin-left: 96px;
+    margin-left: 92px;
     color: rgb(235, 23, 0);
     font-weight: 600;
     text-decoration: none;
-    top: -28px;  
+    margin-top: 20px;  
 }
 .phone  svg{
     width: 12px;
@@ -361,8 +369,7 @@ input::placeholder{
 }
 .aa{
     background: rgb(255, 240, 237);
-    position: relative;
-    width: 100%;   
+    width: 352px;   
 }
 .allin{
     padding-left: 16px;
@@ -371,9 +378,9 @@ input::placeholder{
     margin-right: auto;
 }
 .allin img{
-    width: 256px;
+    width: 286px;
     height: 185px;
-    margin-left: 49px;
+    margin-left: 48px;
     float:left;
     margin-top: -118px;
 
@@ -448,7 +455,7 @@ input::placeholder{
     font-size: 14px;
     font-weight: 600;
     line-height: 16px;
-    position: relative;
+    /* position: relative; */
     background-color: rgb(235, 23, 0);
     border-radius: 100px;
     border: none;
@@ -465,7 +472,8 @@ input::placeholder{
 footer{
     background: rgb(25, 25, 25);
     background-size: cover;
-    Padding: 0 20px;
+    Padding: 1px 20px;
+    width: 310px;
 }
 .place{
     display: flex;
@@ -477,9 +485,9 @@ footer{
     margin-top: -15px;
 }
 .cities{
-    display: flex;
+    /* display: flex;
     flex-flow: column;
-    justify-content: center;
+    justify-content: center; */
     padding: 32px 0px;
     
 }
@@ -489,6 +497,11 @@ footer{
     color: #fff;
     text-align: center;
     line-height: 22px;
+}
+.city{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
 }
 .cities a{
     font-size: 14px;
@@ -500,12 +513,16 @@ footer{
     letter-spacing: 0ch;
 }
 .cuisines{
+    /* display: flex;
+    flex-flow: column;
+    justify-content: center; */
+    padding: 32px 0px;
+    margin-top: -133px; 
+}
+.cuisine{
     display: flex;
     flex-flow: column;
     justify-content: center;
-    padding: 32px 0px;
-    position: relative;
-    margin-top: -133px; 
 }
 .cuisines h2{
     font-size: 16px ;
@@ -540,7 +557,7 @@ footer{
    
     border-radius: 8px;
     background-color: rgb(73, 73, 73);
-    padding: 2px 8px;
+    padding: 0px 8px;
 }
 .knowus{
     padding: 32px 0px 0px;
@@ -556,7 +573,49 @@ footer{
     color: rgb(255, 255, 255);
 }
 .knowus a{
-    display: block;
+    
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+    text-decoration: none;
+    color: rgb(196, 196, 196);
+}
+.help{
+    padding: 32px 0px 0px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.help h2{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    color: rgb(255, 255, 255);
+}
+.help a{
+    
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 25px;
+    text-decoration: none;
+    color: rgb(196, 196, 196);
+}
+.business{
+    padding: 32px 0px 0px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.business h2{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    color: rgb(255, 255, 255);
+}
+.business a{
+    /* display: block; */
     font-size: 14px;
     font-weight: 500;
     line-height: 25px;
@@ -605,16 +664,22 @@ footer{
 @media screen and (min-width: 375px) {
 
     .banner{
-        width: 375px;
+        width: 374px;
+        height: 450px;
         background-size: cover;
-        padding: 0;
+        
     }
+
     .sign{
-        padding-right: 15px;
+        padding-right: 24px;
         
     }
     .sign a{
         padding: 0 16px;
+    }
+    .search{
+        padding: 0 50px;
+        max-width: 300px
     }
     .app{
         width: 327px;
@@ -625,55 +690,118 @@ footer{
     }
     .get span{
         width: 161px;
+        margin-left: 15px;
 
     }
     .get button{
         margin-right: 0;
+        
     }
     .children{
-        /* display: flex;
-        justify-content: center; */
-        padding-left: 20px;
+        width: 84vw;
+        padding-left: 28px;
     
     }
+    .dasher{
+          margin:0;  
+    }
+    .dasher img{
+        left: 20px;
+    }
     .dasher h2{
-        width: 61vw;
+        width: 33vw;
+        padding-left: 140px;
+        margin-left: 0;
+        margin-right: 0;
     }
     .dasher p{
         width: 60vw;
+        margin-left: 140px;
+    }
+    .dasher a{
+        margin-left: 140px;
+    }
+    .partner img{
+        left:18px;
+        top:-5px;
     }
     .partner h2{
-        width:90vw;
+        width:38vw;
+        padding-left: 36px;
+        margin-right: 0;
+    }
+    .partner p{
+        margin-left: 142px;
+    }
+    .partner a{
+        margin-left: 142px;
+    }
+    .phone img{
+        left: 8px;
+        top:25px;
+    }
+    .phone{
+        padding-right: 0;
+        padding-left: 0;
+    }
+    .phone h2{
+        width:42vw;
+        margin-left: 135px;
+    }
+    .phone p{
+        width: 55vw;
+        margin-left: 135px;
+      
+    }
+    .phone a{
+        margin-left: 135px;
+        margin-right: 0;
+        width: 25vw;
+    }
+    .aa{
+        width:100vw;
     }
     .allin img{
         height: 224px;
-        width: 311px;
+        width: 291px;
+        margin-left: 67px;
+        float:left; 
     }
     .content1 p{
         width: 74vw;
     }
     .welcome img{
-        width: 311px;
+        width: 330px;
         height: 223px;
     }
     .content2 p{
         width: 64vw;
 
     }
-    .cuisines{
-        margin-top: -202px;
+    footer{
+        width: 89vw;
     }
-    
-}
+    .place{
+        margin-top: 0;
+    }
+    .appstore{
+        padding: 0 10px;
+    }
+    .cuisines{
+        margin-top: -205px;
+    }
 
+
+}
 @media screen and (min-width: 425px) {
  
     .banner{
-        width: 425px ;
+        
+        width: 424px ;
         height: 450px;
     }
     .sign{
-        padding-right: 7px;
+        padding-right: 60px;
     }
     .sign a{
         padding: 1px 20px;
@@ -681,7 +809,7 @@ footer{
     .search{
        
        width: 64vw;
-       margin-left: 54px;
+       margin-left: 37px;
         
     }
     .searchs svg{
@@ -690,18 +818,266 @@ footer{
     }
     input{
         width: 180px;
-    }
-    .get{
+    }  
+    .app{
+        width: 380px;
         
     }
-    .app button{
-        width: 130px;
-        
+    .get{  
+        padding-left: 25px;
+    }
+    .get button{
+        margin-right: 45px;
     }
     .children{
-        margin-left: 20px;
-        width: 73vw;
+        
+        padding-left: 54px;
+    }
+    .dasher p{
+        width: 59vw;
+    }
+    .phone{
+        padding-right: 0;
+        /* min-width: 91vw; */
+        
+    }
+    .phone h2{
+        width: 37vw;
+    }
+    .phone a{
+        margin-left: 139px;
+    }
+    .phone p{
+        width:48vw;
+        margin-left: 138px;
+    
+    }
+
+    .allin img{
+        width: 348px;
+        height: 265px;
+        margin-left: 60px;
+    }
+    .aa{
+        width: 100vw;
+    }
+    .content1{
+        margin-left: 15px;;
+    }
+    .content2{
+        margin-left: 15px;
+    }
+    .content2 p{
+        width: 66vw;
+    }
+    footer{
+        width: 90.5vw;
+    }
+    .place{
+        margin-top: 0px;
+    }
+} 
+
+@media screen and (min-width: 768px){
+    .banner{
+        width: 776px;
+        height: 450px;
+    }
+    .search{
+        margin-left: 181px;
+
+    }
+    .searchs {
+    
+        width: 55vw;
+    }
+    input{
+        width: 45vw;
+    }
+    .app{
+        padding-left: 150px;
+    }
+    .children{
+        width: 50vw;
+        padding-left: 50px;
+    }
+    .dasher h2{
+    
+        margin-left: 186px;
+        
+    }
+    .dasher p{
+        width: 30vw;
+        
+        margin-left:328px;
+    }
+    .dasher a{
+        margin-left: 328px;
+    }
+    .dasher img{
+        width: 124px;
+        height: 124px;
+        left: 150px;
+    }
+    .partner img{
+        width: 124px;
+        height: 124px;
+        left: 150px;
+        
+    }
+    .partner p{
+        
+        margin-left: 326px;
+        width: 32vw;
+    }
+    .partner h2{
+        position: relative;
+        left: 185px;
+        width: 19vw;
+    }
+    .partner a{
+        margin-left: 326px;
+    }
+    .phone img{
+        width: 124px;
+        height: 124px;
+        left: 150px;  
+      }
+      .phone h2{
+        margin-left: 328px;
+      }
+      .phone p{
+        margin-left: 328px;
+        width: 30vw;
+      }
+      .phone a{
+        margin-left: 328px;
+      }
+      .aa{
+        width: 776px;
+        background: none;
+    }
+      .allin img{
+        width: 426px;
+        height:307px;
+        float: right;
+        margin-top: 0px;
+        position: relative;
+        left: 83px;
     }
     
     
-}    
+    .content1 {
+        position: relative;
+        left: 55px;
+        margin-left: -10px; 
+    }
+    .welcome{
+        margin-top: 83px;
+        background: rgb(255, 240, 237);
+        height: 440px;
+        padding-top: 94px;
+    }
+    .welcome img{
+        width: 426px;
+        height: 307px;
+    }
+    .content2{
+    
+    margin-top:  -315px;
+    margin-left: 470px;
+    right: 0;
+    
+    }
+    .content2 span{
+        width: 18vw;
+    }
+    .content2 p{
+        width: 27vw;
+    }
+    footer{
+        width: 96vw;
+    }
+    .place{
+        display: flex;
+        flex-flow: column;
+    }
+    .city {
+        display: grid;
+        grid-template-columns:repeat(3, 1fr);
+        column-gap: 150px;
+        margin-left: -114px;
+        row-gap: 6px;
+
+    } 
+    .cities a{
+          text-align: left; 
+    }
+    .cities h2{
+        margin-left: -646px;
+    }
+    .cuisines{
+        margin-top: 8px;
+    }
+    .cuisines h2{
+        margin-left: -557px;
+    }
+    .cuisine{
+        display: grid ;
+        grid-template-columns: 1fr 1fr;
+        row-gap: 6px ;
+        margin-left: -28px;
+    }
+    .cuisines a{
+        text-align: left;
+    }
+    .download{
+        padding-top: 50px;
+    }
+    .about{
+        display: flex;
+        flex-flow: row;
+        justify-content: center;
+        column-gap: 170px;
+       
+    }
+    .knowus{
+        display: flex;
+        align-items: flex-start;
+    }
+    .help{
+        margin-bottom: 250px;
+        display: flex;
+        align-items: flex-start;
+    }
+    .business{
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 225px;
+        align-items: left;
+    }
+    .media{
+        display: flex;
+        justify-content: end;
+        margin-bottom: -34px;
+    } 
+    .bottom{
+        margin-left: -153px;
+    }
+
+}
+
+@media screen and (min-width: 1024px){
+    .banner{
+        width: 1024px;
+    }
+    .inline svg{
+        display: none;
+    }
+    .icon{
+        display: flex;
+    }
+    .icon svg{
+        display: flex;
+    }
+}
