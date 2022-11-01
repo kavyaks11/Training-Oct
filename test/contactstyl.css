@@ -2,21 +2,143 @@
     font-family:GTZirkon ;
     src: url(font/GTZirkon-Book.woff2);
 }
+*{
+    font-family:GTZirkon ; 
+}
 .top{
     background-color:#ffe8dc ;
+    background-size: cover;
     padding: 10px;
 } 
 .head span{
     display: flex;
     justify-content: flex-end;
     position: relative;
-    top:;
+    top: -45px;
 }
 .top h2{
-    font-size: 24;
+    font-size: 24px;
     font-weight: normal;
+  
 }
 .head p{
+    
     font-size: 20px;
-    font-weight: no;
+    font-weight: none;
+    margin-top: 10px;
+}
+.menu{
+    display: none;
+}
+
+input{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+
+}
+input[type=email]{
+    width: 90vw;
+    background-color: rgb(204, 238, 238);
+    border: none;
+    height: 35px;
+}
+input[type=text]{
+    width: 90vw;
+    background-color: rgb(204, 238, 238);
+    border: none;
+    height: 170px;
+}
+button{
+    color: #fff;
+    background-color: #2b2b2b;
+    border:none;
+    height: 40px;
+    width: 110px;
+}
+.contact{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    
+}
+.git{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin-top: -25px;
+}
+.bottom{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    column-gap: 100px;
+    width: 88vw;
+    margin-top: 44px;
+}
+
+.bottom a{
+    line-height: 25px;
+    text-decoration: none;
+    color: #2b2b2b;
+}
+.privacy{
+    margin-left: 28px;
+    color: #b5b5b5;
+}
+footer{
+    
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 54vw;
+    
+}
+footer a{
+    font-size: 14px;
+    color: #b5b5b5;
+    text-decoration: none;
+    
+}
+footer span{
+    color: #b5b5b5;
+    text-decoration: underline;
+}
+@media screen and (min-width: 1024px) {
+    .top span{
+        display: none;
+    }
+    .menu {
+        display: flex;
+        justify-content: center;
+        margin-right: -180px;
+        padding-top: 100px;
+    
+
+        
+    }
+    .menu a{
+        margin-left: 20px;
+        text-decoration: none;
+        color: #2b2b2b;
+        margin-top: -32px;
+    
+
+    }
+     .head{
+        margin-left: 200px;
+     }
+     .head{}
+
+    input[type=email]{
+        width: 40vw;
+       
+    }
+    input[type=text]{
+        width: 40vw;
+        
+    }
+    .type{
+        margin-left: 200px;
+    }
 }

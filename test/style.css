@@ -27,7 +27,8 @@
 .main{
     
     background: #ffe8dc;
-    width: 85vw;
+    width: 98vw;
+    height: 845px;
 }
 .main img{
     width: 240px;
@@ -46,7 +47,8 @@
 }
 .main span{
     font-size: 18px;
-    margin-left: 10px;
+    position: relative;
+    left: 10px;
     
 }
 .main p{
@@ -56,6 +58,7 @@
 }
 .main h4{
     font-weight: normal;
+    font-size: 18px;
     margin-left: 10px;
 }
 .inline{
@@ -135,7 +138,10 @@ footer span{
     .main h3{
         transform: rotate(90deg);
         margin-left: -109px;
-        margin-right: 132px ;
+        margin-right: 262px ;
+    }
+    .main h4{
+        margin-left: 80px;
     }
     .main span{
         position: relative;
@@ -151,7 +157,7 @@ footer span{
         display: flex;
         flex-flow: row;
         position: relative;
-        bottom: 300px;
+        bottom: 355px;
         column-gap: 20px;
     }
     .dates{
@@ -161,6 +167,8 @@ footer span{
     }
     .dates a{
         padding-top: 34px;
+        color: #07691c;
+        padding-left: 80px;
     }
     .cont {
         display:flex;
@@ -174,10 +182,22 @@ footer span{
         
     }
     .bottom {
-        margin-left: -280px;
+        position: relative;
+        bottom: 200px;
+        left: -280px;
         
     }
+
     .privacy{
-        margin-left: 56px;
+        position: relative;
+        bottom:200px;
+        left: 30px;
     }
+    footer{
+        position: relative;
+        bottom: 150px;
+        left: 36px;
+    }
+    
+    
 }
