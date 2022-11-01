@@ -1,0 +1,203 @@
+@font-face {
+    font-family: GTZirkon-Book;
+    src: url(font/GTZirkon-Book.woff2);
+}
+*{
+    font-family: GTZirkon-Book;
+    color: #2b2b2b;
+
+}
+.top{
+    display: flex;
+    justify-content: flex-end;
+    padding: 0px;
+    font-size: 14px;
+    width: 80vw;
+}
+.top a{
+    text-decoration: none;
+    color: #b5b5b5;
+   
+    padding-left: 10px;
+    
+}
+.top a:nth-child(3){
+    color: #07691c;
+}
+.main{
+    
+    background: #ffe8dc;
+    width: 98vw;
+    height: 845px;
+}
+.main img{
+    width: 240px;
+    height: 400px;
+}
+.main h1{
+    font-size: 43.932px;
+    font-weight: normal;
+    margin-left: -8px;
+}
+.main h3{
+    font-size: 18px;
+    font-weight: normal;
+    color: #07691c;
+    margin-left: 10px;
+}
+.main span{
+    font-size: 18px;
+    position: relative;
+    left: 10px;
+    
+}
+.main p{
+    font-size: 14.4px;
+    padding-left: 10px;
+
+}
+.main h4{
+    font-weight: normal;
+    font-size: 18px;
+    margin-left: 10px;
+}
+.inline{
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ text-align: left;
+ 
+}
+.posts{
+    display: none;
+}
+.contact{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    
+}
+.git{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    margin-top: -25px;
+}
+.bottom{
+    display: flex;
+    flex-flow: row;
+    justify-content: center;
+    column-gap: 100px;
+    width: 88vw;
+}
+.bottom a{
+    line-height: 25px;
+    text-decoration: none;
+}
+.privacy{
+    margin-left: 28px;
+    color: #b5b5b5;
+}
+footer{
+    
+    margin-top: 10px;
+    margin-left: 20px;
+    width: 50vw;
+    
+}
+footer a{
+    font-size: 14px;
+    color: #b5b5b5;
+    text-decoration: none;
+    
+}
+footer span{
+    color: #b5b5b5;
+    text-decoration: underline;
+}
+@media screen and (min-width: 1024px ){
+    
+    body{
+        margin-left: 60px;
+    }
+    .top{
+        margin-left: -130px;
+    }
+    .top a{
+        padding-left: 10px;
+    }
+    .main{
+        height: 1000px;
+    }
+    .main h1{
+        margin-left: -20px;
+    }
+    .main img{
+        width: 300px;
+    }
+    .main h3{
+        transform: rotate(90deg);
+        margin-left: -109px;
+        margin-right: 262px ;
+    }
+    .main h4{
+        margin-left: 80px;
+    }
+    .main span{
+        position: relative;
+        left: 315px;
+        bottom: 65px;
+        display: block;
+        width:261px;
+    }
+    .main p{
+        display: none;
+    }
+    .posts{
+        display: flex;
+        flex-flow: row;
+        position: relative;
+        bottom: 355px;
+        column-gap: 20px;
+    }
+    .dates{
+        display: flex;
+        flex-flow: column;
+        
+    }
+    .dates a{
+        padding-top: 34px;
+        color: #07691c;
+        padding-left: 80px;
+    }
+    .cont {
+        display:flex;
+        flex-flow: column;
+        position: relative;
+        top: 18px;
+    }
+    .dates a{
+        font-size: 15px;
+        text-decoration: none;
+        
+    }
+    .bottom {
+        position: relative;
+        bottom: 200px;
+        left: -280px;
+        
+    }
+
+    .privacy{
+        position: relative;
+        bottom:200px;
+        left: 30px;
+    }
+    footer{
+        position: relative;
+        bottom: 150px;
+        left: 36px;
+    }
+    
+    
+}
