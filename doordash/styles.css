@@ -39,7 +39,6 @@ body{
     background-size: cover;
     height: 450px;
     width: 100vw;
-    /* padding: 0; */
     background-position-x: center;
     
 }
@@ -112,9 +111,7 @@ body{
     display: none;
 }
 .search{
-     /* padding: 0 20px;  */
-    /* max-width: 315px; */
-    /* position: relative; */
+    
     display: flex;
     flex-flow: column;
     align-items: center;
@@ -129,10 +126,9 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    /* width: 275px; */
     max-width: 315px;
     height: 48px;
-    border-radius: 20px;
+    border-radius: 30px;
     box-shadow: rgb(214 214 214) 0px 0px 0px 1px inset;
     border: none;
     background-color: #fff;
@@ -144,6 +140,9 @@ body{
 .location{
     display: none;
 }
+.arrow svg{
+    fill: #000;
+}
 input{
     border: none;
     width: 100%;
@@ -153,6 +152,7 @@ input::placeholder{
     font-family: DD-TTNorms;
     font-weight: 500;
     text-align: left;
+    line-height: 22px;
 }
 .search a{
     font-size: 16px;
@@ -170,7 +170,6 @@ input::placeholder{
     letter-spacing: -0.04ch;
     line-height: 22px;
     padding: 24px 0;
-    /* max-width: 324px;   */
     margin: 0px 16px;
 }
 .get{
@@ -217,7 +216,6 @@ input::placeholder{
 .dasher{
     display: flex;
     width: 100%;
-    /* min-width: 360px; */
     flex-flow: nowrap;
     padding: 16px;
     padding-left: 0;
@@ -243,8 +241,6 @@ input::placeholder{
     font-weight: 600;
     margin: 0;
     padding: 0;
-    
-  
 }
 .dasher p{
     font-size: 18px;
@@ -255,7 +251,6 @@ input::placeholder{
     display: block;
     margin-top: 0;
     margin-left: 0;
-    /* width: 64vw; */
 }
 .dasher a{
     font: 14px;
@@ -289,7 +284,6 @@ input::placeholder{
     background: rgb(255, 240, 237);
     width: 100%;   
     margin-top:100px;
-   
 }
 .allin{
     position: relative;
@@ -313,7 +307,6 @@ input::placeholder{
 }
 .content1 span{
     display: block;
-    /* position: relative; */
     width: 76vw;
     font-size: 24px;
     line-height: 32px;
@@ -395,17 +388,17 @@ input::placeholder{
 }
 footer{
     background: rgb(25, 25, 25);
-    background-size: cover;
-  
-  
+    /* max-width: 1160px; */
+    padding: 0 20px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
 }
 .place{
     display: flex;
     flex-flow: row;
-    align-items: center;
-    justify-content: center;
     padding: 0px 20px;
-    column-gap: 25px;
+    column-gap: 10px;
     
 }
 .place a:hover{
@@ -413,20 +406,28 @@ footer{
     color: #fff;
 }
 .cities{
-
     padding: 32px 0px;
+    
+}
+.cities:first-child{
+    margin-bottom: 8px;
+    
+}
+.citychild{
+    display: flex;
+    flex-direction: column;
+}
+.citychild a{
+    text-align: center;
 }
 .cities h2{
     font-size: 16px ;
     font-weight: 500;
     color: #fff;
-    text-align: center;
     line-height: 22px;
-}
-.city{
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
+    text-align: center;
+   
+  
 }
 .cities a{
     font-size: 14px;
@@ -434,36 +435,42 @@ footer{
     line-height: 25px;
     text-decoration: none;
     color: rgb(196, 196, 196); 
-    text-align: center;  
     letter-spacing: 0ch;
     cursor: pointer;
+  
 }
 .cuisines{
     
     padding: 32px 0px;
-    margin-top: -133px; 
-}
-.cuisine{
     display: flex;
     flex-flow: column;
     justify-content: center;
+    text-align: center;
+    margin-bottom: 133px;
 }
 .cuisines h2{
     font-size: 16px ;
     font-weight: 500;
     color: #fff;
     text-align: center;
+    width: 140px;
+    margin: 0 0 8px;
 }
+
 .cuisines a{
     font-size: 14px;
     font-weight: 500;
     line-height: 25px;
     text-decoration: none;
     color: rgb(196, 196, 196);
-    text-align: center;
-    width: 45vw;
     letter-spacing: 0ch; 
     cursor: pointer;
+    text-align: center;
+}
+.cuisinechild{
+    display: flex;
+    flex-direction: column;
+    
 }
 .download{
     padding: 32px 0px 0px;
@@ -473,6 +480,7 @@ footer{
     align-items: center;
     opacity: 0.7;
     row-gap: 10px;
+    cursor: pointer;
 }
 .appstore{
    
@@ -481,22 +489,26 @@ footer{
     padding: 0px 8px;
 }
 .download svg:hover{
-    cursor: pointer;
+   
     fill: #fff;
 
+}
+.about:first-child{
+    margin-bottom: 8px;
 }
 .knowus{
     padding: 32px 0px 0px;
     display: flex;
     flex-flow: column;
     justify-content: center;
-    align-items: center;
+    
 }
 .knowus h2{
     font-size: 16px;
     font-weight: 500;
     line-height: 22px;
     color: rgb(255, 255, 255);
+    text-align: center;
 }
 .knowus a{
     
@@ -505,60 +517,10 @@ footer{
     line-height: 25px;
     text-decoration: none;
     color: rgb(196, 196, 196);
+    letter-spacing: 0ch;
+    text-align: center;
 }
 .knowus a:hover{
-    cursor: pointer;
-    text-decoration:underline;
-    color: #fff;
-}
-.help{
-    padding: 32px 0px 0px;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-}
-.help h2{
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 22px;
-    color: rgb(255, 255, 255);
-}
-.help a{
-    
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 25px;
-    text-decoration: none;
-    color: rgb(196, 196, 196); 
-}
-.help a:hover{
-    cursor: pointer;
-    text-decoration:underline;
-    color: #fff;
-}
-.business{
-    padding: 32px 0px 0px;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    align-items: center;
-}
-.business h2{
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 22px;
-    color: rgb(255, 255, 255);
-}
-.business a{
-   
-    font-size: 14px;
-    font-weight: 500;
-    line-height: 25px;
-    text-decoration: none;
-    color: rgb(196, 196, 196);
-}
-.business a:hover{
     cursor: pointer;
     text-decoration:underline;
     color: #fff;
@@ -570,6 +532,9 @@ footer{
     gap: 15px;
     cursor: pointer;
 
+}
+.media svg:hover{
+    fill: #fff;
 }
 .bottom{
     padding-bottom: 32px;
@@ -605,6 +570,9 @@ footer{
 .bottom a:hover{
     text-decoration: underline;
     color: #fff;
+}
+button:hover{
+    background-color: #da2008;
 }
 
 
@@ -656,7 +624,7 @@ footer{
         padding: 0 10px;
     }
     .cuisines{
-        margin-top: -205px;
+        margin-bottom: 183px;
     }
 }
 @media screen and (min-width: 425px) {
@@ -705,9 +673,16 @@ footer{
         width: 66vw;
     }
     .place{
-        margin-top: 0px;
-        
+       column-gap: 70px;
     }
+    .cuisines h2{
+      width: 162px;
+      margin-bottom: 15px;
+    }
+   .cuisines{
+    margin-bottom: 198px;
+    }
+   
 } 
 
 @media screen and (min-width: 768px){
@@ -730,7 +705,7 @@ footer{
     }
     .children{
 
-        margin-left: -14px;
+        margin-left: -15px;
     }
     .dasher img{
         width: 124px;
@@ -751,7 +726,6 @@ footer{
         height:307px;
         margin-top: 0px;
         left: 294px;
-        
     }
     .content1 {
         top: 10px;
@@ -769,8 +743,6 @@ footer{
         background: rgb(255, 240, 237);
         height: 525px;
         padding-top: 94px;
-        
-        
     }
     .welcome img{
         width: 426px;
@@ -788,69 +760,60 @@ footer{
         width: 27vw;
     }
     .place{
-        display: flex;
-        flex-flow: column;
+        flex-direction: column;
     }
-    .city {
-        display: grid;
-        grid-template-columns:repeat(3, 1fr);
-        column-gap: 150px;
-        margin-left: -121px;
-        row-gap: 6px;
-    } 
-    .cities a{
-          text-align: left; 
+    .cities{
+        margin-left: -19px;
     }
     .cities h2{
-        margin-left: -654px;
+        display: flex;
+        justify-content: flex-start;
+        
     }
-    .cuisines{
-        margin-top: 8px;
+    .city{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 150px;
     }
-    .cuisines h2{
-        margin-left: -566px;
-    }
-    .cuisine{
-        display: grid ;
-        grid-template-columns: 1fr 1fr;
-        row-gap: 6px ;
-        margin-left: -36px;
-    }
-    .cuisines a{
+    .city a{
         text-align: left;
     }
-
-    .download{
-        padding-top: 50px;
+    .cuisines{
+        margin-bottom: 40px;
+        margin-left: -19px;
+    }
+    .cuisine{
+        display: flex;
+        justify-content: space-between;
+        margin-right: 255px;
+    }
+    .cuisine a{
+        text-align: left;
     }
     .about{
         display: flex;
-        flex-flow: row;
-        justify-content: center;
-        column-gap: 170px;
+        flex-direction: row;
+        justify-content: space-between;
+    
     }
-    .knowus{
-        display: flex;
-        align-items: flex-start;
-        
-    }
-    .help{
+    .knowus:nth-child(2){
         margin-bottom: 250px;
-        display: flex;
-        align-items: flex-start;
     }
-    .business{
-        display: flex;
-        align-items: flex-start;
-        margin-bottom: 225px;
-        align-items: left;
+    .knowus:last-child{
+        margin-bottom: 227px;
+    }
+    .knowus a{
+        text-align: left;
+    }
+    .knowus h2{
+        text-align: left;
     }
     .media{
         display: flex;
         justify-content: end;
         margin-bottom: -34px;
-        margin-right: 20px;
     } 
+   
     .bottom{
         margin-left: -185px;
     
@@ -904,7 +867,7 @@ footer{
     .allin img{
         width: 554px;
         height: 400px;
-        left: 358px;
+        left: 357px;
     }
     .allin span{
         width: 147px;
@@ -930,7 +893,7 @@ footer{
         height: 399px;
     }
     .content2{
-        margin-left: 645px;
+        padding-left: 148px;
         margin-top: -341px;
     }
     .content2 span{
@@ -945,51 +908,36 @@ footer{
         height: 40px;
     }
     .place{
-        margin-left: 20px;
-    }
-    .city{
-        column-gap: 10px;
-        margin-left: -475px;
-    }
-    .cities h2{
+        flex-direction: row;
+        column-gap: 70px;
     
-        margin-left: -878px;
-    }
-     .cuisines h2{
-        display: flex;
-        margin-left: -36px; 
     } 
-    .cuisine :nth-child(even){
-        margin-left:  -230px ;
-        width: 146px;
+    .cuisine{
+        margin-right: 0px;
+        column-gap:  70px;
+      
     }
     .cuisines{
-        display: grid;
-        margin-left: 150px;
-        margin-top: -354px;
-        width: 100px;
+        margin-top: 0;
+        padding-top: 47px;
     }
-    .download{
+    .city{
+        margin-right: 0;
+        column-gap: 70px;
+    }
+    .us {
         display: flex;
-        align-items: flex-end;
-        margin-right: 20px;
+        flex-flow: row-reverse;
+        
     }
     .about{
-        position: relative;
-        left: -100px;
-        top: -159px;
+        column-gap: 70px;
+     
     }
-
-    .help{
-        position: relative;
-        left: -128px;;
-    }
-    .business{
-        position: relative;
-        left: -252px;
-    }
-    .media{
-        margin-right: 20px;
+    
+    .download{
+        padding-bottom: 230px;
+        padding-left: 236px;
     }
     .bottom{
         margin-left: -379px;
@@ -1001,13 +949,16 @@ footer{
     .icon{
         padding-right: 200px;
     }
+    .searchs{
+        min-width: 30vw;
+    }
     .middle{
         padding-left: 106px;;
     }
     .allin img{
         width: 597px;
         height: 430px;
-        left: 379px;
+        left: 378px;
     }
     .welcome img{
         width: 597px;
@@ -1018,10 +969,25 @@ footer{
         height: 676px;
     }
     .place{
-        margin-left: -34px;
+        column-gap: 80px;
     }
-    .about{
-        left: -128px;
+    .cuisine{
+        column-gap: 80px;
+    }
+    .city{
+        column-gap: 80px;
+    }
+    .download{
+        padding-left: 300px;
+    }
+    .us {
+        margin-top: -50px;
+    }
+    .bottom{
+        margin-left: -446px;
+    }
+    .media{
+        margin-right: 0;
     }
 
 }
@@ -1035,115 +1001,170 @@ footer{
     .sign span{
         padding-top: -10px;
     }
-    .searchs{
-        
-    }
    .arrow svg{
-    width: 30px;
-    height: 35px;
-   }
+         width: 30px;
+         height: 35px;
+         fill: #fff;
+    }
    .arrow{
-    border-radius: 50%;
-    width:80px;
-    height: 40px;
-    border: none;
-    background: #eb1700;
-    margin-bottom: 5px;
+        padding-left: 5px;
+        padding-right: 5px;
+        border-radius: 100%;
+        width:50px;
+        height: 40px;
+        border: none;
+        background: #eb1700;
+        margin-bottom: 5px;
+        
    }
    .icon{
-    padding-right: 280px;
+       padding-right: 280px;
    }
    .dasher{
-
-   display:block;
-   text-align: center;
-
+         display:block;
+      padding-left: 160px;
+   }
+   .dasher h2{
+       text-align: center;
+   }
+   .dasher p{
+       text-align: center;
+   }
+   .dasher img{
+       width: 154px;
+       height: 154px;
+   }
+   .dashercontent{
+       align-items: center;
+       margin-left: -12px;
+   }
+   .dasher button{
+       margin-left: -20px;
+       font-size: 18px;
    }
      .middle{
-    display: flex;
-    flex-flow: row;
-    padding: 0;
-    margin: 0;
-     }
+       display: flex;
+       flex-flow: row;
+       padding: 0;
+       margin: 0;
+   }
     .allin{
         margin-top: 10px;
         
     }
     .allin img{
         width: 712px;
-        height: 513px;
-        left: -30px;
+        height: 514px;
+        left: 424px;
 
     }
     .allin span{
         font-size: 40px;
         width: 245px;
+        line-height: 48px;
+    }
+    .content1{
+        left:-25px;
+        top: 100px;
     }
     .content1 p{
         font-size: 18px;
-        width: 30vw;
+        width: 35vw;
     }
     .content1 button{
-        font-size: 16px;;
+        font-size: 16px;
     }
     .welcome{
-        padding-bottom: 166px;
-        margin-top: -253px;
-        
+        margin-top: 260px;
+       padding-top: 90px;
+       height: 750px;
+      
+
     }
     .welcome img{
         width: 712px;
         height: 513px;
-        margin-left: 125px;
+        
     }
     .content2{
-        padding-left:250px;
+        padding-left:300px;
     }
     .content2 span{
         font-size: 40px;
-        width:30vw;
+        width:35vw;
     }
     .content2 p{
         font-size: 18px;
+        width: 34vw;
     
     }
     .content2 button{
         font-size: 16px;
-        width: 138px;
+        width: 154px;
     }
     .place{
-        margin-left: -165px;
+        column-gap: 105px;
     }
-    .cities h2{
-        margin-left: -908px;
+    .place a{
+        line-height: 30px;
     }
-    .cuisines h2{
-        margin-left: -515px;
+    .city{
+        column-gap: 105px;
     }
-    .city {
-        column-gap: 100px;
-        
+    .cuisine{
+        column-gap: 105px;
     }
-    .cuisines{
-        margin-left: 345px;
-    }
-    .cuisine a:nth-child(even){
-        margin-left: -380px;
-    }
-    .download{
-        margin-right: 130px;
-    }
-    .about{
-        margin-left: -342px;
-        column-gap: 215px;
+
+    .bottom{
+        margin-left: -603px;
     }
     .media{
-        margin-right: 135px;
+        margin-right: 30px;
+    }
+
+}
+@media screen and (min-width: 1440px) {
+    .icon{
+        padding-right: 410px;
+    }
+    .middle{
+        padding-left: 110px;
+    }
+    
+    .allin img{
+        left: 550px;
+    }
+    .content1{
+        left:70px;
+    }
+    .content1 p{
+        width:28vw;
+    }
+    .welcome img{
+        margin-left: 120px;
+    }
+    .content2{
+        padding-left: 424px;
+    }
+    .content2 p{
+        width: 28vw;
+    }
+    .place{
+        margin-left: 150px;
+    }
+    .download{
+        padding-left: 436px;
+        padding-right: 130px;
+    }
+    .media{
+        margin-right: 119px;
     }
     .bottom{
-        margin-left: -573px;
+        margin-left: -556px;
     }
     footer{
-        width:97vw;
+        max-width: 100%;
     }
+    
+    
 }
