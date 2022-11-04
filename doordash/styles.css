@@ -571,7 +571,10 @@ footer{
     text-decoration: underline;
     color: #fff;
 }
-button:hover{
+.app button:hover{
+    background-color: #da2008;
+}
+.aa button:hover{
     background-color: #da2008;
 }
 
@@ -928,7 +931,6 @@ button:hover{
     .us {
         display: flex;
         flex-flow: row-reverse;
-        
     }
     .about{
         column-gap: 70px;
@@ -941,7 +943,6 @@ button:hover{
     }
     .bottom{
         margin-left: -379px;
-    
     }
     
 } 
