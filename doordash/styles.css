@@ -187,7 +187,7 @@ input::placeholder{
     height: 56px;
     
 }
-  .app button{
+.app button{
     position: relative;
     max-width: 100%;
     font-size: 16px;
@@ -211,6 +211,7 @@ input::placeholder{
     width: 100vw;
     padding-top: 15px;
     cursor: pointer;
+    margin-left: 5px;
 
 }
 .dasher{
@@ -280,7 +281,7 @@ input::placeholder{
     display: block;
     max-width: 768px;
 }
-.aa{
+.all{
     background: rgb(255, 240, 237);
     width: 100%;   
     margin-top:100px;
@@ -388,7 +389,6 @@ input::placeholder{
 }
 footer{
     background: rgb(25, 25, 25);
-    /* max-width: 1160px; */
     padding: 0 20px;
     margin: auto;
     display: flex;
@@ -478,10 +478,16 @@ footer{
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    opacity: 0.7;
     row-gap: 10px;
     cursor: pointer;
 }
+.download svg{
+    opacity: 0.7;
+}
+.download svg:hover{
+    opacity:3;
+}
+
 .appstore{
    
     border-radius: 8px;
@@ -533,8 +539,11 @@ footer{
     cursor: pointer;
 
 }
+.media svg{
+    opacity: 0.7;
+}
 .media svg:hover{
-    fill: #fff;
+    opacity: 3;
 }
 .bottom{
     padding-bottom: 32px;
@@ -545,7 +554,7 @@ footer{
     flex-wrap: wrap;
     column-gap: 20px;
     row-gap: 1.5px; 
-    cursor: pointer;
+    
 }
 .bottom a{
     font-weight: 400;
@@ -553,6 +562,7 @@ footer{
     line-height: 18px;
     text-decoration: none;
     color: rgb(196, 196, 196);
+    cursor: pointer;
 }
 .img{
     width:32px;
@@ -569,12 +579,11 @@ footer{
 }
 .bottom a:hover{
     text-decoration: underline;
-    color: #fff;
 }
 .app button:hover{
     background-color: #da2008;
 }
-.aa button:hover{
+.all button:hover{
     background-color: #da2008;
 }
 
@@ -592,7 +601,7 @@ footer{
         padding: 0 16px;
     }
     .children{
-        margin-left: -20px;
+        margin-left: -25px;
         
 
     }
@@ -703,12 +712,13 @@ footer{
         width: 30px;
     }
     input{
-        width: 45vw;
+        width: 100vw;
         padding-left: 10px;
+        padding-bottom: 5px;
     }
     .children{
 
-        margin-left: -15px;
+        margin-left: -14px;
     }
     .dasher img{
         width: 124px;
@@ -717,7 +727,7 @@ footer{
     .middle{
        margin-left: 200px;
     }
-      .aa{
+      .all{
         background: none;
     
     }
@@ -1158,7 +1168,7 @@ footer{
         padding-right: 130px;
     }
     .media{
-        margin-right: 119px;
+        margin-right: 130px;
     }
     .bottom{
         margin-left: -556px;
@@ -1168,4 +1178,46 @@ footer{
     }
     
     
+}
+@media screen and (min-width: 1800px){
+     .icon{
+        padding-right:590px;
+     }
+    .middle{
+        padding-left: 280px;
+    }
+    .allin img{
+        left:740px;
+    }
+    .content1{
+        width: 50vw;
+        left: 260px;
+    }
+    .content1 p{
+        width: 22vw;
+    }
+    .welcome{
+        padding-top: 110px;
+    }
+    .welcome img{
+        margin-left: 325px;
+    }
+    .content2{
+        margin-left: 640px;
+    }
+    .content2 p{
+        width:23vw;
+    }
+    .place{
+        margin-left: 345px;
+    }
+    .download{
+        padding-right: 295px;
+    }
+    .media{
+        margin-right: 290px;
+    }
+    .bottom{
+        margin-left: -530px;
+    }
 }
