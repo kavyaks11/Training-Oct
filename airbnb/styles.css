@@ -1,0 +1,215 @@
+@font-face {
+    font-family: circular-apple-system;
+    src: url(asset/font/Airbnb_Cereal-Book-9a1c9cca9bb3d65fefa2aa487617805e.woff2);
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: circular-apple-system ;
+    src: url(asset/font/Airbnb_Cereal-Medium-50fc004b3082375f12ff0cfb67bf8e56.woff2);
+     font-weight: 500;
+    font-style: medium;
+}
+@font-face {
+    font-family: circular-apple-system;
+    src: url(asset/font/Airbnb_Cereal-Bold-bdfb98485e7836ba31b456f65cded088.woff2);
+    font-weight: 600;
+    font-style: bold;
+}
+body{
+    font-family: circular-apple-system;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #484848;
+    background-color: #fff;
+    margin: 0;
+}
+.header{
+    padding: 14px 24px 0px;
+}
+.header_content{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    border: 0.5px solid  rgba(0,0,0,0.08);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 10%);
+    border-radius: 1000px;
+    color: black;
+    height: 54px;
+    width: 100%;
+    padding-right: 10px;
+
+}
+.search_icon{
+    padding: 19px 15px 0px 20px;
+
+}
+.search_icon svg{
+    width: 16px;
+    height: 16px;
+}
+.search{
+    display: flex;
+    flex-direction: row;
+}
+
+.header_part1{
+    padding-left: 2px;
+    padding-top: 9px;
+    width: 82%;
+    
+}
+.part1_head{
+     font-weight: 500;
+   
+}
+
+.part1_foot{
+    font-size: 12px;
+    line-height: 16px;
+    color: #717171;
+    display: flex;
+    width: 90%;
+
+}
+.part1_foot span{
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+    min-width: 20px;
+
+}
+.header button svg{
+    width: 12px;
+    height: 12px;
+}
+.header button{
+    padding: 0 9px;
+    display: flex;
+    align-items: center;
+    height: 36px;
+    border: 1px solid #DDDDDD;
+    border-radius: 100%;
+    margin-top: 9px;
+    background-color: #fff;
+    /* margin-right: 10px; */
+  
+}
+.header2{
+    display: none;
+}
+@media screen and (min-width: 375px) {
+    .header_content{
+        padding:0;
+    }
+    .header button{
+        margin-right: 10px;
+    }
+    .part1_foot{
+        width: 100%;
+    }
+}
+@media screen and (min-width: 744px) {
+    .header{
+        display: none;
+    }
+    .header2{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        /* position: sticky; */
+        width: 100%;
+        top: 0;
+        /* padding: 0px 24px; */
+        margin-top: 17px;
+    }
+    .header2_content{
+        display: flex;
+        gap: 20px;
+        padding: 0 24px;
+    }
+    .header2::after{
+        display: flex;
+        content: '';
+    }
+    .airbnb_icon{
+        display: flex;
+        margin-left: -9px;
+        margin-top: 7px;
+    }
+    .icon2{
+        display: none;
+    }
+    .searchbar{
+        display: flex;
+        justify-content: center;
+        background: #fff;
+        border: 0.5px solid  rgba(0,0,0,0.08);
+        box-shadow: 0 1px 5px rgb(0 0 0 / 10%);;
+        border-radius: 40px;
+        height: 46px;
+        min-width: 348px;
+        width: 90%;
+      
+    }
+    .searchbar a{
+        text-decoration: none;
+        color: #222222 ;
+        font-weight: 500;
+        border-right: 1px solid #DDDDDD;
+        height: 20px;
+        padding: 0px 10px;
+        margin-top: 13px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        min-width: 80px;
+    }
+    .searchicon{
+        display: flex;
+    }
+    .searchicon svg{
+        height: 5px;
+        width: 5px;
+        border-radius: 100px;
+        background-color: #ff385c;
+        padding: 8px;
+        margin: 7px 0px 0px -3px;
+     
+    }
+    .searchicon a{
+        color: rgb(113, 113, 113);
+        padding: 0 10px;
+        margin-top: 13px;
+        height: 20px;
+        font-weight: 400;
+        border-right: none;
+    }
+    .profile{
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        column-gap: 20px;
+        padding: 0px 10px;
+    }
+    .profile button{
+        display: flex;
+        align-items: center;
+        background-color: #ffff;
+        border-radius: 21px;
+        border: 1px solid #DDDDDD;
+        padding: 5px 5px 5px 12px;
+        column-gap: 12px;
+        
+    }
+    .profile a{
+        text-decoration: none;
+        color: #222222;
+        font-weight: 500;
+    }
+    .profie button svg{
+        width: 30px;
+        height: 30px;
+    }
+}
