@@ -24,8 +24,13 @@ body{
     background-color: #fff;
     margin: 0;
 }
-.header{
+.header_parent{
     padding: 14px 24px 0px;
+    cursor: pointer;
+    /* width: 100%; */
+}
+.header{
+    width: 104%;
 }
 .header_content{
     display: flex;
@@ -36,8 +41,7 @@ body{
     border-radius: 1000px;
     color: black;
     height: 54px;
-    width: 100%;
-    padding-right: 10px;
+    
 
 }
 .search_icon{
@@ -56,7 +60,7 @@ body{
 .header_part1{
     padding-left: 2px;
     padding-top: 9px;
-    width: 82%;
+    width: 70%;
     
 }
 .part1_head{
@@ -69,14 +73,13 @@ body{
     line-height: 16px;
     color: #717171;
     display: flex;
-    width: 90%;
+    width: 80%;
 
 }
 .part1_foot span{
     overflow: hidden;
     text-overflow:ellipsis;
     white-space: nowrap;
-    min-width: 20px;
 
 }
 .header button svg{
@@ -92,12 +95,49 @@ body{
     border-radius: 100%;
     margin-top: 9px;
     background-color: #fff;
-    /* margin-right: 10px; */
-  
+}
+.header_button{
+    margin-right: 9px;  
+    margin-left: -6px;
 }
 .header2{
     display: none;
 }
+.scroll_bar{
+    display: flex;
+    gap: 18px;
+    overflow: scroll;
+    padding: 0 24px;
+    border-bottom: 0.5px solid  rgba(0,0,0,0.08);
+    overflow-x: hidden;
+   
+}
+.scroll_icon{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 12px 0px 0px;
+    padding: 4px 0px 14px;
+    gap: 4px;
+    cursor: pointer;
+}
+.scroll_icon img{
+    width: 24px;
+    height: 24px;
+    opacity: 0.5;
+}
+.scroll_icon a{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    color: #717171;
+    white-space: nowrap;
+}
+.scroll_icon:hover{
+    
+}
+
+
 @media screen and (min-width: 375px) {
     .header_content{
         padding:0;
@@ -115,31 +155,31 @@ body{
     }
     .header2{
         display: flex;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        /* position: sticky; */
-        width: 100%;
+        justify-content: space-between;
+        width: 94.5%;
         top: 0;
-        /* padding: 0px 24px; */
-        margin-top: 17px;
+        padding-left: 20px;
+        margin-top: 16px;
     }
     .header2_content{
         display: flex;
-        gap: 20px;
-        padding: 0 24px;
+        gap: 25px;
+        /* justify-content: space-between; */
+        padding: 0 0 0 24px;
+        width: 53%;
     }
-    .header2::after{
-        display: flex;
-        content: '';
-    }
+
     .airbnb_icon{
         display: flex;
-        margin-left: -9px;
-        margin-top: 7px;
+        margin-left: -4px;
+        margin-top: 8px;
+        
     }
     .icon2{
         display: none;
+    }
+    .searchbar_parent{
+        width: 100%
     }
     .searchbar{
         display: flex;
@@ -149,8 +189,10 @@ body{
         box-shadow: 0 1px 5px rgb(0 0 0 / 10%);;
         border-radius: 40px;
         height: 46px;
-        min-width: 348px;
-        width: 90%;
+        width: 100%;
+        gap: 12px;
+        padding-left: 13px;
+        /* padding-right: 5px; */
       
     }
     .searchbar a{
@@ -159,7 +201,6 @@ body{
         font-weight: 500;
         border-right: 1px solid #DDDDDD;
         height: 20px;
-        padding: 0px 10px;
         margin-top: 13px;
         overflow: hidden;
         text-overflow: ellipsis;
@@ -170,17 +211,15 @@ body{
         display: flex;
     }
     .searchicon svg{
-        height: 5px;
-        width: 5px;
         border-radius: 100px;
         background-color: #ff385c;
-        padding: 8px;
-        margin: 7px 0px 0px -3px;
+        padding: 10px;
+        margin: 7px 0px 0px 9px;
      
     }
     .searchicon a{
         color: rgb(113, 113, 113);
-        padding: 0 10px;
+    
         margin-top: 13px;
         height: 20px;
         font-weight: 400;
@@ -188,10 +227,10 @@ body{
     }
     .profile{
         display: flex;
-        flex-flow: row;
-        align-items: center;
+        align-items:center;
         column-gap: 20px;
-        padding: 0px 10px;
+        padding-right: 19px;
+       
     }
     .profile button{
         display: flex;
@@ -201,15 +240,113 @@ body{
         border: 1px solid #DDDDDD;
         padding: 5px 5px 5px 12px;
         column-gap: 12px;
+    
         
     }
     .profile a{
         text-decoration: none;
         color: #222222;
         font-weight: 500;
+        padding-right: 4px;
+    } 
+}
+@media screen and (min-width: 768px) {
+  
+    .header2_content{
+        gap: 25px;
     }
-    .profie button svg{
-        width: 30px;
-        height: 30px;
+    .searchicon svg{
+        margin-left: 22px;
+    }
+    .profile{
+        padding-right: 18px;
+    }
+}
+@media screen and (min-width: 950px){
+    .header2_content{
+        justify-content: space-between;
+        gap: 217px;
+    }
+
+    .searchbar_parent{
+        width: 70%;
+    }
+    .searchbar{
+        padding-left: 16px;
+    }
+    .profile{
+        padding-right: 8px;
+    }
+   
+}
+@media screen and (min-width: 960px) {
+    .header2_content{
+        gap: 225px;
+    }
+    .profile{
+        padding-right: 7px;
+    }
+    .searchicon svg{
+        margin-left: 26px;
+    }
+    
+}
+@media screen and (min-width: 1024px){
+    .header2_content{
+        gap: 260px;
+    }
+    .airbnb_icon{
+        margin-left: -4px;
+    }
+    .searchbar_parent{
+        width: 66%;
+    }
+    .searchbar{
+        padding-left: 16px;;
+    }
+    .searchicon svg{
+        margin-left: 23px;
+    }
+    .profile{
+        padding-right: 4px;
+    }
+    
+}
+@media screen and (min-width: 1128px){
+    .icon1{
+        display: none;
+    }
+    .icon2{
+        display: flex;
+        margin-left: 0px;
+    }
+    .header2_content{
+        gap: 246px;
+    }
+    .searchbar{
+        padding-left: 13px;
+    }
+    .profile{
+        padding-right: 0;
+        padding-left: 1px;
+
+    }
+}
+@media screen and (min-width: 1440px) {
+    .header2{
+        padding: 0 60px;
+        width: 90%;
+    }
+    .header2_content{
+        gap: 363px;
+    }
+    .searchbar_parent{
+        
+    }
+    .searchbar{
+        padding-left: 13px;
+    }
+    .profile{
+      margin-right: -4px;
     }
 }
