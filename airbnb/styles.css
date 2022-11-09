@@ -25,9 +25,9 @@ body{
     margin: 0;
 }
 .header_parent{
-    padding: 14px 24px 0px;
+    padding: 14px 23px 0px;
     cursor: pointer;
-    /* width: 100%; */
+    width: 85.5%;
 }
 .header{
     width: 104%;
@@ -54,18 +54,16 @@ body{
 }
 .search{
     display: flex;
-    flex-direction: row;
 }
 
 .header_part1{
     padding-left: 2px;
     padding-top: 9px;
-    width: 70%;
+    width: 85%;
     
 }
 .part1_head{
      font-weight: 500;
-   
 }
 
 .part1_foot{
@@ -82,6 +80,9 @@ body{
     white-space: nowrap;
 
 }
+.part1_foot span:nth-child(even){
+    padding: 0 5px;
+}
 .header button svg{
     width: 12px;
     height: 12px;
@@ -95,6 +96,7 @@ body{
     border-radius: 100%;
     margin-top: 9px;
     background-color: #fff;
+    margin-left: -37px;
 }
 .header_button{
     margin-right: 9px;  
@@ -105,11 +107,11 @@ body{
 }
 .scroll_bar{
     display: flex;
-    gap: 18px;
+    gap: 32px;
     overflow: scroll;
     padding: 0 24px;
     border-bottom: 0.5px solid  rgba(0,0,0,0.08);
-    overflow-x: hidden;
+    overflow-y: hidden;
    
 }
 .scroll_icon{
@@ -121,10 +123,13 @@ body{
     gap: 4px;
     cursor: pointer;
 }
+.scroll_bar::-webkit-scrollbar{
+    display: none;
+}
 .scroll_icon img{
     width: 24px;
     height: 24px;
-    opacity: 0.5;
+    opacity: 0.7;
 }
 .scroll_icon a{
     text-decoration: none;
@@ -132,25 +137,126 @@ body{
     font-weight: 500;
     color: #717171;
     white-space: nowrap;
+    line-height: 16px;
+   
 }
-.scroll_icon:hover{
-    
+.scrollbar_end{
+    display: none;
+   
+}
+.cards{
+    display: grid;
+    grid-template-rows:repeat(n, 1fr);
+    padding: 0px 24px;
+    padding-top: 23px;
+}
+.card{
+    padding-bottom: 40px;
+}
+.images{
+    position: relative;
+   
+}
+.image{
+    background-size: cover;
+    margin-bottom: 12px;
+}
+.image img{
+    width: 85vw;
+    height: 80.75vw;
+    border-radius: 12px;
+}
+.wishlist{
+    position: absolute;
+    top:15px;
+    right: 16px;
+    z-index: 1;
+}
+.wishlist svg{
+    fill:rgba(0, 0, 0, 0.5);
+}
+.details{
+    /* padding-top: 6px; */
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    line-height: 19px;
+}
+.place{
+    display: flex;
+    flex-flow: column;
+}
+.place a{
+    text-decoration: none;
+    color: #222222;
+    font-weight: 500;
+    /* font-size: 15px; */
+}
+.place span{
+    color:#717171;
+    /* font-size: 15px; */
+}
+.price{
+    padding-top: 5px;
+}
+.price a{
+    text-decoration: none;
+    color: #222222;
+    font-weight: 500;
+}
+.star{
+    display: flex;
+    gap: 4px;
+   align-items: baseline;
+}
+.star a{
+    text-decoration: none;
+    color: #222222;
+    /* font-size: 15px; */
+    /* letter-spacing: 0.06ch; */
+    /* line-height: 1.43; */
 }
 
 
 @media screen and (min-width: 375px) {
-    .header_content{
-        padding:0;
+    .header_parent{
+        width: 87.25%;
+     
     }
+    .header{
+        width:100%;
+    }
+    .search_icon{
+        padding: 19px 15px 0px 20px;
+    
+    }
+    .header_part1{
+        width: 100%;
+        margin-left: 1px;
+    }
+     .part1_foot{
+        width: 101%;
+        margin-left: px;
+     }
     .header button{
         margin-right: 10px;
     }
-    .part1_foot{
-        width: 100%;
+    .header_button{
+        margin-right: 0;
+        margin-left: 0;
     }
+
+  
+   
+}
+@media screen and (min-width: 425px) {
+    .header_parent{
+        width: 88.75%;
+    }
+    
 }
 @media screen and (min-width: 744px) {
-    .header{
+    .header_parent{
         display: none;
     }
     .header2{
@@ -160,11 +266,11 @@ body{
         top: 0;
         padding-left: 20px;
         margin-top: 16px;
+       
     }
     .header2_content{
         display: flex;
-        gap: 25px;
-        /* justify-content: space-between; */
+        gap: 24px;
         padding: 0 0 0 24px;
         width: 53%;
     }
@@ -189,10 +295,9 @@ body{
         box-shadow: 0 1px 5px rgb(0 0 0 / 10%);;
         border-radius: 40px;
         height: 46px;
-        width: 100%;
+        width: 99.5%;
         gap: 12px;
-        padding-left: 13px;
-        /* padding-right: 5px; */
+        padding-left: 15px;
       
     }
     .searchbar a{
@@ -214,7 +319,7 @@ body{
         border-radius: 100px;
         background-color: #ff385c;
         padding: 10px;
-        margin: 7px 0px 0px 9px;
+        margin: 7px 0px 0px 10px;
      
     }
     .searchicon a{
@@ -240,8 +345,6 @@ body{
         border: 1px solid #DDDDDD;
         padding: 5px 5px 5px 12px;
         column-gap: 12px;
-    
-        
     }
     .profile a{
         text-decoration: none;
@@ -249,11 +352,68 @@ body{
         font-weight: 500;
         padding-right: 4px;
     } 
+    
+    .scroll_bar{
+        gap: 44px;
+        border-bottom: none;
+        border-top: 0.5px solid  rgba(0,0,0,0.08) ;
+        margin-top: 16px;
+        padding-top: 19px;
+        position: relative;
+        padding-left: 40px;
+        padding-right: 40px;
+        width: 66%
+    }
+    .scroll_icon{
+        gap: 8px;
+     
+    }
+    .scrollbar_end{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        right: 40px;
+        gap: 20px;
+        top: 115px;
+   
+        
+    }
+    .next svg{
+        width: 12px;
+        height: 12px;
+    }
+    .next button{
+        border-radius: 50%;
+        border: 1px solid rgb(0 0 0 / 0.3);
+        background-color: #ffff;
+        padding: 7px;
+    }
+    
+    .filter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 16px;
+        border: 1px solid #DDDDDD;
+        border-radius: 12px;
+        background-color: #ffff;
+        gap: 8px;
+        z-index: 1;
+        
+    }
+    .filter span{
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16px;
+        color: #222222;
+    }
+   
 }
 @media screen and (min-width: 768px) {
   
     .header2_content{
-        gap: 25px;
+        gap: 24px;
     }
     .searchicon svg{
         margin-left: 22px;
@@ -274,26 +434,32 @@ body{
     .searchbar{
         padding-left: 16px;
     }
+    .searchicon svg{
+        margin-left: 18px;
+    }
     .profile{
         padding-right: 8px;
+    }
+    .scroll_bar{
+        width: 76%;
     }
    
 }
 @media screen and (min-width: 960px) {
     .header2_content{
-        gap: 225px;
+        gap: 227px;
     }
     .profile{
         padding-right: 7px;
     }
     .searchicon svg{
-        margin-left: 26px;
+        margin-left: 24px;
     }
     
 }
 @media screen and (min-width: 1024px){
     .header2_content{
-        gap: 260px;
+        gap: 266px;
     }
     .airbnb_icon{
         margin-left: -4px;
@@ -329,8 +495,13 @@ body{
     .profile{
         padding-right: 0;
         padding-left: 1px;
+        margin-right: -2px;
 
     }
+    .scroll_bar{
+        width: 80%;
+    }
+  
 }
 @media screen and (min-width: 1440px) {
     .header2{
@@ -340,13 +511,22 @@ body{
     .header2_content{
         gap: 363px;
     }
-    .searchbar_parent{
-        
-    }
+   
     .searchbar{
         padding-left: 13px;
     }
+    .searchicon svg{
+        margin-right: 1px;
+    }
     .profile{
       margin-right: -4px;
+    }
+    .scroll_bar{
+        padding-left: 80px;
+        padding-right: 80px;
+        width: 73%;
+    }
+    .scrollbar_end{
+        right: 80px;
     }
 }
