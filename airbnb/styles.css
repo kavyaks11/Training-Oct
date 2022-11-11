@@ -1,0 +1,1092 @@
+@font-face {
+    font-family: circular-apple-system;
+    src: url(asset/font/Airbnb_Cereal-Book-9a1c9cca9bb3d65fefa2aa487617805e.woff2);
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: circular-apple-system ;
+    src: url(asset/font/Airbnb_Cereal-Medium-50fc004b3082375f12ff0cfb67bf8e56.woff2);
+     font-weight: 500;
+    font-style: medium;
+}
+@font-face {
+    font-family: circular-apple-system;
+    src: url(asset/font/Airbnb_Cereal-Bold-bdfb98485e7836ba31b456f65cded088.woff2);
+    font-weight: 600;
+    font-style: bold;
+}
+*{
+    font-family: circular-apple-system; 
+}
+body{
+    font-family: circular-apple-system;
+    font-size: 14px;
+    line-height: 1.43;
+    color: #484848;
+    background-color: #fff;
+    margin: 0;
+}
+.header_parent{
+    padding: 14px 24px 0px;
+    cursor: pointer;
+    width: 85.5%;
+    position: fixed;
+    z-index: 2;
+    background: #fff;
+
+}
+.header{
+    width: 89.067vw;
+    z-index: 2;
+}
+.header_content{
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    border: 0.5px solid  rgba(0,0,0,0.08);
+    box-shadow: 0 3px 10px rgb(0 0 0 / 10%);
+    border-radius: 1000px;
+    color: black;
+    height: 54px;
+    width: 88.44vw
+    
+
+}
+.search_icon{
+    padding: 19px 15px 0px 20px;
+
+}
+.search_icon svg{
+    width: 16px;
+    height: 16px;
+}
+.search{
+    display: flex;
+    width: 70.84vw;
+}
+
+.header_part1{
+    padding-left: 3px;
+    padding-top: 9px;
+    width: 55vw;
+    
+}
+.part1_head{
+     font-weight: 500;
+     width: 54vw;
+}
+
+.part1_foot{
+    font-size: 12px;
+    line-height: 16px;
+    color: #717171;
+    display: flex;
+
+}
+.part1_foot span{
+    overflow: hidden;
+    text-overflow:ellipsis;
+    white-space: nowrap;
+
+}
+.part1_foot span:nth-child(even){
+    padding: 0 5px;
+}
+.header button svg{
+    width: 12px;
+    height: 12px;
+}
+.header button{
+    padding: 0 9px;
+    display: flex;
+    align-items: center;
+    height: 36px;
+    border: 1px solid #DDDDDD;
+    border-radius: 100%;
+    margin-top: 9px;
+    background-color: #fff;
+    margin-left: -37px;
+}
+.header_button{
+    margin-right: 9px;  
+    margin-left: -6px;
+}
+.header2{
+    display: none;
+}
+.scroll_bar{
+    display: flex;
+    gap: 16px;
+    overflow: scroll;
+    padding: 0 24px;
+    border-bottom: 0.5px solid  rgba(0,0,0,0.08);
+    overflow-y: hidden;
+    z-index: 1;
+    height: 74px;
+    position: fixed;
+    background-color: #fff;
+    padding-top: 70px;
+   
+}
+.scroll_icon{
+    display: flex;
+    flex-flow: column;
+    align-items: center;
+    margin: 12px 0px 0px;
+    padding: 4px 0px 0px;
+    gap: 4px;
+    cursor: pointer;
+}
+.scroll_icon:first-child{
+    width:84.61px;
+    height: 43.75px;
+}
+.scroll_icon:nth-child(2){
+   min-width: 64px;
+    height: 44px;
+}
+.scroll_icon:nth-child(3){
+    min-width: 64px;
+    height: 44px;
+}
+.scroll_icon:nth-child(4){
+    min-width: 64px;
+    height: 44px;
+}
+.scroll_icon:nth-child(5){
+    min-width: 64px;
+    height: 44px;
+}
+.scroll_icon:nth-child(6){
+    min-width: 83.66px;
+    height: 44px;
+}
+.scroll_icon:nth-child(7){
+    min-width: 64.17px;
+    height: 43.75px;
+}
+.scroll_icon:nth-child(8){
+    min-width: 80.86px;
+    height: 43.75px;
+}
+.scroll_icon:nth-child(9){
+    min-width: 64px;
+    height: 44px;
+}
+.scroll_icon:nth-child(10){
+    min-width: 64px;
+    height: 44px;
+}
+.scroll_icon:nth-child(11){
+    min-width: 95.67px;
+    height: 62px;
+}
+.scroll_icon:nth-child(12){
+    min-width: 64px;
+    height: 44px;
+}
+.scroll_icon:nth-child(13){
+    min-width: 64px;
+    height: 44px;
+}
+.scroll_icon:nth-child(14){
+    min-width: 69.72px;
+    height: 44px;
+}
+.scroll_icon:nth-child(15){
+    min-width: 65.23px;
+    height: 44px;
+}
+.scroll_icon:nth-child(16){
+    min-width: 67.86px;
+    height: 44px;
+}
+.scroll_icon:nth-child(17){
+    min-width: 64px;
+    height: 44px;
+}
+.scroll_icon:nth-child(18){
+    min-width: 64px;
+    height: 44px;
+}
+.scroll_icon:nth-child(19){
+    min-width: 94.17px;
+    height: 43.75px;
+}
+.scroll_icon:last-child{
+    min-width: 71.13px;
+    height: 44px;
+}
+.scroll_bar::-webkit-scrollbar{
+    display: none;
+}
+.scroll_icon img{
+    width: 24px;
+    height: 24px;
+    opacity: 0.7;
+}
+.scroll_icon a{
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 500;
+    color: #717171;
+    white-space: nowrap;
+    line-height: 16px;
+   
+}
+.previous{
+    display: none;
+}
+.scrollbar_end{
+    display: none;
+   
+}
+.cards{
+    display: grid;
+    grid-template-rows:repeat(10, 1fr);
+    padding: 0px 24px;
+    padding-top: 168px;
+    z-index: 1;
+    border-bottom: 1px solid  #DDDDDD;
+
+}
+.card{
+    padding-bottom: 38px;
+    
+   
+}
+.images{
+    position: relative;
+   
+}
+.image{
+    background-size: cover;
+    margin-bottom: 6px;
+}
+.image img{
+    width: 85vw;
+    height: 80.75vw;
+    border-radius: 12px;
+}
+.wishlist{
+    position: absolute;
+    top:15px;
+    right: 16px;
+    z-index: 1;
+}
+.wishlist svg{
+    fill:rgba(0, 0, 0, 0.5);
+}
+.details{
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    line-height: 21px;
+}
+.place{
+    display: flex;
+    flex-flow: column;
+}
+.place a{
+    text-decoration: none;
+    color: #222222;
+    font-weight: 500;
+}
+.place span{
+    color:#717171;
+  
+}
+.price{
+    padding-top: 6px;
+}
+.price a{
+    text-decoration: none;
+    color: #222222;
+    font-weight: 500;
+}
+.star{
+    display: flex;
+    gap: 4px;
+}
+.star svg{
+    width: 12px;
+    height: 12px;
+}
+.star a{
+    text-decoration: none;
+    color: #222222;
+    letter-spacing: 0.07ch;
+}
+.star_icon{
+    margin-top: 5px;
+}
+.explore{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.explore span{
+    font-size: 18px;
+    color: #222222;
+    text-align: center;
+    margin-top: 56px;
+    font-weight: 500;
+    line-height: 22px;
+    width:85vw;
+
+}
+.explore .button{
+    padding: 24px 0px 80px;
+}
+.explore button{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    color: #222222;
+    padding: 13px 23px;
+    cursor: pointer;
+    width: auto;
+    border-radius: 8px;
+    border-width: 1px;
+    background: #fff;
+}
+.getaways{
+    padding: 0 24px;
+    padding-bottom: 72px;
+    
+}
+.getaways h2{
+    font-size: 22px;
+    line-height: 26px;
+    color: #222222;
+    font-weight: 500;
+}
+.getaways .button{
+    display: flex;
+    white-space: nowrap;
+    padding: 0px 12px;
+    margin: 0px -12px;
+    border-bottom: 1px solid #DDDDDD;
+ 
+}
+.getaways button{
+    font-size: 14px;
+    margin: 6px 6px 6px -10px;
+    padding: 10px;
+    line-height: 18px;
+    font-weight: 500;
+    border: none;
+    background: none;
+    color: rgb(113, 113, 113);
+}
+.getaways button:hover{
+    text-decoration: underline;
+    color: black;
+}
+.categories{
+    display: flex;
+    flex-flow: column;
+    padding: 8px 0px 50px;
+
+}
+.categories a{
+    font-size: 14px;
+    color: rgb(34, 34, 34);
+    text-decoration: none;
+    padding: 24px 0px 0px;
+    
+
+}
+.categories a:last-child{
+    font-weight: 500;
+    text-decoration: underline;
+}
+footer{
+    background-color: rgb(247, 247, 247);
+    border-top: 1px solid rgb(221, 221, 221);
+    padding: 32px 24px 24px 24px;
+    
+}
+.footer_nav{
+    display: grid;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #DDDDDD;
+}
+.footer_nav_list{
+    display: grid;
+}
+.footer_nav h2{
+    font-size: 14px;
+    font-weight: 600;
+    color: #222222;
+    line-height: 18px;
+    margin:0;
+}
+.footer_nav a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #222222;
+    margin-top: 12px;
+}
+.country{
+    display: flex;
+    gap:  20px;
+    padding-bottom: 12px;
+}
+.country button{
+    border: none; 
+    background: none;
+    display: flex; 
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+    gap: 8px;
+    padding: 0;
+    
+}
+.country span{
+    font-weight: 500;
+    color: #222222;
+}
+.copyright{
+    color: #222222;
+}
+.privacy a{
+    text-decoration: none;
+    color: #222222;
+}
+.privacy span{
+    font-size: 14px;
+    width: 19px;
+    line-height: 18px;
+    padding: 5px;
+}
+.airbnb_in{
+    display: none;
+}
+.footer_group{
+    display: none;
+}
+
+@media screen and (min-width: 375px) {
+    .header_parent{
+        width: 87.2vw;
+     
+    }
+    .header{
+        width:100%;
+    }
+    .header_content{
+        width:86.67vw;
+    }
+    .search{
+        width: 70.67vw; 
+    }
+    .search_icon{
+        padding: 19px 15px 0px 20px;
+    
+    }
+    .header_part1{
+        width: 57vw;
+    }
+     .part1_foot{
+        width: 57.4vw;
+        margin-left: px;
+     }
+    .header button{
+        margin-right: 10px;
+    }
+    .header_button{
+        margin-right: 0;
+        margin-left: 0;
+    }
+    .image img{
+        width: 87.20vw;
+        height: 82.84vw;
+    }
+    .star_icon{
+        margin-top: 4px;
+    }
+    .categories{
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+        grid-template-rows: repeat(6,1fr);
+    }
+
+  
+
+}
+@media screen and (min-width: 425px) {
+    .header_parent{
+        width: 88.709vw;
+    }
+    .header_content{
+        width: 88.238vw;
+    }
+    .header_part1{
+        width: 61.6vw;
+    }
+    .part1_head{
+        width: 63.3vw;
+    }
+    .part1_foot{
+        width: 62.36vw;
+    }
+    .image img{
+        width: 88.709vw;
+        height: 84.27vw;
+    }
+    .star_icon{
+        margin-top: 5px;
+    }
+    
+}
+@media screen and (min-width: 768px) {
+    .head{
+        position: fixed;
+        background: #fff;
+        z-index: 2;
+    }
+    .header_parent{
+        display: none;
+    }
+    .header2{
+        display: flex;
+        justify-content: space-between;
+        width: 97vw;
+        top: 0;
+        padding-left: 20px;
+        margin-top: 16px;
+        border-bottom: 0.5px solid  rgba(0,0,0,0.08) ;
+        padding-bottom: 16px;
+    }
+    .header2_content{
+        display: flex;
+        gap: 24px;
+        padding: 0 0 0 24px;
+        width: 53%;
+    }
+
+    .airbnb_icon{
+        display: flex;
+        margin-left: -4px;
+        margin-top: 8px;
+        
+    }
+    .icon2{
+        display: none;
+    }
+    .searchbar{
+        display: flex;
+        justify-content: center;
+        background: #fff;
+        border: 0.5px solid  rgba(0,0,0,0.08);
+        box-shadow: 0 1px 5px rgb(0 0 0 / 10%);;
+        border-radius: 40px;
+        height: 46px;
+        gap: 12px;
+        width: 44.168vw;
+        padding-left: 11px ;
+      
+    }
+    .searchbar a{
+        text-decoration: none;
+        color: #222222 ;
+        font-weight: 500;
+        border-right: 1px solid #DDDDDD;
+        height: 18px;
+        margin-top: 13px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        min-width: 80px;
+        padding-left: 7px;
+    }
+    .searchicon{
+        display: flex;
+    }
+    .searchicon svg{
+        border-radius: 100px;
+        background-color: #ff385c;
+        padding: 10px;
+        margin: 7px 0px 0px 6px;
+     
+    }
+    .searchicon a{
+        color: rgb(113, 113, 113);
+    
+        margin-top: 13px;
+        height: 18px;
+        font-weight: 400;
+        border-right: none;
+    }
+    .profile{
+        display: flex;
+        align-items:center;
+        column-gap: 20px;
+        padding-right: 37px;
+       
+    }
+    .profile button{
+        display: flex;
+        align-items: center;
+        background-color: #ffff;
+        border-radius: 21px;
+        border: 1px solid #DDDDDD;
+        padding: 5px 5px 5px 12px;
+        column-gap: 12px;
+    }
+    .profile a{
+        text-decoration: none;
+        color: #222222;
+        font-weight: 500;
+        padding-right: 4px;
+        line-height: 18px;
+    }
+    .scroll_bar{
+        gap: 32px;
+        border-bottom: none;
+        padding-top: 19px;
+        position: relative;
+        padding-left: 40px;
+        padding-right: 40px;
+        width: 66%;
+        z-index: 1;
+        background-color: #fff;
+    }
+    .scroll_icon{
+        gap: 8px;
+     
+    }
+   
+    .scrollbar_end{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: fixed;
+        right: 40px;
+        gap: 20px;
+        top: 115px;
+   
+        
+    }
+    .next svg{
+        width: 12px;
+        height: 12px;
+    }
+    .next button{
+        border-radius: 50%;
+        border: 1px solid rgb(0 0 0 / 0.3);
+        background-color: #ffff;
+        padding: 7px;
+    }
+    
+    .filter{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 15px 16px;
+        border: 1px solid #DDDDDD;
+        border-radius: 12px;
+        background-color: #ffff;
+        gap: 8px;
+        z-index: 1;
+        
+    }
+    .filter span{
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16px;
+        color: #222222;
+    }
+
+    .cards{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5,1fr);
+        column-gap: 24px;
+        padding: 0 40px;
+        padding-top: 218px;
+    }
+    .image img{
+        width: 43.23vw;
+        height: 41.067vw;
+    }
+    .getaways{
+        padding-bottom: 50px;
+    }
+    .categories{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4,1fr);
+        row-gap: 11px;
+        padding-bottom: 0;
+    }
+    footer{
+        border-top: none;
+        padding: 40px;
+        padding-bottom: 0;
+    }
+    .footer_nav_list{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 24px;
+        width: 89.71vw;
+    }
+    .footer_nav:last-child{
+        padding-bottom: 40px;
+    }
+    .address{
+        display: none;
+    }
+    .airbnb_in{
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        padding-bottom: 10px;
+        gap: 57px;
+    }
+    .country_in{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 24px
+    }
+    .country_in button{
+        border: none; 
+        background: none;
+        display: flex; 
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 500;
+        gap: 8px;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .country_in a{
+        text-decoration: none;
+        font-weight: 500;
+        color: #222222;
+    }
+    .rupee{
+        display: flex;
+        gap: 8px;
+    }
+    .media{
+        display: flex;
+        gap: 24px;
+    }
+    .footer_group{
+        display: flex;
+        padding: 13px 26px 14px 40px;
+        border-top: 1px solid #dddd;
+        justify-content: space-between;
+    }
+    .airbnb_copyright{
+        width: 42.15vw;
+        align-items: center;
+    }
+    .airbnb_copyright a{
+        text-decoration: none;
+        color: #222222;
+    }
+    .airbnb_copyright span{
+        padding: 0 5px;
+    }
+    
+    .footer_country{
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        width:23.91vw
+    }
+    .footer_country a{
+        color: #222222;
+        text-decoration: none;
+        font-weight: 500;
+        padding-right: 5px;
+    }
+    .footer_country  button{
+        border: none; 
+        background: none;
+        display: flex; 
+        align-items: center;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 500;
+        gap: 8px;
+        padding: 0;
+    }
+   
+    .footer_child{
+        display: flex;
+        /* gap:15px; */
+    }
+    .support{
+        display: flex;
+    }
+    .support button{
+        display: flex;
+        background: none;
+        border: none;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .support button a{
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 500;
+        color: #222222;
+    }
+    .support svg{
+        padding: 2px 8px 0px 8px;
+    }
+    .support span{
+        align-items: baseline;
+    }
+ 
+
+}
+
+@media screen and (min-width: 960px) {
+    .header2_content{
+        gap: 227px;
+    }
+
+    .profile{
+        padding-right: 7px;
+    }
+    .searchbar{
+        width: 35.335vw;
+        padding-left: 11px;
+    }
+    .searchicon svg{
+        margin-left: 5px;
+    }
+    .serachbar a{
+        padding-left: 6px
+    }
+    .profile{
+        padding-right: 31px;
+    }
+    .cards{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+    .image img{
+        width: 28.889vw;
+        height: 27.444vw;
+    }
+    .footer_nav_list{
+        column-gap:45px;
+    }
+    .airbnb_copyright{
+        width: 58vw;
+    }
+    .support button a{
+        width: 135px;
+    }
+    .footer_country{
+        width: 19vw;
+    }
+    
+}
+@media screen and (min-width: 1024px){
+    .header2_content{
+        gap: 266px;
+    }
+    .airbnb_icon{
+        margin-left: -4px;
+    }
+ 
+    .searchbar{
+        padding-left: 5px;
+        width: 33.712vw;
+    }
+    .searchicon svg{
+        margin-left: 11px;
+    }
+    .profile{
+        padding-right: 29px;
+    }
+    .image img{
+        width: 29.168vw;
+        height: 27.709vw;
+    }
+    .star_icon{
+        margin-top: 4px;
+    }
+    
+}
+@media screen and (min-width: 1440px){
+    .icon1{
+        display: none;
+    }
+    .icon2{
+        display: flex;
+        margin-left: 40px;
+    }
+    .header2_content{
+        gap: 362px;
+    }
+    .searchbar{
+        width: 23.973vw;
+    }
+    .profile{
+        padding-right: 57px;
+        padding-left: 1px;
+    }
+    .scroll_bar{
+        padding-left: 80px;
+        padding-right: 80px;
+    }
+    .scrollbar_end{
+        right: 80px;
+    }
+    .cards{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        column-gap: 24px;
+        padding: 0 80px;
+        padding-top: 202px;
+    }
+    .image img{
+        width: 20.973vw;
+        height: 19.923vw;
+    }
+    .wishlist{
+        right: 16px;
+        top: 15px;
+    }
+    .categories{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+    .getaways{
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-bottom: 45px;
+    }
+    footer{
+        padding-top: 50px;
+    }
+    .footer_nav{
+        display: flex;
+        flex-flow: column;
+        row-gap: 10px;
+        width: 50vw;
+    }
+    .footer_nav_list{
+        display: flex;
+        flex-flow: column;
+        row-gap: 5px;
+        width: 20.937vw;
+    }
+    .footer_nav_group{
+        display: flex;
+        width: 90.556vw;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .footer_nav{
+        margin-bottom: 20px;
+    }
+    .footer_nav{
+        padding-bottom: 48px;
+    }
+    .footer_nav_list{
+        row-gap: 4px;
+    }
+    .airbnb_in{
+        display: none;
+    }
+    .footer_group{
+        padding-right: 80px;
+        padding-left: 80px;
+    }
+    
+
+}
+@media screen and (min-width: 1640px) {
+    .header2_content{
+        gap: 463px;
+    }
+    .searchbar{
+        width: 21.049vw;
+    }
+    .profile{ 
+        padding-right: 51px;
+    }
+    .scroll_bar{
+        padding-left: 90px;
+    }
+
+    .cards{
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+    .card{
+        padding-bottom: 37px;
+    }
+    .image img{
+        width: 16.8789vw;
+        height: 16.035vw;
+    }
+}
+/* @media screen  and (min-width: 2560px){
+    .header2{
+        padding-bottom: 0;
+    }
+    .header2_content{
+        gap: 886px;
+    }
+
+    .searchbar{
+        width: 13.485vw;
+    }
+    .icon2 svg{
+        width: 118px;
+        height: 57px;
+    }
+    .icon2{
+        margin-left: 60px;
+    }
+    .previous svg{
+        width: 12px;
+        height: 12px;
+    }
+    .previuos{
+        border-radius: 50%;
+        border: 1px solid rgb(0 0 0 / 0.3);
+        background-color: #ffff;
+        padding: 7px;
+
+    }
+    .profile{
+        height: 48px;
+        padding-right: 43px;
+    }
+   
+    .wishlist{
+        right: 103px;
+    }
+    .scrollbar_end{
+        right: 100px;
+    }
+   
+    .cards{
+        grid-template-columns: repeat(6, 1fr);
+        margin: 0 20px;
+    }
+    .image img{
+        width: 14.584vw;
+        height: 13.8546vw;
+    }
+} */
