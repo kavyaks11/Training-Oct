@@ -17,6 +17,9 @@
     font-style: bold;
 }
 *{
+    font-family: circular-apple-system; 
+}
+body{
     font-family: circular-apple-system;
     font-size: 14px;
     line-height: 1.43;
@@ -380,23 +383,95 @@
     background: none;
     color: rgb(113, 113, 113);
 }
+.getaways button:hover{
+    text-decoration: underline;
+    color: black;
+}
 .categories{
     display: flex;
     flex-flow: column;
-    padding: 8px 0px 0px;
+    padding: 8px 0px 50px;
+
 }
 .categories a{
     font-size: 14px;
     color: rgb(34, 34, 34);
     text-decoration: none;
     padding: 24px 0px 0px;
+    
 
 }
 .categories a:last-child{
     font-weight: 500;
     text-decoration: underline;
 }
-
+footer{
+    background-color: rgb(247, 247, 247);
+    border-top: 1px solid rgb(221, 221, 221);
+    padding: 32px 24px 24px 24px;
+    
+}
+.footer_nav{
+    display: grid;
+    padding-bottom: 24px;
+    margin-bottom: 24px;
+    border-bottom: 1px solid #DDDDDD;
+}
+.footer_nav_list{
+    display: grid;
+}
+.footer_nav h2{
+    font-size: 14px;
+    font-weight: 600;
+    color: #222222;
+    line-height: 18px;
+    margin:0;
+}
+.footer_nav a{
+    font-size: 14px;
+    text-decoration: none;
+    color: #222222;
+    margin-top: 12px;
+}
+.country{
+    display: flex;
+    gap:  20px;
+    padding-bottom: 12px;
+}
+.country button{
+    border: none; 
+    background: none;
+    display: flex; 
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 500;
+    gap: 8px;
+    padding: 0;
+    
+}
+.country span{
+    font-weight: 500;
+    color: #222222;
+}
+.copyright{
+    color: #222222;
+}
+.privacy a{
+    text-decoration: none;
+    color: #222222;
+}
+.privacy span{
+    font-size: 14px;
+    width: 19px;
+    line-height: 18px;
+    padding: 5px;
+}
+.airbnb_in{
+    display: none;
+}
+.footer_group{
+    display: none;
+}
 
 @media screen and (min-width: 375px) {
     .header_parent{
@@ -436,6 +511,11 @@
     }
     .star_icon{
         margin-top: 4px;
+    }
+    .categories{
+        display: grid;
+        grid-template-columns: repeat(2 ,1fr);
+        grid-template-rows: repeat(6,1fr);
     }
 
   
@@ -484,9 +564,6 @@
         margin-top: 16px;
         border-bottom: 0.5px solid  rgba(0,0,0,0.08) ;
         padding-bottom: 16px;
-        /* position: fixed;
-        background: #fff;
-        z-index: 2; */
     }
     .header2_content{
         display: flex;
@@ -631,6 +708,7 @@
     .cards{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(5,1fr);
         column-gap: 24px;
         padding: 0 40px;
         padding-top: 218px;
@@ -639,7 +717,141 @@
         width: 43.23vw;
         height: 41.067vw;
     }
-  
+    .getaways{
+        padding-bottom: 50px;
+    }
+    .categories{
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4,1fr);
+        row-gap: 11px;
+        padding-bottom: 0;
+    }
+    footer{
+        border-top: none;
+        padding: 40px;
+        padding-bottom: 0;
+    }
+    .footer_nav_list{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 24px;
+        width: 89.71vw;
+    }
+    .footer_nav:last-child{
+        padding-bottom: 40px;
+    }
+    .address{
+        display: none;
+    }
+    .airbnb_in{
+        display: flex;
+        justify-content: center;
+        /* align-items: center; */
+        padding-bottom: 10px;
+        gap: 57px;
+    }
+    .country_in{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 24px
+    }
+    .country_in button{
+        border: none; 
+        background: none;
+        display: flex; 
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 500;
+        gap: 8px;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .country_in a{
+        text-decoration: none;
+        font-weight: 500;
+        color: #222222;
+    }
+    .rupee{
+        display: flex;
+        gap: 8px;
+    }
+    .media{
+        display: flex;
+        gap: 24px;
+    }
+    .footer_group{
+        display: flex;
+        padding: 13px 26px 14px 40px;
+        border-top: 1px solid #dddd;
+        justify-content: space-between;
+    }
+    .airbnb_copyright{
+        width: 42.15vw;
+        align-items: center;
+    }
+    .airbnb_copyright a{
+        text-decoration: none;
+        color: #222222;
+    }
+    .airbnb_copyright span{
+        padding: 0 5px;
+    }
+    
+    .footer_country{
+        display: flex;
+        align-items: center;
+        gap: 24px;
+        width:23.91vw
+    }
+    .footer_country a{
+        color: #222222;
+        text-decoration: none;
+        font-weight: 500;
+        padding-right: 5px;
+    }
+    .footer_country  button{
+        border: none; 
+        background: none;
+        display: flex; 
+        align-items: center;
+        font-size: 14px;
+        line-height: 18px;
+        font-weight: 500;
+        gap: 8px;
+        padding: 0;
+    }
+   
+    .footer_child{
+        display: flex;
+        /* gap:15px; */
+    }
+    .support{
+        display: flex;
+    }
+    .support button{
+        display: flex;
+        background: none;
+        border: none;
+        justify-content: center;
+        align-items: center;
+
+    }
+    .support button a{
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 500;
+        color: #222222;
+    }
+    .support svg{
+        padding: 2px 8px 0px 8px;
+    }
+    .support span{
+        align-items: baseline;
+    }
+ 
 
 }
 
@@ -666,10 +878,23 @@
     }
     .cards{
         grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
     }
     .image img{
         width: 28.889vw;
         height: 27.444vw;
+    }
+    .footer_nav_list{
+        column-gap:45px;
+    }
+    .airbnb_copyright{
+        width: 58vw;
+    }
+    .support button a{
+        width: 135px;
+    }
+    .footer_country{
+        width: 19vw;
     }
     
 }
@@ -727,6 +952,7 @@
     }
     .cards{
         grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3, 1fr);
         column-gap: 24px;
         padding: 0 80px;
         padding-top: 202px;
@@ -739,6 +965,54 @@
         right: 16px;
         top: 15px;
     }
+    .categories{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(3,1fr);
+    }
+    .getaways{
+        padding-left: 80px;
+        padding-right: 80px;
+        padding-bottom: 45px;
+    }
+    footer{
+        padding-top: 50px;
+    }
+    .footer_nav{
+        display: flex;
+        flex-flow: column;
+        row-gap: 10px;
+        width: 50vw;
+    }
+    .footer_nav_list{
+        display: flex;
+        flex-flow: column;
+        row-gap: 5px;
+        width: 20.937vw;
+    }
+    .footer_nav_group{
+        display: flex;
+        width: 90.556vw;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .footer_nav{
+        margin-bottom: 20px;
+    }
+    .footer_nav{
+        padding-bottom: 48px;
+    }
+    .footer_nav_list{
+        row-gap: 4px;
+    }
+    .airbnb_in{
+        display: none;
+    }
+    .footer_group{
+        padding-right: 80px;
+        padding-left: 80px;
+    }
+    
+
 }
 @media screen and (min-width: 1640px) {
     .header2_content{
@@ -756,6 +1030,7 @@
 
     .cards{
         grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 1fr);
     }
     .card{
         padding-bottom: 37px;
