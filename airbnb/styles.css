@@ -39,6 +39,7 @@ body{
 .header{
     width: 89.067vw;
     z-index: 2;
+
 }
 .header_content{
     display: flex;
@@ -107,6 +108,7 @@ body{
     margin-top: 9px;
     background-color: #fff;
     margin-left: -37px;
+    cursor: pointer;
 }
 .header_button{
     margin-right: 9px;  
@@ -137,6 +139,13 @@ body{
     padding: 4px 0px 0px;
     gap: 4px;
     cursor: pointer;
+}
+.scroll_icon img:hover{
+     opacity: 10;
+}
+.scroll_icon a:hover{
+    color: #222222;
+    text-decoration: underline;
 }
 .scroll_icon:first-child{
     width:84.61px;
@@ -253,6 +262,7 @@ body{
 }
 .card{
     padding-bottom: 38px;
+    cursor: pointer;
     
    
 }
@@ -405,6 +415,10 @@ body{
     font-weight: 500;
     text-decoration: underline;
 }
+.categories a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
 footer{
     background-color: rgb(247, 247, 247);
     border-top: 1px solid rgb(221, 221, 221);
@@ -433,6 +447,10 @@ footer{
     color: #222222;
     margin-top: 12px;
 }
+.footer_nav a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
 .country{
     display: flex;
     gap:  20px;
@@ -447,11 +465,16 @@ footer{
     font-weight: 500;
     gap: 8px;
     padding: 0;
+    cursor: pointer;
     
 }
 .country span{
     font-weight: 500;
     color: #222222;
+}
+.country span:hover{
+    cursor: pointer;
+    text-decoration: underline;
 }
 .copyright{
     color: #222222;
@@ -459,6 +482,9 @@ footer{
 .privacy a{
     text-decoration: none;
     color: #222222;
+}
+.privacy a:hover{
+    text-decoration: underline;
 }
 .privacy span{
     font-size: 14px;
@@ -472,7 +498,9 @@ footer{
 .footer_group{
     display: none;
 }
-
+.footer_section{
+    display: none;
+}
 @media screen and (min-width: 375px) {
     .header_parent{
         width: 87.2vw;
@@ -576,6 +604,7 @@ footer{
         display: flex;
         margin-left: -4px;
         margin-top: 8px;
+        cursor: pointer;
         
     }
     .icon2{
@@ -589,23 +618,36 @@ footer{
         box-shadow: 0 1px 5px rgb(0 0 0 / 10%);;
         border-radius: 40px;
         height: 46px;
-        gap: 12px;
-        width: 44.168vw;
-        padding-left: 11px ;
+        width: 44.558vw;
+        padding-left: 8px;
       
     }
     .searchbar a{
         text-decoration: none;
         color: #222222 ;
         font-weight: 500;
-        border-right: 1px solid #DDDDDD;
         height: 18px;
         margin-top: 13px;
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
         min-width: 80px;
-        padding-left: 7px;
+        padding-left: 16px;
+    }
+    .search a:first-child{
+        padding-left: 16px;
+        padding-right: 3px;
+    }
+    .search a:last-child{
+        padding-right: px;
+    }
+ 
+    .line{
+        background-color:#DDDDDD;
+        margin-top: 10px;
+        flex: 0 0 1px;
+        height: 24px;
+        width: 1px;
     }
     .searchicon{
         display: flex;
@@ -614,22 +656,23 @@ footer{
         border-radius: 100px;
         background-color: #ff385c;
         padding: 10px;
-        margin: 7px 0px 0px 6px;
+        margin: 7px 7px 0px 0px;
+        cursor: pointer;
      
     }
     .searchicon a{
         color: rgb(113, 113, 113);
-    
         margin-top: 13px;
         height: 18px;
         font-weight: 400;
-        border-right: none;
+        padding-right: 9px;
     }
     .profile{
         display: flex;
         align-items:center;
         column-gap: 20px;
         padding-right: 37px;
+        cursor: pointer;
        
     }
     .profile button{
@@ -640,13 +683,23 @@ footer{
         border: 1px solid #DDDDDD;
         padding: 5px 5px 5px 12px;
         column-gap: 12px;
+        cursor: pointer;
     }
+
     .profile a{
         text-decoration: none;
         color: #222222;
         font-weight: 500;
         padding-right: 4px;
         line-height: 18px;
+    }
+    .profile a:hover{
+        background-color: #ebebeb;
+        border-radius: 22px;
+    }
+    .profile span:hover{
+        background-color: #ebebeb;
+        border-radius: 22px;
     }
     .scroll_bar{
         gap: 32px;
@@ -655,7 +708,7 @@ footer{
         position: relative;
         padding-left: 40px;
         padding-right: 40px;
-        width: 66%;
+        width: 23%;
         z-index: 1;
         background-color: #fff;
     }
@@ -746,13 +799,13 @@ footer{
     .airbnb_in{
         display: flex;
         justify-content: center;
-        /* align-items: center; */
         padding-bottom: 10px;
         gap: 57px;
     }
     .country_in{
         display: flex;
-        gap: 24px
+        gap: 24px;
+        cursor: pointer;
     }
     .country_in button{
         border: none; 
@@ -765,12 +818,17 @@ footer{
         padding: 0;
         justify-content: center;
         align-items: center;
-        
+    }
+    .country_in button span:hover{
+        text-decoration: underline;
     }
     .country_in a{
         text-decoration: none;
         font-weight: 500;
         color: #222222;
+    }
+    .country_in a:hover{
+        text-decoration: underline;
     }
     .rupee{
         display: flex;
@@ -802,13 +860,18 @@ footer{
         display: flex;
         align-items: center;
         gap: 18px;
-        width:23.91vw
+        width:23.91vw;
+        cursor: pointer;
     }
     .footer_country a{
         color: #222222;
         text-decoration: none;
         font-weight: 500;
         padding-right: 5px;
+        cursor: pointer;
+    }
+    .footer a:hover{
+        text-decoration: underline;
     }
     .footer_country  button{
         border: none; 
@@ -822,11 +885,22 @@ footer{
         padding-left: 6px;
         color: #222222;
     }
+    .airbnb_copyright a:hover{
+        text-decoration: underline;
+    }
    
     .footer_child{
         display: flex;
+        cursor: pointer;
 
     }
+    .footer_country a:hover{
+        text-decoration: underline;
+    }
+    .footer_country span:hover{
+        text-decoration: underline;
+    }
+
     .support{
         display: flex;
     }
@@ -836,6 +910,7 @@ footer{
         border: none;
         justify-content: center;
         align-items: center;
+        cursor: pointer;
 
     }
     .support button a{
@@ -843,6 +918,9 @@ footer{
         font-size: 14px;
         font-weight: 500;
         color: #222222;
+    }
+    .support button a:hover{
+        text-decoration: underline;
     }
     .support svg{
         padding: 2px 8px 0px 8px;
@@ -863,17 +941,21 @@ footer{
         padding-right: 7px;
     }
     .searchbar{
-        width: 35.335vw;
+        width: 35.4vw;
         padding-left: 11px;
     }
     .searchicon svg{
-        margin-left: 5px;
+        margin-right: 10px;
+        margin-left: 2px;
     }
     .serachbar a{
         padding-left: 6px
     }
     .profile{
         padding-right: 31px;
+    }
+    .scroll_bar{
+        width:31.5%;
     }
     .cards{
         grid-template-columns: repeat(3, 1fr);
@@ -908,16 +990,17 @@ footer{
     .airbnb_icon{
         margin-left: -4px;
     }
- 
     .searchbar{
-        padding-left: 5px;
-        width: 33.712vw;
+        width: 33.126vw;
     }
     .searchicon svg{
-        margin-left: 11px;
+        margin-left:0 ;
     }
     .profile{
         padding-right: 29px;
+    }
+    .scroll_bar{
+        width: 35%;
     }
     .image img{
         width: 29.168vw;
@@ -944,7 +1027,7 @@ footer{
         gap: 362px;
     }
     .searchbar{
-        width: 23.973vw;
+        width: 23.556vw;
     }
     .profile{
         padding-right: 57px;
@@ -953,6 +1036,7 @@ footer{
     .scroll_bar{
         padding-left: 80px;
         padding-right: 80px;
+        width:46%;
     }
     .scrollbar_end{
         right: 80px;
@@ -1041,16 +1125,20 @@ footer{
 }
 @media screen and (min-width: 1640px) {
     .header2_content{
-        gap: 463px;
+        gap: 462px;
     }
     .searchbar{
-        width: 21.049vw;
+        width: 20.684vw;
+    }
+    .searchicon a{
+      padding-left: 16.5px;
     }
     .profile{ 
         padding-right: 51px;
     }
     .scroll_bar{
         padding-left: 90px;
+        width: 53.5%;
     }
 
     .cards{
@@ -1065,7 +1153,7 @@ footer{
         height: 16.035vw;
     }
     .getaways h2{
-     
+        margin-bottom: 8px;
     }
     
     .categories{
@@ -1074,9 +1162,64 @@ footer{
   
     .footer_nav_group{
         column-gap: 19px;
+     
+    }
+    .footer_nav{
+        padding-bottom: 30px;
     }
     .footer_country button {
         padding-left: 135px;
     }
-    
+    .footer_group{
+        display: none;
+    }
+    .footer_section{
+        display: flex;
+        justify-content:space-between;
+        align-items: center;
+        padding: 24px 38px;
+        border-top: 1px solid #DDDDDD;
+       
+    }
+    .in_rupee a{
+        text-decoration: none;
+        color: #222222;
+        font-weight: 500;
+    }
+    .content1{
+        display: flex;
+        
+    }
+    .content1 a{
+        text-decoration: none;
+        color: #222222;
+
+    }
+    .content2{
+        display: flex;
+        gap:50px;
+    }
+}
+@media screen and (min-width: 1800px) {
+
+    .header2_content{
+        gap: 545px;
+    }
+    .searchbar{
+        width: 18.7823vw;
+    }
+    .profile{ 
+        padding-right: 46px;
+    }
+    .scroll_bar{
+        width: 61.5%;
+    }
+    footer{
+        padding-left: 65px;
+        padding-right: 65px;
+       
+    }
+    .footer_nav_group{
+        column-gap: 0;
+    }
 }
