@@ -630,6 +630,29 @@ body{
        font-weight: 600;
        width: 6.366vw;
        margin-right: 36px;
+       line-height: 1.5;
+    }
+    .section1_card3 button{
+        background-color: transparent;
+        border: 1px solid #0078d4;
+        border-radius: 4px;
+        width: 11.892vw;
+        height: 64px;
+        margin-top: 4px;
+        
+    }
+    .section1_card3 a{
+        color: #0062ad;
+        font-family: Segoe-UI;
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: none;
+        padding: 0px 10px;
+        display: flex;
+        align-items: center;
+        line-height: 1.5;
+        
+
     }
 }
  @media screen and (min-width: 769px) {
@@ -666,21 +689,116 @@ body{
     .azure_invent p{
         width: 47vw;
     }
+    .section1 h2{
+        padding-left: 15px;
+        width: 96.876vw;
+    }
+    .section1_cards{
+        margin-top: 36px;
+    }
+    .section1_card1{
+        width: 46.667vw;
+        height: 43.334vw;
+    }
+    .card1_content{
+        padding-bottom: 15px;
+    }
+    .card2_child1{
+        width: 46.667vw;
+        height: 17.709vw;
+        background-size: 31% 100%;
+        background-position: -3.3% 64%;
+    }
+    .child1_content a{
+        margin-left: -17.5px;
+    }
+    .child1_content p{
+        width: 24vw;
+    }
+    .card2_child2{
+        width: 46.667vw;
+        height: 22.918vw;
+        background-position: -11% 100%;
+        background-size: 39% 100%;
+    }
+    .child2_content a{
+        width: 25vw;
+    }
+    .child2_content p{
+        width: 26vw;
+    }
+    .section1_card3 span{
+        width: 8.959vw;
+        margin-top: 8px;
+    }
+    .section1_card3 button{
+        width: 12.267vw;
+        margin-top:0 ;
+    }
+    
 } 
 @media screen and (min-width: 961px ) {
 
     .azure_invent{
         background-image: url(asset/background2.webp);
-        background-size: 100vw 61vw;
-
+        background-size: cover;
         background-repeat: no-repeat;
-        object-fit: cover;
-        /* background-position-y: center; */
-        /* background-position: top 10px; */
-        /* transform: translate(2, 3); */
+        background-position-x: -22.15pc;
         
     }
     
+}
+@media screen  and (min-width: 1024px){
+    .azure_invent{
+        background-position-x: -14.62pc;
+    }
+    .section1 h2{
+        padding-left: 16px;
+        line-height: 1.22;
+    }
+    .section1_cards{
+        margin-top: 35px;
+    }
+    .section1_card1{
+        width: 46.875vw;
+        height: 35.938vw;
+    }
+    .card1_content p{
+        margin-bottom: 10px;
+    }
+    .card2_child1{
+        width: 46.875vw;
+        height: 14.258vw;
+        background-size: 24.7% 100%;
+        background-position: 0% 64%;
+    }
+    .child1_content a{
+        margin-left: -24.3px;
+    }
+    .child1_content p{
+        width: 27vw;
+    }
+    .card2_child2{
+        width: 46.875vw;
+        height: 19.142vw;
+        background-position: -6.2% 100%;
+        background-size: 33.1% 100%;
+    }
+    .child2_content a{
+        width: 28vw;
+    }
+    .child2_content p{
+        width: 28vw
+    }
+    .section1_card3{
+        margin-top: 49px;
+    }
+    .section1_card3 span{
+        width: 9.48vw;
+    }
+    .section1_card3 button{
+        width: 12.526vw;
+    }
 }
 @media screen and (min-width:1080px ) {
 
@@ -718,7 +836,6 @@ body{
         font-size: 13px;
         color: #4c4c51;
         border: none;
-        /* padding-right: 24px; */
         padding-left: 12px;
         width:88px;
         background: none;
@@ -778,7 +895,8 @@ body{
     .azure_invent{
         padding-left:  65px;
         padding-top: 72px;
-        height: 40.441vw;
+        height: 39.608vw;
+        background-position-x: -21.23pc;
     }
     .azure_invent p{
         width: 43.4vw;
