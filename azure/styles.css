@@ -479,11 +479,158 @@ body{
         font-family: Segoe-UI;
         font-weight: 600;
         font-size: 24px;
-        padding: 0 15px;
         width: 92.188vw;
         padding-left: 30px;
+        text-align: center;
+        line-height: 1.2;
+        margin-bottom: 0;
     }
-  
+
+    .section1_cards{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 30px;
+        margin-top: 37px;
+        padding: 0 15px;
+
+    }
+    .section1_card1{
+        background-image: url(asset/ez-optimize-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #fff;
+        border-radius: 6px;
+        box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
+        border: 1px solid transparent;
+        width:45.834vw;
+        height: 70.313vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+    .card1_content{
+        padding-left: 24px;
+        padding-bottom: 24px;
+    }
+    .card1_content a{
+        text-align: none;
+        font-family: Segoe-UI;
+        font-size: 24px;
+        color: #0062ad;
+        font-weight: 600;
+    }
+    .card1_content p{
+        font-family: Segoe-UI;
+        font-size: 16px;
+        color: #1A1A1F;
+        font-weight: 400;
+        line-height: 1.5;
+        margin-top: 12px;
+        margin-bottom: 14px;
+    }
+    .section1_card2{
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding: 0;
+    }
+    .card2_child1{
+        display: flex;
+        background-color: #fff;
+        border-radius: 6px;
+        box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
+        border: 1px solid transparent;
+        width: 45.834vw;
+        height: 28.646vw;
+        background-image: url(asset/ez-net-desktop.webp);
+        background-position: -17.5% 64%;
+        background-repeat: no-repeat;
+        background-size: 51% 100%;
+    }
+    /* .card2_child1 .image{
+        width: 119px;
+    }
+    .card2_child1 img{
+        width: 176px;
+        
+    } */
+    .child1_content{
+        padding-left: 168px;
+    }
+    .child1_content a{
+        font-family: Segoe-UI;
+        font-size: 20px;
+        color: #0062ad;
+        font-weight: 600;
+        border: none;
+        padding: 24px 0px 0px 0px;
+        width: 21vw;
+        line-height: 1.3;
+    }
+    .child1_content p{
+        font-family: Segoe-UI;
+        font-weight: 400;
+        font-size: 16px;
+        color: #4c4c51;
+        line-height: 1.5;
+        width: 20vw;
+        margin: 12px 0px;
+        width:21vw;
+    }
+    .card2_child2{
+        display: flex;
+        background-color: #fff;
+        border-radius: 6px;
+        box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
+        border: 1px solid transparent;
+        width: 45.834vw;
+        height: 38.238vw;
+        background-image: url(asset/ez-devbox-desktop.webp);
+        background-position: -35.5% 64%;
+        background-repeat: no-repeat;
+        background-size: 60% 100%;
+    }
+    /* .card2_child2 img{
+        width: 119px;
+        height: 220px;
+    } */
+ 
+    .child2_content{
+        padding-left: 168px;
+    }
+    .child2_content a{
+        font-family: Segoe-UI;
+        font-size: 20px;
+        color: #0062ad;
+        font-weight: 600;
+        border: none;
+        width: 21vw;
+        padding: 24px 0px 0px 0px;
+        line-height: 1.3;
+    }
+    .child2_content p{
+        font-family: Segoe-UI;
+        font-weight: 400;
+        font-size: 16px;
+        color: #4c4c51;
+        line-height: 1.5;
+        width: 21vw;
+        margin: 12px 0px;
+    }
+    .section1_card3{
+        display: flex;
+        justify-content: center;
+        padding: 24px;
+        margin: 48px 256px 0px 256px;
+    }
+    .section1_card3 span{
+       font-family: Segoe-UI;
+       font-size: 16px;
+       font-weight: 600;
+       width: 6.366vw;
+       margin-right: 36px;
+    }
 }
  @media screen and (min-width: 769px) {
     .azure_invent .heading1 p{
