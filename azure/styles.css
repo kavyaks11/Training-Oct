@@ -446,6 +446,7 @@ body{
 .section2{
     display: none;
 }
+
 @media screen and (min-width: 375px) {
  
     .azure_invent h1{
@@ -663,6 +664,9 @@ body{
         flex-direction: column;
         padding-top: 40px;
         padding-bottom: 60px;
+        max-width: 1280;
+        margin-left: auto;
+        margin-right: auto;
     }
     .section1 h2{
         font-family: Segoe-UI;
@@ -681,6 +685,9 @@ body{
         column-gap: 30px;
         margin-top: 37px;
         padding: 0 15px;
+        max-width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
 
     }
     .section1_card1{
@@ -695,9 +702,14 @@ body{
         flex-direction: column;
         justify-content: flex-end;
         padding: 24px 0px;
+       
+        
     }
     .card1_content{
         margin-left: 24px;
+        /* max-width: 536px;
+        margin-left: auto;
+        margin-right: auto; */
     }
     .card1_content a{
         text-align: none;
@@ -714,7 +726,7 @@ body{
         line-height: 1.5;
         margin-top: 12px;
         margin-bottom: 14px;
-        width: 42.7vw;
+        /* width: 42.7vw; */
 
 
     }
@@ -745,6 +757,9 @@ body{
     }
     .child1_content{
         padding: 24px 23px 24px 49px;
+         /* max-width: 396px;
+        margin-left: auto;
+        margin-right: auto;  */
     }
     .child1_content a{
         font-family: Segoe-UI;
@@ -846,6 +861,7 @@ body{
         padding-bottom: 60px;
         padding-top: 41px;
         background-color: #f8f9fa;
+        overflow: hidden;
     }
     .section2 h2{
         font-family: Segoe-UI;
@@ -860,6 +876,7 @@ body{
     .section2_container{
         display: flex;
         padding: 0 15px;
+        /* width:100% */
     }
     .section2_cards{
         padding: 0;
@@ -881,8 +898,10 @@ body{
         font-weight: 400;
         color: #4c4c51;
         text-decoration: none;
-        width: 100%;
+        /* width: 100%; */
         margin-left: -2px;
+        /* padding: 12px; */
+        line-height: 1.5;
     }
     .icon img{
         width:36px;
@@ -913,6 +932,11 @@ body{
     }
 }
  @media screen and (min-width: 769px) {
+    .azure_container{
+        max-width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .azure_invent .heading1 p{
         text-align: left;
     }
@@ -988,12 +1012,63 @@ body{
         width: 26vw;
     }
     .section1_card3 span{
-        /* width: 8.959vw; */
-        margin-top: 8px;
+        width: 8.959vw;
+        margin-top: 27px;
     }
     .section1_card3 button{
-        /* width: 12.267vw; */
+        width: 15.6vw;
         margin-top:0 ;
+    }
+    .section2 h2{
+        margin-bottom: 49px;
+    }
+    .section2_image{
+        display: flex;
+        padding: 0 15px;
+        margin-left: 25px;
+    }
+    .section2_image .image img{
+      
+        max-height: 477px;
+        border: 28px solid black;
+        /* width: 1000px; */
+     
+    }
+    .section_container{
+        display: flex;
+        width: 100%;
+
+    }
+    .list{
+        width: 17.7vw;
+        margin-top: -1.5px;
+    }
+    .list_item{
+        margin-bottom: 12px;
+    }
+    .section2_link{
+        margin-left: -6px;
+    }
+    .section2_link a{
+        width: 15vw;
+        text-align: left;
+    }
+    .section2_cards{
+        column-gap: 30px;
+        row-gap: 24px;
+    }
+    .section2_card{
+        width: 10.365vw;
+    }
+    
+    .card_container p{
+        margin-bottom: 26px;
+    }
+    .section2_card:nth-child(5) p {
+        margin-bottom: 42.1px;
+    }
+    .section2_image .link {
+        display: none;
     }
     
 } 
@@ -1003,14 +1078,16 @@ body{
         background-image: url(asset/background2.webp);
         background-size: cover;
         background-repeat: no-repeat;
-        background-position-x: -22.15pc;
+        /* background-position-x: -22.15pc; */
+        background-position-x: center;
+        /* width: 100%; */
         
     }
     
 }
 @media screen  and (min-width: 1024px){
     .azure_invent{
-        background-position-x: -14.62pc;
+        /* background-position-x: -14.62pc; */
     }
     .section1 h2{
         padding-left: 16px;
@@ -1061,6 +1138,51 @@ body{
     .section1_card3 button{
         width: 12.526vw;
     }
+    .section2_card{
+        width: 10.89vw;
+    }
+    .list{
+        width: 17.8vw;
+    }
+    .section2_link a{
+        width: 16vw;
+    }
+    .section2_image .link{
+        display: flex;
+        padding: 0px 12px 0px 15px;
+        width: 18vw;
+        margin-top: 5px;
+        
+    }
+    .section2_image{
+        padding: 0 15px;
+        display: flex;
+        flex-direction: column;
+
+        margin-bottom: 34px;
+    }
+    .section2 .link{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap:10px
+    }
+    .section2_image .link a{
+        font-family: Segoe-UI;
+        font-weight: 400;
+        font-size: 14px;
+        color: #0062ad;
+        text-decoration: none;
+    }
+    .link .arrow2 img{
+        width: 20px;
+        height: 20px;
+        border: none;
+        background-color: #000;
+        transform: rotate(180deg);
+        
+    }
+    
 }
 @media screen and (min-width:1080px ) {
 
@@ -1071,6 +1193,9 @@ body{
         display: flex;
         justify-content: space-between;
         height: 61px;
+        max-width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
     }
     .azure a{
         margin-left: 24px;
@@ -1129,7 +1254,10 @@ body{
        
     }
 }
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1298px) {
+    
+}
+/* @media screen and (min-width: 1440px){
     .header2{
         height: 54px;
         padding-left: 65px;
@@ -1219,4 +1347,4 @@ body{
         /* padding-left: 9px; */
     }
 
-}
+} */
