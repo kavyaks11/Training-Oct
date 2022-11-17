@@ -638,6 +638,11 @@ body{
     .arrow{
         margin-left: -1.5px;
     }
+    .azure_container{
+        max-width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
     .azure_invent h1{
         margin-bottom: 12px;
     }
@@ -677,6 +682,9 @@ body{
         column-gap: 30px;
         margin-top: 37px;
         padding: 0 15px;
+        max-width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
 
     }
     .section1_card1{
@@ -691,6 +699,8 @@ body{
         flex-direction: column;
         justify-content: flex-end;
         padding: 24px 0px;
+        max-width: 625px;
+        /* max-height: 320px; */
     }
     .card1_content{
         margin-left: 23px;
@@ -710,7 +720,7 @@ body{
         line-height: 1.5;
         margin-top: 12px;
         margin-bottom: 14px;
-        width: 42.7vw;
+        max-width: 542.31px;
 
 
     }
@@ -727,6 +737,8 @@ body{
         border-radius: 6px;
         box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
         border: 1px solid transparent;
+        max-width: 625px;
+        /* max-height: 148px; */
     }
     .card2_child1 .image{
         width: 119px;
@@ -748,6 +760,7 @@ body{
     }
     .child1_content{
         padding: 24px 23px 24px 49px;
+        
     }
     .child1_content a{
         font-family: Segoe-UI;
@@ -768,6 +781,7 @@ body{
         margin: 12px 0;
         width:21vw;
         display: block;
+        /* max-width: 430px; */
     }
     .card2_child2{
         display: flex;
@@ -775,9 +789,12 @@ body{
         border-radius: 6px;
         box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
         border: 1px solid transparent;
+        max-width: 625px;
+        /* max-height: 148px; */
     }
     .child2_content{
         padding: 24px 23px 24px 49px;
+        max-width: 438px;
     }
     .child2_content a{
         font-family: Segoe-UI;
@@ -797,6 +814,7 @@ body{
         line-height: 1.5;
         width: 21vw;
         margin: 12px 0px;
+      
     }
     .section1_card3{
         display: flex;
@@ -928,15 +946,16 @@ body{
         background-image: url(asset/background2.webp);
         background-size: cover;
         background-repeat: no-repeat;
-        background-position-x: -22.15pc;
+        background-position-x: center;
+        width:100%;
         
     }
     
 }
+@media screen and (min-width: 989px) {
+    
+}
 @media screen  and (min-width: 1024px){
-    .azure_invent{
-        background-position-x: -14.62pc;
-    }
     .section1 h2{
         padding-left: 16px;
         line-height: 1.22;
@@ -969,6 +988,7 @@ body{
     .card2_child1 .image {
         background-position-X: 0pc;
         background-size: 100% 100%;
+        height: 146px;
     }
     .card2_child2 .image {
         background-position-x: -1.2pc;
@@ -999,6 +1019,9 @@ body{
         display: flex;
         justify-content: space-between;
         height: 61px;
+        max-width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
     }
     .azure a{
         margin-left: 24px;
@@ -1057,7 +1080,18 @@ body{
        
     }
 }
-@media screen and (min-width: 1440px){
+@media screen and (min-width: 1264px){
+    .section1_card1{
+        height: 270px;
+    }
+    .card2_child1{
+        height: 148px;
+    }
+    .card2_child2{
+        height: 148px;
+    }
+}
+/* @media screen and (min-width: 1440px){
     .header2{
         height: 54px;
         padding-left: 65px;
@@ -1143,4 +1177,4 @@ body{
         /* padding-left: 9px; */
     }
 
-}
+} */
