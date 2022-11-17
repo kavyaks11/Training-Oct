@@ -417,7 +417,7 @@ body{
     justify-content: center;
     margin-top: 47px;
     margin-left: -0.5px;
-    /* margin-bottom: 34px; */
+    margin-bottom: 34px;
 }
 .section2_link img{
     width:20px;
@@ -442,6 +442,9 @@ body{
     width: 100%;
     display: flex;
     justify-content: center;
+}
+.section2{
+    display: none;
 }
 @media screen and (min-width: 375px) {
  
@@ -659,6 +662,7 @@ body{
         display: flex;
         flex-direction: column;
         padding-top: 40px;
+        padding-bottom: 60px;
     }
     .section1 h2{
         font-family: Segoe-UI;
@@ -693,7 +697,7 @@ body{
         padding: 24px 0px;
     }
     .card1_content{
-        margin-left: 22px;
+        margin-left: 24px;
     }
     .card1_content a{
         text-align: none;
@@ -727,19 +731,17 @@ body{
         border-radius: 6px;
         box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
         border: 1px solid transparent;
-        /* background-image: url(asset/ez-net-desktop.webp); */
         background-position: -17.5% 64%;
         background-repeat: no-repeat;
         background-size: 51% 100%;
-        /* padding: 13px 20px; */
+       
     }
-    .image{
+    .card2_child1 .image{
         width: 119px;
         background-image: url(asset/ez-net-desktop.webp);
-    }
-    .image img{
-        width: 119px;
-        height: 100%;
+        background-repeat: no-repeat;
+        background-size: 151% 100%;
+        background-position-x: -1.9pc ;
     }
     .child1_content{
         padding: 24px 23px 24px 49px;
@@ -764,19 +766,15 @@ body{
         width:21vw;
         display: block;
     }
+    .child2_content{
+        padding: 24px 23px 24px 49px;
+    }
     .card2_child2{
         display: flex;
         background-color: #fff;
         border-radius: 6px;
         box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
         border: 1px solid transparent;
-        /* width: 45.834vw; */
-        /* height: 38.238vw; */
-        /* background-image: url(asset/ez-devbox-desktop.webp); */
-        /* background-position: -35.5% 64%;
-        background-repeat: no-repeat;
-        background-size: 60% 100%; */
-        padding: 13px 20px;
     }
     .child2_content a{
         font-family: Segoe-UI;
@@ -786,6 +784,7 @@ body{
         border: none;
         width: 21vw;
         line-height: 1.3;
+        padding: 0;
     }
     .child2_content p{
         font-family: Segoe-UI;
@@ -795,6 +794,13 @@ body{
         line-height: 1.5;
         width: 21vw;
         margin: 12px 0px;
+    }
+    .card2_child2 .image{
+        width: 119px;
+        background-image: url(asset/ez-devbox-desktop.webp);
+        background-repeat: no-repeat;
+        background-size: 193% 100%;
+        background-position-x: -3.5pc ;
     }
     .section1_card3{
         display: flex;
@@ -806,17 +812,15 @@ body{
        font-family: Segoe-UI;
        font-size: 16px;
        font-weight: 600;
-       width: 6.366vw;
        margin-right: 36px;
        line-height: 1.5;
+       /* width: 8vw; */
+       margin-top: 14px;
     }
     .section1_card3 button{
-        background-color: transparent;
-        border: 1px solid #0078d4;
-        border-radius: 4px;
-        width: 11.892vw;
-        height: 64px;
-        margin-top: 4px;
+        border: none;
+        background: none;
+        padding:16px;
         
     }
     .section1_card3 a{
@@ -825,12 +829,87 @@ body{
         font-size: 14px;
         font-weight: 600;
         text-decoration: none;
-        padding: 0px 10px;
+        padding: 10px 16px;
         display: flex;
         align-items: center;
         line-height: 1.5;
-        
-
+        background-color: transparent;
+        border: 1px solid #0078d4;
+        border-radius: 4px;
+    }
+    .body_section2{
+        display: none;
+    }
+    .section2{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 60px;
+        padding-top: 41px;
+        background-color: #f8f9fa;
+    }
+    .section2 h2{
+        font-family: Segoe-UI;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 1.2;
+        padding: 0 15px;
+        text-align: left;
+        color: #1A1A1F;
+        margin-bottom: 59px;
+    }
+    .section2_container{
+        display: flex;
+        padding: 0 15px;
+    }
+    .section2_cards{
+        padding: 0;
+    }
+    .list{
+        margin-right: 12px;
+        width: 70vw;
+        text-align: left;
+        margin-top: -10.5px;
+    }
+    .list_item{
+        padding: 12px;
+        margin-bottom: 14px;
+      
+    }
+    .list_item a{
+        font-family: Segoe-UI;
+        font-size: 16px;
+        font-weight: 400;
+        color: #4c4c51;
+        text-decoration: none;
+        width: 100%;
+        margin-left: -2px;
+    }
+    .icon img{
+        width:36px;
+        height: 36px;
+    }
+    .section2_cards{
+       grid-template-columns: repeat(3, 1fr);
+    }
+    .section2_link  {
+        padding: 14px 0px 0px 4px;
+        margin-top: 0;
+    }
+    .card_container p{
+        font-size: 16px;
+        margin:19px 0px 32px 0px;
+    }
+    .section2_card:nth-child(6) p{
+        margin-bottom: 24px;
+    }
+    .section2_card:nth-child(5) p{
+        margin-bottom: 24px;
+    }
+    .section2_card:nth-child(2) p{
+        margin-bottom: 24px;
+    }
+    .section2_image{
+        display: none;
     }
 }
  @media screen and (min-width: 769px) {
@@ -874,30 +953,33 @@ body{
     .section1_cards{
         margin-top: 36px;
     }
-    .section1_card1{
-        width: 46.667vw;
-        height: 43.334vw;
-    }
     .card1_content{
-        padding-bottom: 15px;
+        margin-left: 10px;
+    }
+    .card1_content p{
+        margin-bottom: 5px;
+    }
+    .card2_child1 .image{
+   
+        background-size: 116% 100%;
+        background-position-x: -0.6pc ;
     }
     .card2_child1{
-        width: 46.667vw;
-        height: 17.709vw;
-        background-size: 31% 100%;
-        background-position: -3.3% 64%;
+        width: 46.667vw
     }
     .child1_content a{
         margin-left: -17.5px;
     }
     .child1_content p{
-        width: 24vw;
+        width: 26vw;
+    }
+    .card2_child2 .image{
+   
+        background-size: 151% 100%;
+        background-position-x: -1.9pc ;
     }
     .card2_child2{
         width: 46.667vw;
-        height: 22.918vw;
-        background-position: -11% 100%;
-        background-size: 39% 100%;
     }
     .child2_content a{
         width: 25vw;
@@ -906,11 +988,11 @@ body{
         width: 26vw;
     }
     .section1_card3 span{
-        width: 8.959vw;
+        /* width: 8.959vw; */
         margin-top: 8px;
     }
     .section1_card3 button{
-        width: 12.267vw;
+        /* width: 12.267vw; */
         margin-top:0 ;
     }
     
@@ -937,18 +1019,20 @@ body{
     .section1_cards{
         margin-top: 35px;
     }
-    .section1_card1{
-        width: 46.875vw;
-        height: 35.938vw;
+    .card1_content{
+        margin-left: 5px;
     }
     .card1_content p{
-        margin-bottom: 10px;
+        margin-bottom: 1px;
     }
     .card2_child1{
         width: 46.875vw;
-        height: 14.258vw;
-        background-size: 24.7% 100%;
-        background-position: 0% 64%;
+    
+    }
+    .card2_child1 .image{
+   
+        background-size: 100% 100%;
+        background-position-x: 0pc ;
     }
     .child1_content a{
         margin-left: -24.3px;
@@ -958,9 +1042,12 @@ body{
     }
     .card2_child2{
         width: 46.875vw;
-        height: 19.142vw;
-        background-position: -6.2% 100%;
-        background-size: 33.1% 100%;
+       
+    }
+    .card2_child2 .image{
+   
+        background-size: 134% 100%;
+        background-position-x: -1.25pc ;
     }
     .child2_content a{
         width: 28vw;
@@ -970,9 +1057,6 @@ body{
     }
     .section1_card3{
         margin-top: 49px;
-    }
-    .section1_card3 span{
-        width: 9.48vw;
     }
     .section1_card3 button{
         width: 12.526vw;
@@ -1088,22 +1172,26 @@ body{
     }
     .section1_card1{
         width: 43.264vw;
-        height: 22.084vw;
 
     }
+    .card1_content{
+        margin-left: 40px;
+    }
     .card1_content p{
-        margin-bottom: 7px;
+        margin-bottom: -2px;
     }
     .card2_child1{
         width: 43.264vw ;
-        height: 10.139vw ;
     }
     .child1_content a{
         margin-left: -68px;
     }
     .card2_child2{
         width: 43.264vw;
-        height: 10.139vw;
+    }
+    .card2_child2 .image {
+        background-size: 100% 100%;
+        background-position-x: 0;
     }
     .child2_content p{
         width: 30vw;
