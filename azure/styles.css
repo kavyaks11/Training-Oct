@@ -1,0 +1,1134 @@
+@font-face {
+    font-family: Segoe-UI;
+    src: url(font/SegoeUI-Roman-VF_web.woff2);
+    font-weight: 600;
+}
+@font-face {
+    font-family: Segoe-UI;
+    src: url(font/SegoeUI-Roman-VF_web.woff2);
+    font-weight: 400;
+}
+@font-face {
+    font-family: latest-woff2;
+    src: url(font/latest.woff2);
+}
+body{
+    margin:0;
+    padding: 0;
+}
+.header_nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px;
+    height: 54px;
+    
+}
+.azure_menu{
+    display: flex;
+    align-items: center;
+    min-width: 120px;
+    gap: 16px;
+    padding-left: 12px;
+
+}
+.menu_icon{
+    padding-top:5px;
+}
+.menu_icon svg{
+    width: 20px;
+    height: 15px;
+}
+.azure_menu a{
+    text-decoration: none;
+    font-family: Segoe-UI;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 44px;
+    color: #1A1A1F;
+}
+.azure_icon{
+    
+    padding-top: 5px;
+}
+.search{
+    display: flex;
+    align-items: center;
+    padding-left: 8px;
+}
+.search_icon{
+    padding-top: 5px;
+}
+.search_icon img{
+    width: 28px;
+    height: 28px;
+}
+.search_icon button{
+    border: none;
+    background: none;
+}
+.sign_in{
+    padding: 18px 20px 20px 21px;
+    display: flex;
+    align-items: center;
+}
+.sign_in a{
+    font-family: Segoe-UI;
+    font-size: 14px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #1A1A1F;
+}
+.header{
+    display: none;
+}
+.header2{
+    display: none;
+}
+.banner{
+    padding: 12px 0;
+    background-color: #0078d4;
+    text-align: center;
+    height: 43px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+/* .banner img{
+    width: 12px;
+    height: 12px;
+    fill: white;
+    color: white;
+    background-color: #1A1A1F;
+} */
+
+.arrow{
+    border: solid #fff;
+    border-width: 1.9px 1.9px 0px 0px;
+    display: inline-block;
+    padding: 3px;
+    -webkit-transform: rotate(45deg) ;
+}
+.banner a{
+    text-decoration: none;
+    font-family: Segoe-UI;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    padding-left: 16px;
+    padding-right: 30px;
+    line-height: 21px;
+    padding-bottom: 2px;
+    
+}
+.azure_invent{
+    background-image: url(asset/background1.png);
+    background-size: 100% 100%;
+    object-fit: cover;
+    padding: 60px 0px;
+}
+.azure_invent .heading1 p{
+    font-family: Segoe-UI;
+    font-size: 20px;
+    font-weight: 600;
+    color: #0078d4;
+    margin: 0 0 9px;
+    text-align: center;
+    padding: 0px 15px;
+    line-height: 1.3;
+}
+.azure_invent h1{
+    font-family: Segoe-UI;
+    font-size: 54px;
+    font-weight: 600;
+    color: #1A1A1F;
+    line-height: 1.1;
+    margin: 0 0 29px;
+    text-align: center;
+}
+.azure_invent p{
+    font-family: Segoe-UI;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.3;
+    margin: 0 0 9px;
+    color: #4c4c51;
+    text-align: center;
+    padding: 0 15px;
+}
+.button_group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 29px;
+}
+.button1 {
+    background: #0078d4;
+    padding:11px 16px 10px 16px;
+    
+    border: 1px solid #0078d4;
+    border-radius: 4px;
+    margin-top: 12px;
+}
+.button1 a{
+    text-decoration: none;
+    font-family: Segoe-UI;
+    font-size: 14px;
+    font-weight: 600;
+    color: #fff;
+    padding: 0 71px;
+
+}
+.button2 {
+    background: none;
+    padding:11px 16px 10px 16px;
+    border: 1px solid #000;
+    border-radius: 4px;
+    margin-top: 12px;
+}
+.button2 a{
+    text-decoration: none;
+    font-family: Segoe-UI;
+    font-size: 14px;
+    font-weight: 600;
+    color: #000;
+    padding: 0 51px;
+
+}
+.body_section1{
+    padding: 43px 0px 85px 0px;
+}
+.body_section1 h2{
+    font-family: Segoe-UI;
+    font-size: 20px;
+    font-weight: 600;
+    color: #1A1A1F;
+    text-align: center;
+    width: 91vw;
+    padding: 0 14.5px;
+    line-height: 1.2;
+
+}
+.section1_cards{
+    display: grid;
+    gap:24px;
+    margin: 32px 0px 0px;
+    padding: 0 15px;
+}
+.section1_card1{
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
+    border: 1px solid transparent;
+}
+.section1_card1 a{
+    text-decoration: none;
+    font-family: Segoe-UI;
+    font-size: 20px;
+    font-weight: 600;
+    color: #0062ad;
+    line-height: 1.1;
+}
+.card1_content1{
+    padding: 25px 0px 23px 12px;
+}
+.card1_content2{
+    padding: 26px 0px 24px 12px;
+}
+.card1_content3{
+    padding: 25px 0px 23px 12px;
+    line-height: 1.3;
+}
+.section1_card1 img{
+    width: 68px;
+    height: 68px;
+}
+.card1_image1{
+    height: 100%;
+}
+.card1_image2{
+    height: 100%;
+}
+.card1_image2 img{
+    margin-top: 3px;
+    margin-bottom: -2px;
+}
+.card1_image3 img{
+    margin-top: 4px;
+}
+
+.section1_card2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+    margin-top: 55px;
+}
+.section1_card2 span{
+    font-family: Segoe-UI;
+    font-size: 16px;
+    font-weight:600;
+    margin-bottom: 24px;
+    color: #1A1A1F;
+}
+.section1_card2 a{
+    text-decoration: none;
+    font-family: Segoe-UI;
+    font-size: 14px;
+    font-weight: 600;
+    color: #0062ad;
+    border-radius: 4px;
+    border: 1px solid #0078d4;
+    padding: 11px 16px;
+    width: 64.376vw;
+    display: flex;
+    justify-content: center;
+
+}
+.section1{
+    display: none;
+}
+.body_section2{
+    padding: 60px 0px 60px 0px;
+    background-color: #f8f9fa;
+    /* background-color: greenyellow; */
+}
+.body_section2 h2{
+    font-family: Segoe-UI;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    margin: 0px 0px 32px 14.5px;
+    text-align: center;
+    color: #1A1A1F;
+    width: 91vw;
+}
+.toggle_box{
+    padding: 0 15px;
+    margin-bottom: 24px;
+}
+.toggle_box button{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    border: 0;
+    border-bottom: 1px solid #eaebec;
+    border-radius: 4px;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
+    /* width: 90.625vw; */
+    padding: 12px 24px 12px 12px;
+    min-height: 60px;
+    width: 100%;
+
+}
+.toggle_box img{
+    width: 23.4px;
+    height: 23.4px;
+    transform: rotate(180deg);
+    margin-right: -4px;
+}
+.toggle_box:first-child img{
+    transform: rotate(180deg);
+}
+.toggle_box a{
+    text-decoration: none;
+    font-family: Segoe-UI;
+    font-size: 16px;
+    font-weight: 600;
+    color: #1A1A1F;
+
+}
+.section2_cards{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 15px;
+    gap: 18px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 17px;
+}
+.section2_card{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
+    border: 1px solid transparent;
+    padding: 24px;
+   
+}
+.section2_card:nth-child(2) p{
+    margin-bottom: 0px;
+}
+.section2_card:nth-child(3) a{
+    margin-top: -2px;
+
+}
+.section2_card:nth-child(6) p{
+    margin-bottom: 0px;
+}
+.section2_card:nth-child(5) p{
+    margin-bottom: 12px;
+}
+.section2_card svg{
+    width: 36px;
+    height: 36px;
+
+}
+.section2_card a{
+    text-decoration: none;
+    font-family: Segoe-UI;
+    font-size: 14px;
+    font-weight: 600;
+    color: #0062ad;
+    line-height: 1.3;
+}
+.card_container p{
+    font-family: Segoe-UI;
+    font-size: 14px;
+    font-weight: 400;
+    color: #4c4c51;
+    line-height: 1.5;
+    margin-top: 7px;
+}
+.toggle_box:nth-child(n+3):nth-child(-n+8){
+    margin-top: -5px;
+    margin-bottom: 17px;
+}
+.toggle_box:nth-child(n+3):nth-child(-n+8) img{
+    width: 23.4px;
+    height: 23.4px;
+    transform: rotate(0deg);
+    margin-right: -5.5px;
+    margin-bottom: 1px;
+    
+}
+.toggle_box:nth-child(n+3):nth-child(-n+8) a{
+    margin-bottom: 2px;
+}
+.section2_link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 47px;
+    margin-left: -0.5px;
+    /* margin-bottom: 34px; */
+}
+.section2_link img{
+    width:20px;
+    height: 20px;
+}
+.section2_link a{
+    font-family: Segoe-UI;
+    font-size: 14px;
+    color: #0062ad;
+    font-weight: 600;
+    text-decoration: none;
+}
+.section2_image img{
+    border-radius: 12px;
+    border: 2.5vw solid black;
+    box-shadow: 0 10px 20px rgb(0 0 0 / 14%);
+    width: 80%;
+    height: auto;
+    
+}
+.section2_image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+@media screen and (min-width: 375px) {
+ 
+    .azure_invent h1{
+        margin-bottom: 35px;
+    }
+    .azure_invent p{
+        line-height: 1.293;
+    }
+    .button_group{
+        margin-top: 35px;
+    }
+    .button1 a{
+        padding: 0px 94px;
+    }
+    .button2 a{
+        padding: 0px 74px;
+    }
+    .body_section1 h2{
+        width: 92vw;
+        padding: 0 15px;
+    }
+    .section1_cards{
+        margin-top: 37px;
+    }
+    .section1_card2{
+        margin-top: 64px;
+    }
+    .section1_card2 a{
+        width: 69.6vw;
+        padding: 11px 16px;
+    }
+    .section1_card2 span{
+        margin-bottom: 26px;
+    }
+    .body_section2 h2{
+        margin-left: 17px;
+        margin-bottom: 37px;
+    }
+    .section2_card:nth-child(2) p{
+        margin-bottom: 12px;
+    }
+    .section2_card:nth-child(1) a{
+        margin-bottom: -1px;
+    }
+    .toggle_box:nth-child(n+3):nth-child(-n+8) a {
+        margin-bottom: 1px;
+    }
+    .section2_image img{
+        width: 82%;
+    }
+    .section2_link{
+        margin-top: 53px;
+        margin-bottom: 8px;
+    }
+}
+@media screen and (min-width: 425px) {
+    .azure_invent h1{
+        margin-bottom: 40px;
+    }
+    .button_group{
+        margin-top: 40px;
+    }
+    .button1 a{
+        padding: 0px 115px;
+    }
+    .button2 a{
+        padding: 0px 95px;
+    }
+    .body_section1{
+        padding-top: 44px;
+    }
+    .body_section1 h2{
+        padding-left: 17px;
+    }
+    .section1_cards{
+        margin-top: 41px;
+    }
+    .section1_card2{
+        margin-top: 69px;
+    }
+    .body_section2 h2{
+        margin-left: 19px;
+        margin-bottom: 42px;
+    }
+    .section2_card:nth-child(1) a{
+        margin-bottom: 0px;
+    }
+    .section2_image img{
+        width: 84%;
+    }
+    .section2_link{
+        margin-top: 53px;
+        margin-bottom: 10px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .header_nav{
+        display: none;
+    }
+    .header{
+        display: flex;
+        height: 55px;
+        justify-content: space-between;
+    }
+    .header_container{
+        display: flex;
+        padding: 0 12px;
+    }
+    .azure{
+        display: flex;
+        align-items: center;
+    }
+    .azure_icon svg{
+        width: 24px;
+        height: 24px;
+    }
+    .azure a{
+        text-decoration: none;
+        font-family: Segoe-UI;
+        font-size: 18px;
+        font-weight: 600;
+        line-height: 44px;
+        color: #1A1A1F;
+        margin-left: 12px;
+        padding-bottom: 2px;
+    }
+    .nav_explore{
+        display: inline-flex;
+        margin-left: 13px;
+    }
+    .explore_list{
+        display: flex;
+    }
+    .explore_list button{
+        display: flex;
+        align-items: center;
+        background: none;
+        border: none;
+        padding: 20px 8px 20px 7px;
+    }
+    .explore_list button img{
+        width: 9px;
+        height: 9px;
+        margin: 4.9px 0px 0px 4px;
+    }
+  
+    .explore_list button a{
+        font-family: Segoe-UI;
+        font-size: 13px;
+        font-weight: 400;
+        color: #1A1A1F;
+        text-decoration: none;
+    }
+    .header_container2{
+        display: flex;
+        align-items: center;
+    }
+    .header_search{
+        padding-right: 12px;
+        padding-top: 3px;
+    }
+    .header_search img{
+        width: 23px;
+        height: 23px;
+    }
+    .expand button{
+        background: none;
+        border: none;
+        padding: 17px 10px 15px 8px;
+    }
+    .expand button svg{
+        width: 24px;
+        height: 24px;
+    }
+    .header_sign{
+        display: flex;
+        align-items: center;
+    }
+    .header_sign a{
+        text-decoration: none;
+        font-family: Segoe-UI;
+        font-size: 13px;
+        color: #1A1A1F;
+        padding: 20px 8px;
+    }
+    .banner{
+        height: 24px;
+    }
+    .banner a{
+        padding-bottom: 0;
+        padding-left: 26px;
+    }
+    .arrow{
+        margin-left: -1.5px;
+    }
+    .azure_invent h1{
+        margin-bottom: 12px;
+    }
+    .azure_invent P{
+        line-height: 1.3;
+    }
+    .button_group{
+        margin-top: 36px;
+    }
+    .button1 a{
+        padding: 0px 262px;
+    }.button2 a{
+        padding: 0px 242px;
+    }
+    .body_section1{
+        display: none;
+    }
+    .section1{
+        display: flex;
+        flex-direction: column;
+        padding-top: 40px;
+    }
+    .section1 h2{
+        font-family: Segoe-UI;
+        font-weight: 600;
+        font-size: 24px;
+        width: 92.188vw;
+        padding-left: 30px;
+        text-align: center;
+        line-height: 1.2;
+        margin-bottom: 0;
+    }
+
+    .section1_cards{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        column-gap: 30px;
+        margin-top: 37px;
+        padding: 0 15px;
+
+    }
+    .section1_card1{
+        background-image: url(asset/ez-optimize-desktop.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-color: #fff;
+        border-radius: 6px;
+        box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
+        border: 1px solid transparent;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        padding: 24px 0px;
+    }
+    .card1_content{
+        margin-left: 22px;
+    }
+    .card1_content a{
+        text-align: none;
+        font-family: Segoe-UI;
+        font-size: 24px;
+        color: #0062ad;
+        font-weight: 600;
+    }
+    .card1_content p{
+        font-family: Segoe-UI;
+        font-size: 16px;
+        color: #1A1A1F;
+        font-weight: 400;
+        line-height: 1.5;
+        margin-top: 12px;
+        margin-bottom: 14px;
+        width: 42.7vw;
+
+
+    }
+    .section1_card2{
+        margin-top: 0;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        padding: 0;
+    }
+    .card2_child1{
+        display: flex;
+        background-color: #fff;
+        border-radius: 6px;
+        box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
+        border: 1px solid transparent;
+        /* background-image: url(asset/ez-net-desktop.webp); */
+        background-position: -17.5% 64%;
+        background-repeat: no-repeat;
+        background-size: 51% 100%;
+        /* padding: 13px 20px; */
+    }
+    .image{
+        width: 119px;
+        background-image: url(asset/ez-net-desktop.webp);
+    }
+    .image img{
+        width: 119px;
+        height: 100%;
+    }
+    .child1_content{
+        padding: 24px 23px 24px 49px;
+    }
+    .child1_content a{
+        font-family: Segoe-UI;
+        font-size: 20px;
+        color: #0062ad;
+        font-weight: 600;
+        border: none;
+        width: 21vw;
+        line-height: 1.3;
+        padding: 0;
+    }
+    .child1_content p{
+        font-family: Segoe-UI;
+        font-weight: 400;
+        font-size: 16px;
+        color: #4c4c51;
+        line-height: 1.5;
+        margin: 12px 0;
+        width:21vw;
+        display: block;
+    }
+    .card2_child2{
+        display: flex;
+        background-color: #fff;
+        border-radius: 6px;
+        box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
+        border: 1px solid transparent;
+        /* width: 45.834vw; */
+        /* height: 38.238vw; */
+        /* background-image: url(asset/ez-devbox-desktop.webp); */
+        /* background-position: -35.5% 64%;
+        background-repeat: no-repeat;
+        background-size: 60% 100%; */
+        padding: 13px 20px;
+    }
+    .child2_content a{
+        font-family: Segoe-UI;
+        font-size: 20px;
+        color: #0062ad;
+        font-weight: 600;
+        border: none;
+        width: 21vw;
+        line-height: 1.3;
+    }
+    .child2_content p{
+        font-family: Segoe-UI;
+        font-weight: 400;
+        font-size: 16px;
+        color: #4c4c51;
+        line-height: 1.5;
+        width: 21vw;
+        margin: 12px 0px;
+    }
+    .section1_card3{
+        display: flex;
+        justify-content: center;
+        padding: 24px;
+        margin: 48px 256px 0px 256px;
+    }
+    .section1_card3 span{
+       font-family: Segoe-UI;
+       font-size: 16px;
+       font-weight: 600;
+       width: 6.366vw;
+       margin-right: 36px;
+       line-height: 1.5;
+    }
+    .section1_card3 button{
+        background-color: transparent;
+        border: 1px solid #0078d4;
+        border-radius: 4px;
+        width: 11.892vw;
+        height: 64px;
+        margin-top: 4px;
+        
+    }
+    .section1_card3 a{
+        color: #0062ad;
+        font-family: Segoe-UI;
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: none;
+        padding: 0px 10px;
+        display: flex;
+        align-items: center;
+        line-height: 1.5;
+        
+
+    }
+}
+ @media screen and (min-width: 769px) {
+    .azure_invent .heading1 p{
+        text-align: left;
+    }
+    .azure_invent h1{
+        text-align: left;
+        padding-left: 15px;
+    }
+    .azure_invent p{
+        text-align: left;
+        width: 71vw;
+    }
+    .button_group{
+        flex-direction: row;
+        padding-left: 15px;
+    }
+    .button1{
+        margin-right: 24px;
+    }
+    .button1 a{
+        padding: 0;
+    }
+    .button2 a{
+        padding:0
+    }
+    
+}
+@media screen and (min-width: 960px) {
+    .azure_invent h1{
+        width: 45.32vw;
+    }
+    .azure_invent p{
+        width: 47vw;
+    }
+    .section1 h2{
+        padding-left: 15px;
+        width: 96.876vw;
+    }
+    .section1_cards{
+        margin-top: 36px;
+    }
+    .section1_card1{
+        width: 46.667vw;
+        height: 43.334vw;
+    }
+    .card1_content{
+        padding-bottom: 15px;
+    }
+    .card2_child1{
+        width: 46.667vw;
+        height: 17.709vw;
+        background-size: 31% 100%;
+        background-position: -3.3% 64%;
+    }
+    .child1_content a{
+        margin-left: -17.5px;
+    }
+    .child1_content p{
+        width: 24vw;
+    }
+    .card2_child2{
+        width: 46.667vw;
+        height: 22.918vw;
+        background-position: -11% 100%;
+        background-size: 39% 100%;
+    }
+    .child2_content a{
+        width: 25vw;
+    }
+    .child2_content p{
+        width: 26vw;
+    }
+    .section1_card3 span{
+        width: 8.959vw;
+        margin-top: 8px;
+    }
+    .section1_card3 button{
+        width: 12.267vw;
+        margin-top:0 ;
+    }
+    
+} 
+@media screen and (min-width: 961px ) {
+
+    .azure_invent{
+        background-image: url(asset/background2.webp);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position-x: -22.15pc;
+        
+    }
+    
+}
+@media screen  and (min-width: 1024px){
+    .azure_invent{
+        background-position-x: -14.62pc;
+    }
+    .section1 h2{
+        padding-left: 16px;
+        line-height: 1.22;
+    }
+    .section1_cards{
+        margin-top: 35px;
+    }
+    .section1_card1{
+        width: 46.875vw;
+        height: 35.938vw;
+    }
+    .card1_content p{
+        margin-bottom: 10px;
+    }
+    .card2_child1{
+        width: 46.875vw;
+        height: 14.258vw;
+        background-size: 24.7% 100%;
+        background-position: 0% 64%;
+    }
+    .child1_content a{
+        margin-left: -24.3px;
+    }
+    .child1_content p{
+        width: 27vw;
+    }
+    .card2_child2{
+        width: 46.875vw;
+        height: 19.142vw;
+        background-position: -6.2% 100%;
+        background-size: 33.1% 100%;
+    }
+    .child2_content a{
+        width: 28vw;
+    }
+    .child2_content p{
+        width: 28vw
+    }
+    .section1_card3{
+        margin-top: 49px;
+    }
+    .section1_card3 span{
+        width: 9.48vw;
+    }
+    .section1_card3 button{
+        width: 12.526vw;
+    }
+}
+@media screen and (min-width:1080px ) {
+
+    .header{
+        display: none;
+    }
+    .header2{
+        display: flex;
+        justify-content: space-between;
+        height: 61px;
+    }
+    .azure a{
+        margin-left: 24px;
+    }
+    .nav_explore{
+        margin-left: 25px;
+    }
+    .header_container2{
+        display: flex;
+    }
+    .header_search{
+        display: flex;
+        align-items: center;
+        border: 1px solid #747479;
+        border-radius: 4px;
+        background-color: #f8f9fa;
+        width:105px;
+        height: 27px;
+        padding-right: 13px;
+        margin: -1px 12px 0px -1px;
+    }
+    .header_search input{
+        font-family: Segoe-UI;
+        font-weight: 400;
+        font-size: 13px;
+        color: #4c4c51;
+        border: none;
+        padding-left: 12px;
+        width:88px;
+        background: none;
+        padding-bottom: 5px;
+        
+    }
+    .search_icon{
+        padding-top: 0;
+    }
+    .container_list{
+        padding: 8px;
+    }
+    .container_list a{
+        text-decoration: none;
+        font-family: Segoe-UI;
+        font-size: 13px;
+        color: #1A1A1F;
+        padding: 8px 0px;
+    }
+    .container_list a:nth-child(4){
+        font-size: 12px;
+        font-weight: 600;
+        background-color: #89c402;
+        border: 1px solid #6f9e02;
+        padding: 9px;
+        text-align: center;
+        border-radius: 4px;
+        margin: 0px 6px;
+       
+    }
+}
+@media screen and (min-width: 1440px){
+    .header2{
+        height: 54px;
+        padding-left: 65px;
+        padding-right: 57px;
+    }
+    .explore_list button{
+        padding-top: 18px;
+    }
+    .header_search{
+        margin-right: 16px;
+    }
+    .container_list a{
+        padding: 20px 8px;
+    }
+    .container_list a:nth-child(4){
+        padding: 7px 9px;
+        margin: 0px 2px;
+    }
+    .container_list a:first-child{
+        padding-right: 4px;
+    }
+    .container_list a:nth-child(2){
+        padding-right: 4px ;
+    }
+    .azure_invent{
+        padding-left:  65px;
+        padding-top: 72px;
+        height: 39.608vw;
+        background-position-x: -21.23pc;
+    }
+    .azure_invent p{
+        width: 43.4vw;
+    }
+    .section1 h2{
+        padding-left: 22.5px;
+    }
+    .section1_cards{
+        width: 86.806vw;
+        padding-left: 80px;
+    }
+    .section1_card1{
+        width: 43.264vw;
+        height: 22.084vw;
+
+    }
+    .card1_content p{
+        margin-bottom: 7px;
+    }
+    .card2_child1{
+        width: 43.264vw ;
+        height: 10.139vw ;
+    }
+    .child1_content a{
+        margin-left: -68px;
+    }
+    .card2_child2{
+        width: 43.264vw;
+        height: 10.139vw;
+    }
+    .child2_content p{
+        width: 30vw;
+    }
+    .child2_content a{
+        margin-left: -42.3px;
+    }
+    .card2_child1{
+        background-size: 19.1% 100%;
+    }
+    .card2_child2{
+        background-position: 0% 100%;
+        background-size: 19.1% 100%;
+    }
+    .section1_card3 button{
+        width: 9.498vw;
+        height: 43px;
+    }
+    .section1_card3 span{
+        width: 7.48vw;
+        margin-right: 34px;
+        margin-top: 10px;
+    }
+    .section1_card3 a{
+        /* padding-left: 9px; */
+    }
+
+}
