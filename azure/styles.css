@@ -727,22 +727,15 @@ body{
         border-radius: 6px;
         box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
         border: 1px solid transparent;
-        /* background-image: url(asset/ez-net-desktop.webp); */
-        
-        /* padding: 13px 20px; */
-    }
-    .card2_child1 .image{
-        width: 119px;
-        background-image: url(asset/ez-net-desktop.webp);
         background-position: -17.5% 64%;
         background-repeat: no-repeat;
         background-size: 51% 100%;
-        
+        /* padding: 13px 20px; */
     }
-    .card2_child2 .image{
-            width: 119px;
-            background-image: url(asset/ez-devbox-desktop.webp);
-    }
+    /* .image{
+        width: 119px;
+        background-image: url(asset/ez-net-desktop.webp);
+    } */
     .image img{
         width: 119px;
         height: 100%;
