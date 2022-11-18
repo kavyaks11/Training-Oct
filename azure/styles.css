@@ -94,13 +94,6 @@ body{
     justify-content: center;
     align-items: center;
 }
-/* .banner img{
-    width: 12px;
-    height: 12px;
-    fill: white;
-    color: white;
-    background-color: #1A1A1F;
-} */
 
 .arrow{
     border: solid #fff;
@@ -293,7 +286,6 @@ body{
 .body_section2{
     padding: 60px 0px 60px 0px;
     background-color: #f8f9fa;
-    /* background-color: greenyellow; */
 }
 .body_section2 h2{
     font-family: Segoe-UI;
@@ -318,7 +310,6 @@ body{
     border-bottom: 1px solid #eaebec;
     border-radius: 4px;
     box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
-    /* width: 90.625vw; */
     padding: 12px 24px 12px 12px;
     min-height: 60px;
     width: 100%;
@@ -417,7 +408,7 @@ body{
     justify-content: center;
     margin-top: 47px;
     margin-left: -0.5px;
-    /* margin-bottom: 34px; */
+    margin-bottom: 34px;
 }
 .section2_link img{
     width:20px;
@@ -443,6 +434,159 @@ body{
     display: flex;
     justify-content: center;
 }
+.section2{
+    display: none;
+}
+.body_section_three{
+    padding: 60px 0px;
+}
+.body_section_three h2{
+    font-family: Segoe-UI;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #1A1A1F;
+    text-align: center;
+}
+.section_three_container{
+    margin-top: 10%;
+}
+.section_image img{
+    width: 100%;
+}
+.logos .logo:first-child{
+    display: flex;
+    justify-content: center;
+}
+.logo_desktop{
+    display: none;
+}
+
+.text p{
+    font-family: Segoe-UI;
+    font-size: 20px;
+    font-weight: 400;
+    color: #1A1A1F;
+    line-height: 1.3;
+    margin: 0;
+}
+.text_container{
+    padding:  24px;
+}
+
+.section_content{
+    background-color: #f8f9fa;
+}
+.section_link{
+    margin-top: 40px;
+}
+.section_link a{
+    text-decoration: none;
+    font-family: Segoe-UI;
+    font-size: 14px;
+    font-weight: 600;
+    color: #0062ad;
+}
+.dot{
+    text-align: center;
+}
+.dot span{
+    color: #1A1A1F;
+    padding: 15px 19px;
+    
+}
+.section_image_desktop{
+    display: none;
+}
+.section_four{
+    padding: 60px 0;
+    background-color: #f8f9fa;
+}
+.section_four_container{
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+}
+.section_four img{
+    max-width: 100%;
+
+}
+.section_four_content{
+    padding: 0 15px;
+}
+.section_four_content h2{
+    font-family: Segoe-UI;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 1.2;
+    color: #1A1A1F;
+    text-align: center;
+    margin: 0;
+}
+.button{
+    border: 1px solid #0078d4;
+    border-radius: 4px;
+    padding: 10px 16px;
+    margin-top: 20px;
+}
+.button a{
+    font-family: SEgoe-UI;
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    color: #0062ad;
+    display: flex;
+    justify-content: center;
+}
+.section_five h2{
+    font-family: Segoe-UI;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+.section_five_cards{
+    display: grid;
+    grid-template-columns: repeat(6, 75vw);
+    column-gap: 30px;
+    row-gap: 24px;
+    margin-top: 36px;
+    padding: 0 15px;
+    overflow: scroll;
+}
+.section_five_card{
+    background-color: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
+    display: flex;
+    flex-direction: column;
+}
+.section_five_card img{
+    width: 74.376vw;
+    height: 37.19vw;
+    object-fit: cover;
+    border-radius: 6px 6px 0 0;
+}
+.card_text{
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+.card_text a{
+    font-family: Segoe-UI;
+    font-size: 12px;
+    font-weight: 600;
+    color: #4c4c51;
+    text-decoration: none;
+}
+.card_text p{
+    font-family: Segoe-UI;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+}
+
 @media screen and (min-width: 375px) {
  
     .azure_invent h1{
@@ -497,6 +641,7 @@ body{
         margin-top: 53px;
         margin-bottom: 8px;
     }
+    
 }
 @media screen and (min-width: 425px) {
     .azure_invent h1{
@@ -536,6 +681,20 @@ body{
     .section2_link{
         margin-top: 53px;
         margin-bottom: 10px;
+    }
+}
+@media screen and (min-width: 540px){
+    .section_four_content h2{
+        text-align: left;
+    }
+    .button{
+        width: 141.75px;
+    }
+}
+@media screen and (min-width: 570px){
+    .section_image img{
+        height:220px;
+        
     }
 }
 @media screen and (min-width: 768px) {
@@ -700,7 +859,7 @@ body{
         justify-content: flex-end;
         padding: 24px 0px;
         max-width: 625px;
-        /* max-height: 320px; */
+
     }
     .card1_content{
         margin-left: 23px;
@@ -738,7 +897,7 @@ body{
         box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
         border: 1px solid transparent;
         max-width: 625px;
-        /* max-height: 148px; */
+    
     }
     .card2_child1 .image{
         width: 119px;
@@ -781,7 +940,7 @@ body{
         margin: 12px 0;
         width:21vw;
         display: block;
-        /* max-width: 430px; */
+        
     }
     .card2_child2{
         display: flex;
@@ -790,11 +949,11 @@ body{
         box-shadow: 0 2px 5px rgb(0 0 0 / 14%);
         border: 1px solid transparent;
         max-width: 625px;
-        /* max-height: 148px; */
+        
     }
     .child2_content{
         padding: 24px 23px 24px 49px;
-        max-width: 438px;
+     
     }
     .child2_content a{
         font-family: Segoe-UI;
@@ -852,6 +1011,124 @@ body{
         
 
     }
+    .body_section2{
+        display: none;
+    }
+    .section_two{
+        background-color: #f8f9fa;
+    }
+    .section2{
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 60px;
+        padding-top: 41px;
+    }
+    .section2 h2{
+        font-family: Segoe-UI;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 1.2;
+        padding: 0 15px;
+        text-align: left;
+        color: #1A1A1F;
+        margin-bottom: 59px;
+    }
+    .section2_container{
+        display: flex;
+        padding: 0 15px;
+    }
+    .section2_cards{
+        padding: 0;
+    }
+    .list{
+        margin-right: 12px;
+        width: 70vw;
+        text-align: left;
+        margin-top: -10.5px;
+    }
+    .list_item{
+        padding: 12px;
+        margin-bottom: 14px;
+      
+    }
+    .list_item a{
+        font-family: Segoe-UI;
+        font-size: 16px;
+        font-weight: 400;
+        color: #4c4c51;
+        text-decoration: none;
+        margin-left: -2px;
+        line-height: 1.5;
+    }
+    .icon img{
+        width:36px;
+        height: 36px;
+    }
+    .section2_cards{
+       grid-template-columns: repeat(3, 1fr);
+    }
+    .section2_link  {
+        padding: 14px 0px 0px 4px;
+        margin-top: 0;
+    }
+    .card_container p{
+        font-size: 16px;
+        margin:19px 0px 32px 0px;
+    }
+    .section2_card:nth-child(6) p{
+        margin-bottom: 24px;
+    }
+    .section2_card:nth-child(5) p{
+        margin-bottom: 24px;
+    }
+    .section2_card:nth-child(2) p{
+        margin-bottom: 24px;
+    }
+    .section2_image{
+        display: none;
+    }
+    .body_section_three h2{
+        font-size: 24px;
+    }
+    .section_image{
+        display: none;
+    }
+    .section_image_desktop{
+        display: flex;
+    }
+    .section_image_desktop img{
+       width: 100%;
+    }
+    .section_three_container{
+        margin-top: 0;
+    }
+    .section_four_container{
+        flex-direction: row;
+        align-items: center;
+        max-width: 1280px;
+        margin-left: auto;
+    }
+    .section_four_content{
+        width: 45%;
+        
+    }
+    .section_four img{
+        width: 41%;
+        max-width: 485.83px;
+    
+    }
+    .button{
+        margin-top: 36px;
+    }
+    .section_five_cards{
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .section_five_card img{
+        width: 29.428vw;
+        height: 14.714vw;
+    }
+
+
 }
  @media screen and (min-width: 769px) {
     .azure_invent .heading1 p{
@@ -938,7 +1215,119 @@ body{
         width: 12.267vw;
         margin-top:0 ;
     }
+    .section_two{
+        overflow: hidden;
+    }
     
+    .section2 h2{
+        margin-bottom: 49px;
+    }
+    .section2_image{
+        display: flex;
+        flex-direction: column;
+        overflow: visible;
+        
+    }
+    .section2_image .image img{
+      border: none;
+        border: 27px solid black;
+        width: 266%;
+        height: 476px;
+        margin: 15px;
+        overflow: visible;
+     
+    }
+    .section_container{
+        display: flex;
+        width: 100%;
+
+    }
+    .list{
+        width: 17.7vw;
+        margin-top: -1.5px;
+    }
+    .list_item{
+        margin-bottom: 12px;
+    }
+    .section2_link{
+        margin-left: -6px;
+    }
+    .section2_link a{
+        width: 15vw;
+        text-align: left;
+    }
+    .section2_cards{
+        column-gap: 30px;
+        row-gap: 24px;
+    }
+    .section2_card{
+        width: 10.365vw;
+    }
+    
+    .card_container p{
+        margin-bottom: 26px;
+    }
+    .section2_card:nth-child(5) p {
+        margin-bottom: 42.1px;
+    }
+    .section2_image .link {
+        display: none;
+    }
+    .logo_desktop{
+        display: flex;
+    }
+    .logos{
+        display: flex;
+       justify-content: center;
+       align-items: center;
+    }
+    .logos img{
+        filter: grayscale(100%);
+        width: 100%;
+        height: 55px;
+        
+    }
+    .logos .logo{
+        margin: 12px 32px;
+        max-width: 150px;
+        height: 84px;
+    }
+    .section_content{
+        position: relative;
+    }
+    .text{
+        background-color: rgba(26,26,31, .94);
+        padding: 24px;
+        position: absolute;
+        bottom: 77px;
+        border: 1px solid transparent;
+        border-radius: 6px;
+        width: 42%;
+        left: 15px;
+        max-width: 553px;
+    }
+    .text_container{
+        max-width: 1310px;
+        margin-left: auto;
+        margin-right: auto;
+       position: relative;
+    }
+    .text p{
+        color: #fff;
+        max-width: 575px;
+    }
+    .text a{
+        color: #fff;
+        text-decoration: underline;
+        text-decoration-color: #b8b9ba;
+    }
+    .section_image_desktop{
+        min-height: 600px;
+        object-fit: cover;
+    }
+    .dot{
+        display: none;
+    }
 } 
 @media screen and (min-width: 961px ) {
 
@@ -950,6 +1339,32 @@ body{
         width:100%;
         
     }
+    .section2_image .link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 200px;
+        margin-left: 24px;
+
+    }
+    .arrow2 img {
+        background: none;
+        width: 24px;
+        height: 24px;
+        border: none;
+        transform: rotate(180deg);
+        margin-right: 5px;
+        
+    }
+    .section2_image .link a{
+        text-decoration: none;
+        color: #0062ad;
+        font-family: Segoe-UI;
+        font-size: 14px;
+        font-weight: 400;
+    }
+    
+    
     
 }
 @media screen and (min-width: 989px) {
@@ -1086,9 +1501,48 @@ body{
     }
     .card2_child1{
         height: 148px;
+        /* width: 316px; */
     }
     .card2_child2{
         height: 148px;
+    }
+     .child1_content p{
+        width: 316px;
+    }
+    .child1_content a{
+        margin-left: -49.3px;
+    }
+    .child2_content p{
+        width: 408px;
+    }
+    .child2_content a{
+        margin-left: -18px;
+    } 
+}
+/* @media screen and (min-width: 1280px) {
+    .section_two{
+        overflow: hidden;
+    }
+    .section2_image .image img {
+        width: 266%;
+    }
+} */
+@media screen and (min-width: 1310px) {
+    .section2{
+        width: 1310px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .section2_card{
+        width: 167.13px;
+    }
+    .list{
+        width: 235.13px;
+    }
+    
+    .section2_link a {
+        width: 161px;
+        margin-left: -50px;
     }
 }
 /* @media screen and (min-width: 1440px){
