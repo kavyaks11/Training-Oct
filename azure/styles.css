@@ -1124,11 +1124,48 @@ body{
         grid-template-columns: repeat(3, 1fr);
     }
     .section_five_card img{
-        width: 29.428vw;
+        width: 100%;
         height: 14.714vw;
     }
-
-
+    .section_five_card:nth-child(3) img{
+        display: none;
+    }
+    .section_five_card:nth-child(3) a{
+        display: none;
+    }
+    .section_five_card:nth-child(3) {
+        background-image: url(asset/scott-g.webp);
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      
+    }
+    .section_five_card:nth-child(3) p{
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+        padding: 106px 19px 24px 19px;
+    }
+    .section_five_card:nth-child(5) img{
+        display: none;
+    }
+    .section_five_card:nth-child(5) a{
+        display: none;
+    }
+    .section_five_card:nth-child(5) {
+        background-image: url(asset/azure-regions.png);
+        height: 100%;
+        width: 100%;
+        object-fit: cover;
+      
+    }
+    .section_five_card:nth-child(5) p{
+        color: #fff;
+        font-size: 18px;
+        font-weight: 600;
+        padding: 106px 15px 24px 15px;
+    }
+    
 }
  @media screen and (min-width: 769px) {
     .azure_invent .heading1 p{
@@ -1296,6 +1333,14 @@ body{
         position: relative;
     }
     .text{
+        max-width: 553px;
+    }
+    .content{
+        max-width: 1310px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .text_container{
         background-color: rgba(26,26,31, .94);
         padding: 24px;
         position: absolute;
@@ -1304,19 +1349,13 @@ body{
         border-radius: 6px;
         width: 42%;
         left: 15px;
-        max-width: 553px;
-    }
-    .text_container{
-        max-width: 1310px;
-        margin-left: auto;
-        margin-right: auto;
-       position: relative;
+        
     }
     .text p{
         color: #fff;
         max-width: 575px;
     }
-    .text a{
+    .text_container a{
         color: #fff;
         text-decoration: underline;
         text-decoration-color: #b8b9ba;
@@ -1328,6 +1367,36 @@ body{
     .dot{
         display: none;
     }
+    .section_five_cards{
+        grid-template-columns: repeat(4,1fr);
+    }
+    .section_five_card:nth-child(3){
+        grid-column: 3/5;
+        background-position-x: center;
+        background-size: cover; 
+    }
+    .section_five_card:nth-child(5){
+        grid-column: 2/4;
+        
+    }
+    .section_five_card:nth-child(3) p{
+        font-size: 24px;
+        padding: 125px 18px 24px 18px;
+    }
+    .section_five_card:nth-child(5) p{
+        font-size: 24px;
+        padding: 125px 14px 24px 14px;
+    }
+    .section_five_card img{
+        height: 10.938vw;
+        max-height: 147.75px;
+    }
+    .section_five{
+        max-width: 1280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+  
 } 
 @media screen and (min-width: 961px ) {
 
@@ -1367,9 +1436,7 @@ body{
     
     
 }
-@media screen and (min-width: 989px) {
-    
-}
+
 @media screen  and (min-width: 1024px){
     .section1 h2{
         padding-left: 16px;
@@ -1519,14 +1586,6 @@ body{
         margin-left: -18px;
     } 
 }
-/* @media screen and (min-width: 1280px) {
-    .section_two{
-        overflow: hidden;
-    }
-    .section2_image .image img {
-        width: 266%;
-    }
-} */
 @media screen and (min-width: 1310px) {
     .section2{
         width: 1310px;
@@ -1545,90 +1604,6 @@ body{
         margin-left: -50px;
     }
 }
-/* @media screen and (min-width: 1440px){
-    .header2{
-        height: 54px;
-        padding-left: 65px;
-        padding-right: 57px;
-    }
-    .explore_list button{
-        padding-top: 18px;
-    }
-    .header_search{
-        margin-right: 16px;
-    }
-    .container_list a{
-        padding: 20px 8px;
-    }
-    .container_list a:nth-child(4){
-        padding: 7px 9px;
-        margin: 0px 2px;
-    }
-    .container_list a:first-child{
-        padding-right: 4px;
-    }
-    .container_list a:nth-child(2){
-        padding-right: 4px ;
-    }
-    .azure_invent{
-        padding-left:  65px;
-        padding-top: 72px;
-        height: 39.608vw;
-        background-position-x: -21.23pc;
-    }
-    .azure_invent p{
-        width: 43.4vw;
-    }
-    .section1 h2{
-        padding-left: 22.5px;
-    }
-    .section1_cards{
-        width: 86.806vw;
-        padding-left: 80px;
-    }
-    .section1_card1{
-        width: 43.264vw;
-        height: 22.084vw;
 
-    }
-    .card1_content p{
-        margin-bottom: 7px;
-    }
-    .card2_child1{
-        width: 43.264vw ;
-        height: 10.139vw ;
-    }
-    .child1_content a{
-        margin-left: -68px;
-    }
-    .card2_child2{
-        width: 43.264vw;
-        height: 10.139vw;
-    }
-    .child2_content p{
-        width: 30vw;
-    }
-    .child2_content a{
-        margin-left: -42.3px;
-    }
-    .card2_child1{
-        background-size: 19.1% 100%;
-    }
-    .card2_child2{
-        background-position: 0% 100%;
-        background-size: 19.1% 100%;
-    }
-    .section1_card3 button{
-        width: 9.498vw;
-        height: 43px;
-    }
-    .section1_card3 span{
-        width: 7.48vw;
-        margin-right: 34px;
-        margin-top: 10px;
-    }
-    .section1_card3 a{
-        /* padding-left: 9px; */
-    }
-
-} */
+    
+  
