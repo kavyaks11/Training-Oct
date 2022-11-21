@@ -15,7 +15,6 @@
 body{
     margin:0;
     padding: 0;
-    position: relative;
 }
 .header_nav{
     display: flex;
@@ -796,11 +795,11 @@ footer{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px;
+    padding: 5px 5px 5px 8px;
     height: 26px;
     border: 1px solid #747479;
     background-color: #fff;
-    width: 178px;
+    width: 172px;
 }
 .nav_three_list{
     margin-top: 36px;
@@ -831,15 +830,17 @@ footer{
     display: none;
 }
 .chat_box{
-    position:absolute;
+    position:fixed;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #0078d4;
-    width: 156.67px;
+    width: 152.67px;
     height: 42px;
-    border-radius: 6px;
-    right: 0;
+    border-radius: 4px;
+    bottom: 0;
+    right: 12px;
+    
     
 }
 .chat_box a{
@@ -849,7 +850,9 @@ footer{
     font-weight: 14px;
     text-decoration: none;
     margin-left: 5px;
+    font-weight: 400;
 }
+
 @media screen and (min-width: 375px) {
  
     .azure_invent h1{
@@ -1496,6 +1499,11 @@ footer{
     }
     
 }
+@media screen and (min-width: 782px){
+     .child1_content a{
+        width: 166.61px;
+     }
+} 
 @media screen and (min-width: 960px) {
     .azure_invent h1{
         width: 45.32vw;
@@ -1525,9 +1533,7 @@ footer{
         background-position-X: -0.65pc;
         background-size: 118% 100%;
     }
-    .child1_content a{
-        margin-left: -17.5px;
-    }
+    
     .child1_content p{
         width: 24vw;
     }
@@ -1637,11 +1643,6 @@ footer{
     .text{
         max-width: 553px;
     }
-    .content{
-        max-width: 1310px;
-        margin-left: auto;
-        margin-right: auto;
-    }
     .text_container{
         background-color: rgba(26,26,31, .94);
         padding: 24px;
@@ -1650,7 +1651,8 @@ footer{
         border: 1px solid transparent;
         border-radius: 6px;
         width: 42%;
-        left: 15px;
+        right: 51%;
+        max-width: 575px;
         
     }
     .text p{
@@ -1709,10 +1711,11 @@ footer{
        max-height: 700PX;
        width: 100%;
     }
+   
     .section_six_container{
         position: absolute;
         top: 60px;
-        left: 15px;
+        right: 43%;
         background-color: rgba(26,26,31,.94);
         width: 50.209vw;
         border-radius: 6px;
@@ -1886,9 +1889,7 @@ footer{
         height: 14.258vw;
      
     }
-    .child1_content a{
-        margin-left: -24.3px;
-    }
+   
     .child1_content p{
         width: 27vw;
     }
@@ -1977,7 +1978,7 @@ footer{
         font-family: Segoe-UI;
         font-size: 13px;
         color: #1A1A1F;
-        padding: 8px 0px;
+        padding: 8px 4px;
     }
     .container_list a:nth-child(4){
         font-size: 12px;
@@ -1990,6 +1991,24 @@ footer{
         margin: 0px 6px;
        
     }
+    .child2_content a{
+        width: 318.52px;
+     }
+     .card1_content{
+        padding-bottom: 0;
+     }
+     .section1_card3 button{
+        width: 136.77px;
+        height: 43px;
+     }
+     .section1_card3 span{
+        width: 105.81px;
+     }
+}
+@media screen and (min-width: 1092px) {
+    .explore_list button{
+        padding-top: 19px;
+    }
 }
 @media screen and (min-width: 1264px){
     .section1_card1{
@@ -2001,18 +2020,10 @@ footer{
     .card2_child2{
         height: 148px;
     }
-     .child1_content p{
-        width: 316px;
+    .card2_child2 .image{
+        background-position-x: 0pc;
+        background-size: 105% 100% ;
     }
-    .child1_content a{
-        margin-left: -49.3px;
-    }
-    .child2_content p{
-        width: 408px;
-    }
-    .child2_content a{
-        margin-left: -18px;
-    } 
 }
 @media screen and (min-width: 1280px){
     .azure_invent{
@@ -2036,7 +2047,40 @@ footer{
         width: 161px;
         margin-left: -50px;
     }
+    .child1_content p{
+        width: 418px;
+    }
+    .child2_content p{
+        width: 431px;
+    }
+    .card1_content{
+        
+        margin-left: -22px;
+    }
+    .card1_content p {
+        margin-bottom: 0;
+    }
 }
-
+@media screen and (min-width: 1440px) {
+    .container_list{
+        padding: 8px 0;
+    }
+   
+    .container_list a{
+        padding: 8px 8px;
+    }
+    .header_search{
+        margin-right: 24px;
+    }
+    .container_list a:nth-child(4){
+        margin: 0 2px;
+    }
+    .container_list a:nth-child(2){
+        padding: 8px 4px;
+    }
+    .nav_three_list{
+        margin-left: 122px;
+    }
+}
     
   
