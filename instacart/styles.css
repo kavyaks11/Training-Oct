@@ -1,0 +1,324 @@
+@font-face {
+    font-family: Eina;
+    src: url(font/eina-regular-962b94746f466cf38b0dcc93ebf0703e.woff2);
+    font-weight: 400;
+    font-style: normal;
+}
+@font-face {
+    font-family: Eina;
+    src: url(font/eina-semibold-3c45702adeba381bbd0bc600c987febd.woff2);
+    font-weight: 500;
+    font-style: semibold;
+}
+@font-face {
+    font-family: Eina;
+    src: url(font/eina-bold-df33d802f345a9037eb82e0c80e76547.woff2);
+    font-weight: 600;
+    font-style: bold;
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Eina;
+}
+.header{
+    background-color: #d43684;
+    height: 36px;
+    width: 100%;
+/* }   
+.header_content{ */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+   
+}
+.header_image{
+    margin-left: 8px;
+    margin-top: 3px;
+}
+.header_image img{
+    width: 24px;
+    height: 24px;
+   
+}
+.header_text{
+    display: flex;
+    margin: 0 8px;
+}
+.text{
+    font-weight: 400;
+    font-size: 12px;
+    color: #fff;
+    line-height: 18px;
+   
+}
+.text_one{
+    font-weight: 500;
+}
+.header_nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px;
+    border-bottom: 1px solid #E8E9EB;
+}
+
+.menu_button{
+    padding: 1px 6px;
+    height: 24px;
+}
+.instacart_logo img{
+    height: 24px;
+    width: 100%;
+
+}
+.header_button_group{
+    display: flex;
+}
+.log_in{
+    border: none;
+    background: none;
+    margin-right: 11px;
+    font-family: Eina;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 500;
+}
+.log_in a{
+    color: #343538;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.sign_up a{
+    color: #fff;
+    text-decoration: none;
+    white-space: nowrap;
+}
+.sign_up{
+    font-family: Eina;
+    font-size: 15px;
+    line-height: 22px;
+    font-weight: 500;
+    border: none;
+    background-color: #0aad0a;
+    border-radius: 20px;
+    padding: 8px 16px;
+
+}
+.banner{
+    padding: 16px 16px 32px 16px;
+    background-color: #deedd6;
+    margin-bottom: 24px;
+}
+.banner h1{
+   font-size: 31px;
+   font-weight: 600;
+   color: #343538;
+   text-align: left;
+   line-height: 40px;
+   width: 256px;
+   margin: 0;
+}
+.country_select{
+    display: none;
+}
+.banner span{
+    display: none;
+}
+.section_head{
+    display: flex;
+    flex-direction: column;
+}
+.section_head h2{
+    padding: 16px 32px;
+    font-size: 23px;
+    font-weight: 400;
+    color: #343538;
+    text-align: center;
+    line-height: 32px;
+    margin: 0;
+}
+.section_head span{
+    color: #0aad0a;
+}
+.cards{
+    display: flex;
+    flex-direction: column;
+    padding-top: 8px;
+}
+.card{
+    display: flex;
+    align-items: center;
+    padding: 12px 16px;
+    justify-content: space-between;
+}
+.card_container{
+    display: flex;
+    align-items: center;
+}
+.card_text{
+    display: flex;
+    flex-direction: column;
+    margin-left: 12px;
+}
+.card_text p{
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 500;
+    color: #343538;
+    margin: 0;
+}
+.card_text span{
+    font-size: 12px;
+    line-height: 18px;
+    font-weight: 500;
+    color: #343538;
+    margin: 0;
+}
+.card_image img{
+    width: 58px;
+    height: 58px;
+    border-radius: 29px;
+    border: 1px solid #E8E9EB;
+}
+ /* .card_text p{ 
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 500;
+    color: #343538;
+    margin: 0;
+    
+}
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    white-space: nowrap;
+}
+.green_text{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #0aad0a;
+    white-space: nowrap;
+    gap: 3px;
+}
+.pickup{
+    display: flex;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 16px;
+    color: #343538;
+    white-space: nowrap;
+}
+.dot{
+    margin: 0 4px;
+    display: inline-block;
+} */
+
+@media screen and (min-width: 425px){
+}
+@media screen and (min-width: 768px) {
+    .header{
+        padding: 10px 0px;
+    }
+    .text{
+        font-size: 18px;
+    }
+    .header_image{
+        margin-left: 0;
+    }
+    .header_image img{
+        width: 36px;
+        height: 36px;
+    }
+    .header_nav{
+        padding: 24px 40px 23px 34px;
+        max-height: 32px;
+    }
+    .menu_button{
+        padding-right: 8px;
+    }
+    .instacart_logo{
+        margin-right: auto;
+        
+    }
+    .instacart_logo img{width: 149px;}
+    .log_in{
+        margin: 0 22px;
+        line-height: 26px;
+        font-size: 18px;
+    }
+    .sign_up {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .banner{
+        background-image: url(image/background.webp);
+        background-repeat: no-repeat;
+        background-position: right center;
+        height: 171px;
+        background-size: contain;
+        margin-bottom: 32px;
+       
+    }
+    .banner_container{
+        max-width: 1368px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
+        
+    }
+    .banner_text{
+       padding-left: 128px;
+       margin-top: 22px;
+    }
+    .banner span{
+        display: flex;
+        font-size: 15px;
+        font-weight: 400;
+        line-height: 22px;
+        color: #343538;
+        margin-top: 16px;
+    }
+    .banner h1{
+        font-size: 41px;
+        font-weight: 500;
+        width: 578px;
+        line-height: 52px;
+    }
+    .country_select{
+        display: flex;
+        align-items: flex-start;
+        position: absolute;
+        padding: 6.5px 12px;
+        border-radius: 8px;
+        border: 1px solid #c7c8cd;
+        background-color: #fff;
+        top: 1px;
+        left: 24px;
+        gap: 6px;
+    }
+    .icon svg{
+        width: 25px;
+        height: 25px;
+        margin-top: 3px;
+    }
+    .drop_down select{
+        background-color: #efefef;
+        border: none;
+        padding: 4px 0;
+        width: 16px;
+        height: 16px;
+        margin-top: 7px;
+    }
+}
+@media screen and (min-width: 1024px){
+    .banner{
+        background-size: auto;
+    }
+    
+}
