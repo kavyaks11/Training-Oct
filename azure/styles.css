@@ -15,6 +15,7 @@
 body{
     margin:0;
     padding: 0;
+    position: relative;
 }
 .header_nav{
     display: flex;
@@ -683,11 +684,12 @@ body{
 }
 footer{
     background-color: #f4f5f6;
+    padding: 48px 0px 43px;
 }
 .footer{
     display: flex;
     flex-direction: column;
-    padding: 48px 0px 36px;
+   
     
 }
 .footer_nav_one{
@@ -828,7 +830,26 @@ footer{
 .footer_nav_two_desktop{
     display: none;
 }
-
+.chat_box{
+    position:absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0078d4;
+    width: 156.67px;
+    height: 42px;
+    border-radius: 6px;
+    right: 0;
+    
+}
+.chat_box a{
+    font-family: Segoe-UI;
+    font-size: 14px;
+    color: #fff;
+    font-weight: 14px;
+    text-decoration: none;
+    margin-left: 5px;
+}
 @media screen and (min-width: 375px) {
  
     .azure_invent h1{
