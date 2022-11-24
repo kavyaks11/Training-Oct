@@ -1,0 +1,142 @@
+/* body{
+    font-family: sans-serif;
+    font-weight: 300;
+    display: grid;
+    grid-template-columns: 1fr 80vw 1fr;
+    grid-template-rows: 50vh 5em 5em auto;
+} */
+.title{
+    color: white;
+    font-size: 3.5rem;
+}
+.title span{
+    font-weight: 300;
+    display: block;
+}
+.small{
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.section_one{
+    background-color: #777;
+    text-align: center;
+    grid-column: 1/4;
+    grid-row: 1/4;
+}
+.section_two{
+    background: #ddd;
+    text-align: center;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-column: 2/3;
+    grid-row: 2/4;
+    z-index: 5;
+}
+.section_three{
+    background: lightseagreen;
+    grid-column: 1/4;
+    grid-row: 3/4;
+    padding: 100px 0;
+    display: grid;
+    grid-template-columns: inherit;
+   
+}
+.container{
+    background-color: pink;
+    grid-column: 2/3;
+    text-align: center;
+}
+
+    /* portfolio */
+
+.main_content{
+    padding: 10%;
+    flex: 1 1 80%;
+    min-height: 100vh;
+    width: 100vw ;
+    
+}
+.portfolio{
+ 
+    display: grid;
+    height: 100vw;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    gap: 20px;
+    
+
+}
+.portfolio_item{
+    background: rgb(214, 11, 170);
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    font-size: 1.5em;
+
+}
+.portfolio_item.medium{
+    grid-column: span 2;
+    grid-row: span 2;
+}
+.portfolio_item.large{
+    grid-column: span 3;
+    grid-row:  span 3;
+}
+.portfolio_item.small{
+    grid-column: span 1;
+    grid-row: span 1;
+}
+.portfolio_item.wide{
+    grid-column: span 3;
+    grid-row: span 2;
+}
+.portfolio_item.tall{
+    grid-column: span 2;
+    grid-row:  span 3;
+}
+
+body{
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1.5em minmax(400px, 650px) minmax(200px, 350px) 1.5em;
+    grid-template-areas: "header header header header"
+                         "...... main side ......"
+                         "footer footer footer footer";
+}
+header{
+    background-color: lightblue;
+    
+}
+.content{
+    background-color: lightcyan;
+}
+.sidebar{
+    background-color: lightpink;
+}
+footer{
+    background-color: lightseagreen;
+    
+}
+header{
+    grid-area: header;
+}
+.content{
+    grid-area: main;
+}
+.sidebar{
+    grid-area: side;
+}
+footer{
+    grid-area: footer;
+}
+/* header,
+footer{
+    grid-column: 1/4;
+}
+.content{
+    grid-column: 2/3;
+}
+.sidebar{
+    grid-column: 3/4;
+} */
