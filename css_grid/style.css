@@ -48,7 +48,7 @@ body{
     font-family: serif;
     font-size: 1.125em;
     color: gray;
-    background-image: url(background.webp);
+    background-image: url(img/background.webp);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
