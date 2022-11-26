@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'open-sans-semibold';
+    src: url(font/open-sans-semibold.yji-d3abae27d3eac73b40a5.woff2);
+   
+    
+    
+}
+@font-face {
+    font-family: 'open-sans-regular';
+    src: url(font/open-sans-regular.yji-aff9b80e384301f2ae0c.woff2);
+    
+    
+  
+    
+}
+@font-face {
+    font-family: 'open-sans-bold';
+    src: url(font/open-sans-bold.yji-1145ff0b749fff2d31bb.woff2);
+   
+    
+}
+@font-face {
+    font-family:'poppins-semibold';
+    src: url(font/poppins-medium.yji-dc16a3592fdb61b620cc.woff2);
+    
+}
+@font-face {
+    font-family: 'poppins-bold';
+    src: url(font/poppins-bold.yji-9690ce6275ddc5645cfa.woff2);
+    
+}
+
+
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+header{
+    background-image: url(asset/background.jpg);
+  
+    
+}
+.header_container{
+    display:flex;
+    flex-direction: column;
+    padding: 24px 40px 0px;
+}
+.header_container_main{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    margin-left: 1px;
+    margin-top: 4px;
+}
+.searchbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 48px;
+    background: white;
+    border-radius: 4px;
+    margin-right: 16px;
+    margin-left: 32px;
+    width: 100%;
+    
+}
+.text_one input,
+.text_two input{
+    padding: 13px 16px;
+    border: none;
+    background: none;
+    font-family: 'open-sans-regular';
+    font-size: 16px;
+}
+.text_two input::placeholder{
+    color: #2d2e2f;
+   
+}
+
+.search_icon{
+    max-width: 56px;
+}
+.search_icon button{
+    padding: 13px 16px;
+    background: #e00707;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    height: 48px;
+}
+.header_link{
+    display: flex;
+    align-items: center;
+    color: #fff;
+    margin-left: 37px;
+}
+.header_link button{
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    background: none;
+    padding: 8px 16px;
+    height: 40px;
+    border: 2px solid rgba(200,201,202,1);
+    border-radius: 4px;
+}
+
+.header_link  a{
+    font-family: 'poppins-semibold';
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none;
+}
+.sign_up button{
+    align-items: center;
+    background: #e00707;
+    border: none;
+    margin-left: 12px;
+}
+.header_link span{
+    font-family: 'open-sans-semibold';
+    font-size: 14px;
+    white-space: nowrap;
+    padding: 8px;
+    margin-right: 16px;
+   
+}
+.link_text:first-child span{
+    margin-left: 8px;
+}
