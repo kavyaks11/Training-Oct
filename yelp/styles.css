@@ -37,12 +37,37 @@ body{
     line-height: 1;
 }
 header{
-    background-image: url(asset/background.jpg);
-    width: 100%;
+    /* background-image: url(asset/background.jpg); */
+    /* width: 100%; */
     background-size: cover;
-    position: relative;
-  
-    
+    animation: background_image infinite 20s;
+}
+@keyframes background_image{
+
+    0%{
+        opacity: 1;
+        background-image: url(asset/b1.jpg);
+    }
+    33%{
+        opacity: 9;
+        background-image: url(asset/b1.jpg);
+    }
+    33.1%{
+        opacity: 1;
+        background-image: url(asset/b2.jpg);
+    }
+    66%{
+        opacity: 9;
+        background-image: url(asset/b2.jpg);
+    }
+    66.1%{
+        opacity: 1;
+        background-image: url(asset/b3.jpg);
+    }
+    100%{
+        opacity: 9;
+        background-image: url(asset/b3.jpg);
+    }
 }
 .header_container{
     display:flex;
@@ -233,19 +258,43 @@ nav li svg{
 
 }
 .slide_child{
+    width: 10px;
     height: 89.33px;
-    text-align: center;
+    margin-bottom: .6em;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, .5);
+
   
 }
-.slide span{
-    background: #fff;
-    border-radius: 5px;
-    display: block;
-    height: 89.33px;
-    left: 7px;
-    position: absolute;
+.slider_one{
+    height: 0px;
+    position: relative;
     width: 10px;
-    overflow: hidden;
+    animation: slides 20s infinite;
+    border-radius: 5px;
+}
+.slider_two{
+    height: 0px;
+    position: relative;
+    width: 10px;
+    animation: slides 20s infinite;
+    border-radius: 5px;
+    animation-delay: 5s;
+}
+.slider_three{
+    height: 0px;
+    position: relative;
+    width: 10px;
+    animation: slides 20s infinite;
+    border-radius: 5px;
+    animation-delay: 10s;
+}
+@keyframes slides{
+    33.33%, 66.66%, 100%{
+        top:0;
+        background-color: white;
+        height: 89.33px;
+    }
 }
 .header_text{
     
