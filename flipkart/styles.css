@@ -571,6 +571,28 @@ header{
        transform: rotate(270deg);
        margin-left: 6px;
     }
+    .main{
+        display: flex;
+        padding: 8px;
+    }
+    .main_left{
+        padding-right: 10px;
+        max-width: 280px;
+    }
+    .main_left_card{
+        padding-bottom: 10px;
+    }
+    .card_image img{
+       width: 100px;
+    }
+    .card_text h3{
+        font-family: 'roboto-medium';
+        font-weight: 500;
+        font-size: 16px;
+        margin: 0;
+        letter-spacing: 0;
+        line-height: 1.2;
+    }
 }
 
 @media screen and (min-width: 960px) {
