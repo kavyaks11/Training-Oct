@@ -75,6 +75,10 @@ header{
 .sort_and_filter{
     display: flex;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background-color: white;
 }
 .sort{
     display: flex;
@@ -160,15 +164,15 @@ header{
 }
 .border_image{
     margin-top: -1px;
+    position: sticky;
+    top: 38px;
 }
 .border_image img{
     width: 100%;
     height: 4px;
     opacity: 1;
 }
-.cards{
 
-}
 .card{
     position: relative;
     border-bottom: 1px solid #ebebeb;
@@ -196,6 +200,12 @@ header{
 }
 .card:nth-child(4) .item_image{
     padding-top: 8px;
+}
+.card:last-child .item_image{
+    padding-top: 20px;
+}
+.card:last-child .item_image img{
+    height: 88px;
 }
 .item_details{
     display: flex;
