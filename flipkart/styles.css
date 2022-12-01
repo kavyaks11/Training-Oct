@@ -2,6 +2,10 @@
     font-family: 'roboto';
     src: url(font/roboto-regular.woff2);
 }
+@font-face {
+    font-family: 'roboto-medium';
+    src: url(font/roboto-medium-webfont.woff2);
+}
 body{
     
     margin:0;
@@ -377,4 +381,331 @@ header{
 .arrow img{
     width: 6px;
     height: 10px;
+}
+.desktop_view{
+    display: none;
+}
+
+@media screen and (min-width: 911px) {
+    .mobile_view{
+        display: none;
+    }
+    .desktop_view{
+        display: flex;
+    }
+    header{
+        height: 52px;
+        width: 100%;
+    }
+    .blank{
+        min-width: 124px;
+    }
+    .header{
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+        /* height: 56px; */
+    }
+    .header_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 1248px;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .logo_container{
+        min-width: 125px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 0;
+        
+    }
+    .flipkart_text_one img{
+        width: 70px;
+        height: 18.07px;
+    } 
+    .flipkart_text_two{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -10px;
+    }
+    .explore span, 
+    .plus_text span{
+        font-size: 10px;
+        letter-spacing: 0;
+        font-style: italic;
+    }
+    .explore span{
+        font-weight: 400;
+        color: #fff;
+        margin-right: 3px;
+        margin-left: -6px;
+    }
+    .plus_logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .plus_text span{
+        font-weight: 500;
+        color: #ffe500;
+        margin-right: 2px;
+    }
+    .plus_logo img{
+        width: 9px;
+        height: 9px;
+        margin-top: 2px;
+    }
+    .search_bar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 11px;
+        border-radius: 2px;
+        background-color: #fff;
+        width: 100%;
+        max-width: 564px;
+        margin-right: auto;
+        
+        
+    }
+    .search_bar input{
+        font-family: 'roboto';
+        padding: 0 16px;
+        border: none;
+        font-size: 13px;
+        height: 34px;
+        width: 100%;
+        min-width: 198px;
+        background: none;
+        border-radius: 2px;
+    }
+    .icon{
+        padding: 4px 12px 0 22px;
+    }
+    .icon svg{
+        width: 19px;
+        height: 19px;
+    }
+    .log_in{
+        background: #fff;
+        padding: 4px 40px 3px 40px;
+        border: 1px solid #dbdbdb;
+        margin: 0 20px 2px 20px;
+        border-radius: 2px;
+    }
+    .log_in span{
+        font-family: 'roboto-medium';
+        font-size: 14px;
+        letter-spacing: .5px;
+        line-height: 20px;
+        color: #2874f0;
+        font-weight: 500;
+    }
+    .header_text{
+        margin:  0 20px;
+        margin-bottom: 2px;
+    }
+    .header_text span,
+    .more_text span,
+    .cart_text span{
+        font-family: 'roboto-medium';
+        font-size: 14px;
+        font-weight: 500;
+        color: #fff;
+        letter-spacing: .1px;
+        white-space: nowrap;
+    }
+    .more,
+    .cart{
+        display: flex;
+        align-items: center;
+        margin: 0 20px;
+    }
+    .more{
+        margin-bottom: 2px;
+    }
+    .drop_down{
+        transform: rotate(-90deg);
+        margin: 4px 0 0 8px;
+    }
+    .bag{
+        margin: 0 8px;
+    }
+    nav{
+        box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
+        width: 100%;
+    }
+    .nav_container{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        max-width: 1248px;
+        margin-inline: auto;
+        padding: 0 1px;
+        height: 39px;
+        margin-top: -2px;
+        
+    }
+    .category{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .category span{
+        font-family: 'roboto-medium';
+        font-size: 13px;
+        letter-spacing: .01px;
+    }
+    .arrow_down svg{
+       width: 7px;
+       height: 7px;
+       transform: rotate(270deg);
+       margin-left: 6px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    header{
+        height: 55px;
+    }
+    .logo_container{
+        min-width: 137px;
+    }
+    .flipkart_text_one img{
+        width: 75px;
+        height: 20.11px;
+    }
+    .explore span, 
+    .plus_text span{
+        font-size: 11px;
+    }
+    .plus_logo img{
+        width: 10px;
+        height: 10px;
+    }
+    
+    .search_bar input{
+        height: 35px;
+       letter-spacing: .3px;
+
+    }
+    .icon svg{
+        width: 19px;
+        height: 19px;
+        margin-top: 1px;
+    }
+    .log_in{
+      
+        padding-bottom: 4px;
+    }
+    .log_in span{
+        font-size: 15px;
+        letter-spacing: .5px;
+    }
+    .header_text span, 
+    .more_text span,
+     .cart_text span{
+        font-size: 15.5px;
+
+     }
+     .header_text{
+        margin-right: 20px;
+        
+     }
+     .header_text,
+     .more_text{
+        margin-bottom: 3px;
+     }
+     .drop_down {
+        margin-top: 1px;
+     }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    header{
+        height: 56px;
+    }
+    .flipkart_text_one img{
+        height: 20px;
+    }
+    .flipkart_text_two{
+        margin-top: -9px;
+    }
+    .explore span{
+        margin-left: -4px;
+    }
+    .plus_logo img{
+        margin-top: 0;
+    }
+    .search_bar{
+        height: 36px;
+        margin-left: 12px;
+        min-width: 304px;
+    }
+    .search_bar input{
+        font-size: 14px;
+        letter-spacing: 0;
+        min-width: 216px;
+    }
+    .icon{
+        padding-right: 13px;
+        margin-left: -1px;
+    }
+    .icon svg{
+        width: 20px;
+        height: 20px;
+      
+    }
+    .log_in{
+        padding-top: 5px;
+        padding-bottom: 4px;
+       
+    }
+    .log_in span{
+        font-size: 16px;
+        letter-spacing: .1px;
+    }
+    .header_text{
+        margin-bottom: 2px;
+    }
+    .more_text{
+        margin-bottom: 0;
+    }
+    .header_text span,
+    .more_text span,
+    .cart_text span{
+        font-size: 16px;
+    
+    }
+    .more{
+        margin-right: -2px;
+    }
+    .cart_text{
+        margin-bottom: 2px;
+    }
+    .drop_down {
+        margin-left: 7px;
+        margin-top: 2px;
+    }
+    .nav_container{
+        height: 40px;
+        margin-top: 0;
+    }
+    .category span{
+        font-size: 14px;
+        letter-spacing: 0;
+    }
+    .arrow svg{
+        margin-left: 3px;
+    }
 }
