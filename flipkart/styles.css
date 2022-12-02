@@ -396,6 +396,8 @@ header{
     header{
         height: 52px;
         width: 100%;
+        /* position: sticky; */
+        
     }
     .blank{
         min-width: 124px;
@@ -575,16 +577,16 @@ header{
     }
     main{
         display: flex;
-        /* padding: 8px; */
-        min-width: 978px;
+        min-width: 903px;
         max-width: 1680px;
+        margin-inline: auto;
         background: #f1f3f6;
         padding-top: 6.37px;
         padding-left: 7.4px;
     }
     .main_left{
         padding-right: 10px;
-        max-width: 252px;
+      
     }
     .main_left_card{
         padding-bottom: 9px;
@@ -637,8 +639,9 @@ header{
     }
     .categories{
         background: #fff;
-        padding: 12px 14px 14px 15px;
+        padding: 12px 14px 20px 15px;
         border-bottom: 1px solid #f1f3f6;
+        width: 223px;
     }
     .category_text span{
         font-family: 'roboto-medium';
@@ -676,6 +679,221 @@ header{
         color: #212121;
         margin-left: 14px;
         padding-bottom: 7px;
+    }
+    .price_range{
+        background-color: #fff;
+        width: 222px;
+        padding: 14px 16px 16px 14px;
+        border-bottom: 1px solid #f1f3f6;
+    }
+    .heading_text{
+        margin-bottom: 5px;
+    }
+    .heading_text span{
+        font-family: 'roboto-medium';
+        font-size: 13px;
+        letter-spacing: -.2px;
+        color: #212121;
+    }
+    .range_graph{
+        margin-left: -1px;
+    }
+    .graph{
+        display: flex;
+        align-items: center;
+        margin-left: 2px;
+    }
+    .value{
+        height: 22px;
+        width: 44.5px;
+        background-color: #e0e0e0;
+    }
+    .value:nth-child(4){
+        height: 21px;
+        margin-bottom: -5px;
+        margin-left: -2px;
+    }
+    .value_selector{
+        display: flex;
+        align-items: center;
+        margin-top: -4px;
+        width: 232px;
+        margin-left: -3px;
+    }
+    .price_min{
+        width: 10.5px;
+        height: 10.5px;
+        background-color: #fff;
+        border: 1px solid #bababa;
+        border-radius: 20px;
+    }
+    .line_border{
+        width: 219px;
+        background-color: #2874f0;
+        height: 5.8px;
+    }
+    .doted_line{
+        display: flex;
+        gap: 40.5px;
+        margin-top: -5px;
+        margin-left: 1px;
+        
+    }
+    .dot{
+        color: #c2c2c2;
+    }
+    .price_range_selector{
+        display: flex;
+        align-items: center;
+        margin-top: 6px;
+        margin-left: -3px;
+        margin-right: -2px;
+    }
+    .price_value_selector{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5px;
+        border: 1px solid #e0e0e0;
+        border-radius: 1px;
+        height: 20px;
+    }
+    .price_value_selector:first-child{
+        width: 78px;
+    }
+    .price_value_selector:last-child{
+        width: 87px;
+    }
+    .value_text span{
+        font-family: 'roboto';
+        font-size: 13px;
+        line-height: 1px;
+        color: #212121;
+    }
+    .down_arrow{
+        margin-bottom: 3px;
+    }
+    .to_text span{
+        font-family: 'roboto';
+        font-size: 13px;
+        color: #878787;
+        margin: 0 14px;
+    }
+    .type_selector{
+        padding: 13px 16px 16px 15px;
+        background-color: #fff;
+        width: 221px;
+        border-bottom: 1px solid #f1f3f6;
+    }
+    .section_text{
+        display: flex;
+        justify-content: space-between;
+        margin-right: -4px;
+        
+    }
+    .up_arrow svg{
+        transform: rotate(90deg);
+        margin-top: 4.5px;
+        margin-right: 1px;
+    }
+
+    .selection_name,
+    .selection_name1{
+        display: flex;
+        align-items: center;
+        padding: 9px 0;
+        margin-left: -3px;
+        margin-top: -1px;
+    }
+    .selection_name label,
+    .selection_name1 label{
+        font-family: 'roboto';
+        font-size: 13px;
+        color: #212121;
+        padding-left: 8px;
+    }
+    input[type="checkbox"]{
+         appearance: none;
+         border: none;
+         outline: 1px solid #c2c2c2;
+         width: 11px;
+         height: 11px;
+         border-radius: 1.5px;
+    }
+    .flip_assured{
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        padding: 16px 16px 16px 16px;
+        width: 220px;
+        border-bottom: 1px solid #f1f3f6;
+    }
+    .assured{
+        width: 72px;
+        height: 22px;
+        padding-left: 7px;
+        padding-right: 95px;
+    }
+    .assured img{
+        width: 100%;
+    }
+    .question{
+        width: 13px;
+        height: 13px;
+        border-radius: 20px;
+        margin: 0px 2px 0px 8px;
+        color: #878787;
+        border: 1px solid #e0e0e0;
+        box-shadow: 0 0 1px 0 rgb(0 0 0 / 20%);
+        font-family: 'roboto-medium';
+        font-size: 11px;
+        display: flex;
+        justify-content: center;
+
+    }
+    .flip_assured .input{
+        margin-left: -4px;
+    }
+  
+    .selector{
+        padding: 14px 16px 16px 16px;
+        background-color: #fff;
+        width: 220px;
+        border-bottom: 1px solid #f1f3f6;
+    }
+     .selector .up_arrow svg{
+        transform: rotate(270deg);
+
+    }
+    .help_box{
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .help_text{
+        display: flex;
+        align-items: center;
+    }
+    .help_text span{
+        font-family: 'roboto';
+        font-size: 13px;
+        color: #212121;
+    }
+    .help_text p{
+        font-family: 'roboto';
+        font-size: 17;
+        color: #2874f0;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+    .help_text svg{
+        width: 9px;
+        height: 9px;
+        margin-left: 4px;
+        transform: rotate(180deg);
+        margin-bottom: 12px;
     }
 }
 
@@ -806,6 +1024,8 @@ header{
     .nav_container{
         height: 40px;
         margin-top: 0;
+        padding-left: 16px;
+        padding-right: 30px;
     }
     .category span{
         font-size: 14px;
@@ -814,4 +1034,190 @@ header{
     .arrow svg{
         margin-left: 3px;
     }
+    main{
+        padding: 7px 8px;
+    }
+    .main_left{
+        max-width: 270px;
+    }
+    .card_image{
+        width: 270px;
+        height: 144.63px;
+    }
+    .card_text{
+        padding: 14px 16px 16px 16px;
+    }
+    .card_text h3{
+        font-size: 16px;
+        letter-spacing: 0;
+    }
+    .card_text p{
+        letter-spacing: 0;
+        margin-top: 3px;
+    }
+    .main_left_card{
+        padding-bottom: 10px;
+    }
+    .filter_text{
+        padding: 18px 16px 13px 16px;
+    }
+    .aside_container,
+    .categories,
+    .price_range,
+    .value_selector,
+    .type_selector,
+    .selector,
+    .flip_assured{
+        width: auto;
+    }
+    .filter_text span{
+        font-size: 18px;
+        letter-spacing: .3px;
+    }
+    .categories{
+        padding: 15px 14px 22px 16px;
+    }
+    .category_text span{
+        font-size: 12px;
+        letter-spacing: 0;
+    }
+    .category_one span{
+        font-size: 14px;
+        margin-left: 8px;
+    }
+    .category_list{
+        padding-top: 13px;
+        padding-bottom: 8px;
+    }
+    .category_list .arrow svg{
+        margin-left: 0;
+        margin-bottom: 1px;
+    }
+    .category_name span{
+        font-size: 14px;
+        margin-left: 15px;
+    }
+    .price_range{
+        padding: 16px;
+    }
+    .heading_text span{
+        letter-spacing: .3px;
+    }
+    .graph{
+        margin-left: .8px;
+    }
+    .value{
+        width: 47.8px;
+        height: 23px;
+    }
+    .price_min{
+        width: 11.5px;
+        height: 11.5px;
+    }
+    .value_selector{
+        margin-left: -5px;
+        margin-right: -6px;
+    }
+    .line_border{
+        height: 6px;
+        width: 240px;
+        margin-bottom: -1px;
+    }
+    .price_range .heading_text{
+        margin-bottom: 6px;
+    }
+    .doted_line{
+        gap: 42.9px;
+        margin-top: -7px;
+        margin-left: -.08px;
+    }
+    .dot{
+        font-size: 18px;
+    }
+    .value_text span{
+        font-size: 14px;
+        margin-top: 2px;
+    }
+    .price_range_selector{
+        margin: 7px -4px 0px -4px;
+    }
+    .price_value_selector:first-child{
+        width: 92.43px;
+        height: 22px;
+    }
+    .price_value_selector:last-child{
+        width: 100.74px;
+        height: 22px;
+    }
+    .value_text,
+    .to_text{
+        margin-top: 1px;
+    }
+    .down_arrow{
+        margin-bottom: 4px;
+        margin-right: 4px;
+    }
+    .to_text span{
+        font-size: 14px;
+        margin-left: 13px;
+        margin-right: 15px;
+    }
+    .type_selector{
+        padding: 16px 16px 18px 16px;
+    }
+    .selection_name label,
+    .selection_name1 label{
+        font-size: 14px;
+        padding-left: 9px;
+    }
+    input[type="checkbox"]{
+        width: 12px;
+        height: 12px;
+    }
+    .selection_name1{
+        padding: 11px 0;
+    }
+    .up_arrow svg{
+        margin-top: 4.17px;
+        margin-right: 2px;
+    }
+    .assured{
+        width: 77px;
+        height: 21px;
+        padding-left: 9px;
+        padding-right: 110px;
+    }
+    .flip_assured{
+        padding-top: 15px;
+        /* padding-bottom: 15px; */
+       
+    }
+    .question{
+        width:14px;
+        height: 13px;
+        padding-top: 1px;
+    }
+    .flip_assured input{
+        margin-left: 5px;
+        margin-top: 2px;
+    }
+    .selection_name{
+        padding: 7px 0px;
+    }
+    .selector{
+        padding: 16px;
+    }
+    .help_text span{
+        font-size: 14px;
+        
+    }
+    .help_text p{
+        font-size: 18px;
+    }
+    .help_box svg{
+        width: 11px;
+        height: 11px;
+        margin-bottom: 13px;
+    }
+  
 }
