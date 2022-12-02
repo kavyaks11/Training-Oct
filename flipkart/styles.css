@@ -392,13 +392,19 @@ header{
     }
     .desktop_view{
         display: flex;
+        flex-direction: column;
     }
-    header{
+    .desktop_header{
         height: 52px;
         width: 100%;
         position: fixed;
         top: 0;
         z-index: 5;
+        font-family: 'roboto';
+        background: rgba(40, 116, 240);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
         
     }
     .blank{
@@ -408,7 +414,6 @@ header{
         overflow: hidden;
         width: 100%;
         display: flex;
-        /* height: 56px; */
     }
     .header_container{
         display: flex;
@@ -577,17 +582,17 @@ header{
        transform: rotate(270deg);
        margin-left: 6px;
     }
-    main{
+    .desktop_main{
         display: flex;
-        min-width: 903px;
-        max-width: 1680px;
-        margin-inline: auto;
         background: #f1f3f6;
         padding-top: 6.37px;
         padding-left: 7.4px;
     }
     .main_container{
         display: flex;
+        min-width: 903px;
+        max-width: 1680px;
+        margin-inline: auto;
     }
     .main_left{
         padding-right: 10px;
@@ -925,12 +930,19 @@ header{
     .item_links{
         padding: 12px 5px 4px 0px;
     }
+    .item_links p{
+        margin: 0;
+        line-height: 1.4;
+        font-size: 12px;
+    }
     .item_links span{
+        font-family: 'roboto-medium';
         font-size: 11px;
         color: #878787;
     }
     .mi_mobiles{
         display: flex;
+        margin-top: 9px;
     }
     .mi_mobiles_text span{
         font-family: 'roboto-medium';
@@ -961,11 +973,16 @@ header{
         padding: 8px 0px 4px;
         margin: 0 10px;
     }
+    .sort_item:hover{
+        color: #2874f0;
+        border-bottom: 2px solid #2874f0;
+        font-family: 'roboto-medium';
+    }
     
 }
 
 @media screen and (min-width: 960px) {
-    header{
+    .desktop_header{
         height: 55px;
     }
     .logo_container{
@@ -1023,7 +1040,7 @@ header{
 }
 
 @media screen and (min-width: 1024px) {
-    header{
+    .desktop_header{
         height: 56px;
     }
     .flipkart_text_one img{
@@ -1104,7 +1121,7 @@ header{
     .arrow svg{
         margin-left: 3px;
     }
-    main{
+    .desktop_main{
         padding: 7px 8px;
     }
     .main_left{
@@ -1259,7 +1276,7 @@ header{
     }
     .flip_assured{
         padding-top: 15px;
-        /* padding-bottom: 15px; */
+  
        
     }
     .question{
@@ -1294,6 +1311,39 @@ header{
     }
     .path svg{
         width: 12.5px;
+    }
+    .path span:nth-child(3){
+        margin-left: 1px;
+        margin-right: 2px;
+    }
+    .path span:last-child{
+        margin-left: .5px;
+    }
+    .item_links{
+        padding-top: 13px;
+    }
+    .item_links a{
+        font-size: 12px;
+    }  
+    .space{
+        margin-right: 3px;
+    }
+  
+    .mi_mobiles_text span{
+        font-size: 16px;
+    }
+    .products{
+        margin-top: 2px;
+    }
+    .products span{
+        font-size: 12px;
+        margin-bottom: px;
+    }
+    .sort_list{
+        margin-top: 3px;
+    }
+    .sort_item{
+        font-size: 14px;
     }
    
   
