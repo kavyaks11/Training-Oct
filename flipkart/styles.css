@@ -594,11 +594,11 @@ header{
         /* max-width: 1680px;
         margin-inline: auto; */
     }
-    .main_left{
+    .filter_info{
         padding-right: 10px;
       
     }
-    .main_left_card{
+    .filter_info_card{
         padding-bottom: 9px;
       
     }
@@ -992,11 +992,12 @@ header{
     }
     .main_card_text{
         padding-left: 25px;
-        /* width: 25vw; */
+        width: 25vw;
     }
     .main_card_image{
         width: 158px;
         height: 185px;
+        margin-left: 10px;
     }
     .main_card_image img{
         width: 100%;
@@ -1235,7 +1236,7 @@ header{
     .desktop_main{
         padding: 7px 8px;
     }
-    .main_left{
+    .filter_info{
         max-width: 270px;
     }
     .card_image{
@@ -1253,7 +1254,7 @@ header{
         letter-spacing: 0;
         margin-top: 3px;
     }
-    .main_left_card{
+    .filter_info_card{
         padding-bottom: 10px;
     }
     .filter_text{
@@ -1400,7 +1401,7 @@ header{
         margin-top: 2px;
     }
     .selection_name{
-        padding: 7px 0px;
+        padding: 10px 0px;
     }
     .selector{
         padding: 16px;
@@ -1455,6 +1456,30 @@ header{
     }
     .sort_item{
         font-size: 14px;
+    }
+    .main_card_image{
+        width: 172.1px;
+        height: 200px;
+        margin-left: 14px;
+        margin-top: 4px;
+    }
+    .card_item_name{
+        font-size: 18px;
+        line-height: 1;
+    }
+    .rating_text span{
+        font-size: 14px;
+    }
+    .item_specialities li{
+        font-size: 14px;
+    }
+    .like{
+        top: 6px;
+        right: -22px;
+    }
+    .main_card_text{
+        padding-top: 4px;
+        padding-left: 39px;
     }
    
   
