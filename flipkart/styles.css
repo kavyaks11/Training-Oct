@@ -979,6 +979,7 @@ header{
         color: #2874f0;
         border-bottom: 2px solid #2874f0;
         font-family: 'roboto-medium';
+       
     }
     .main_cards{
         padding: 24px 0px 30px 24px;
@@ -1032,15 +1033,30 @@ header{
         color: #212121;
         padding-right: 8px;
         line-height: 22px;
+        text-align: l;
     }
     li::before{
         content: '•';
         color: rgb(194, 194, 194);
         padding-right: 8px;
         font-size: 15px;
+        display:table-cell;
     }
     .price_details{
         padding-left: 25px;
+    }
+    .price_and_offer{
+        display: flex;
+    }
+    .price_and_offer .old_price span{
+        font-family: 'roboto';
+        font-size: 14px;
+        margin-left: 0;
+        margin-right: 5px;
+    }
+    .price_and_offer .offer span{
+        font-family: 'roboto-medium';
+        font-size: 13px;
     }
     .flipkart_assured_image img{
         width: 100%;
@@ -1089,6 +1105,9 @@ header{
         font-size: 13px;
         color: #212121;
         margin-left: 8px;
+    }
+    .assured_price .flip_assured_image{
+        display: none;
     }
   
 }
@@ -1457,11 +1476,16 @@ header{
     .sort_item{
         font-size: 14px;
     }
-    .main_card_image{
-        width: 172.1px;
+    .main_cards:nth-child(2) .main_card_image{
+        width: 166px;
         height: 200px;
-        margin-left: 14px;
+        margin-left: 17px;
         margin-top: 4px;
+    }
+    .main_cards:nth-child(1) .main_card_image{
+        width: ;
+        height: 200px;
+        margin-left: 16px;
     }
     .card_item_name{
         font-size: 18px;
@@ -1470,17 +1494,66 @@ header{
     .rating_text span{
         font-size: 14px;
     }
+    ul{
+        width: 99%;
+    }
     .item_specialities li{
         font-size: 14px;
     }
     .like{
         top: 6px;
-        right: -22px;
+        right: -25px;
     }
     .main_card_text{
         padding-top: 4px;
-        padding-left: 39px;
+        padding-left: 42px;
+        width: 58.33%;
     }
-   
+    .assured_price{
+        display: flex;
+    }
+    .assured_price .flip_assured_image{
+        display: flex;
+    }
+    .flipkart_assured_image{
+        display: none;
+    }  
+    .flip_assured_image{
+        width: 77px;
+        height: 21px;
+        padding-left: 20px;
+    } 
+    .flip_assured_image img{
+        width: 100%;
+        height: 100%;
+    }
+    .price_and_offer .old_price{
+        font-family: 14px;
+    }
+    .compare{
+        margin-top: 16px;
+        margin-left: -3px;
+    }
+    .compare label{
+        font-size: 14px;
+        margin-left: 6px;
+    }
+    .star button{
+        align-items: flex-start;
+    }
+    .star button span{
+        font-size: 13.5px;
+        margin-left: 1px;
+        margin-bottom: .5px;
+    }
+    .rating{
+        margin-top: 6px;
+    }
+    .rating_text span{
+        padding-left: 8.9px;
+    }
+    .price_value span{
+        font-size: 25px;
+    }
   
 }
