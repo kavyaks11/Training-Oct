@@ -1180,6 +1180,17 @@ header{
         margin-right: 8px;
         border: 1px solid #d7d7d7;
     }
+    .review_card{
+        display: flex;
+    }
+    .review_item_image{
+        width: 70.5px;
+        height: 150px;
+    }
+    .review_item_image img{
+        width: 100%;
+        height: 100%;
+    }
 
   
 }
