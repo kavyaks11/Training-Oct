@@ -1297,13 +1297,80 @@ header{
         margin-right: 3px;
     }
     .review_card:nth-child(4) .review_item_image{
-        width: 150px;
-        margin: 0 25px
+        width: 140px;
+        margin: 0 27px
      }
-    
-    
+     .review_card:nth-child(5)  .reviews:nth-child(4) button{
+        background-color: #ff9f00;
+     }
+     .certified{
+        margin-left: 4px;
+     }
+     footer{
+        background: #172337;
+        font-family: 'roboto';
+     }
+     .footer_container{
+        display: flex;
+        margin-left: 65px;
+        padding-top: 40px;
+        width: 90%;
+     }
+     .footer_menu{
+        flex: 1;
+     }
+     
+     .list{
+        display: flex;
+        flex-direction: column;
+       
+     }
+     .menu_name,
+     .address_text{
+        font-size: 12px;
+        color: #878787;
+        margin-bottom: 9px;
+     }
+     .list a{
+        line-height: 2;
+     }
 
-  
+     .list a,
+     .list p{
+        font-size: 12px;
+        color: #ffff;
+        text-decoration: none;
+     }
+     .list p{
+        margin: 0;
+        line-height: 1.5;
+     }
+     .address:nth-child(5){
+        padding: 0 25px;
+        border-left: 1px solid #454d5e;
+        height: 138px;
+     }
+     .address:nth-child(6){
+        padding-left: 14px;
+        padding-bottom: 10px;
+     }
+     .list span{
+        color: #2874f0;
+     }
+     .footer_nav_container{
+        padding: 25px 0;
+        margin-top: 40px;
+        border-top: 1px solid #454d5e;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+     }
+     .nav_element span{
+        font-family: 'roboto';
+        color: #fff;
+        margin-left: 4px;
+        font-size: 14px;
+     }
 }
 
 @media screen and (min-width: 960px) {
@@ -1753,11 +1820,11 @@ header{
     }
     .review_card .price span,
     .review_card .item_details span,
-    .reviews span,
-    .review p
+    .review_type,
+    .review span,
+    .review p,
+    .review_text span
     {
         font-size: 14px;
     }
-   
-  
 }
