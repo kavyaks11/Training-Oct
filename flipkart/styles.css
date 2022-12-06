@@ -482,8 +482,6 @@ header{
         width: 100%;
         max-width: 564px;
         margin-right: auto;
-        
-        
     }
     .search_bar input{
         font-family: 'roboto';
@@ -545,6 +543,9 @@ header{
         transform: rotate(-90deg);
         margin: 4px 0 0 8px;
     }
+    .drop_down svg{
+        opacity: .8;
+    }
     .bag{
         margin: 0 8px;
     }
@@ -576,11 +577,12 @@ header{
         font-size: 13px;
         letter-spacing: .01px;
     }
-    .arrow_down svg{
+    .category .arrow_down svg{
        width: 7px;
        height: 7px;
        transform: rotate(270deg);
        margin-left: 6px;
+       opacity: .5;
     }
     .desktop_main{
         display: flex;
@@ -591,8 +593,6 @@ header{
     .main_container{
         display: flex;
         min-width: 903px;
-        /* max-width: 1680px;
-        margin-inline: auto; */
     }
     .filter_info{
         padding-right: 10px;
@@ -905,9 +905,7 @@ header{
         transform: rotate(180deg);
         margin-bottom: 12px;
     }
-    .main_right_section{
-        /* background: #fff; */
-    }
+   
     .section_header{
         padding: 12px 16px 0px;
         border-bottom: 1px solid #f1f3f6;
@@ -1313,7 +1311,7 @@ header{
      .footer_container{
         display: flex;
         margin-left: 65px;
-        padding-top: 40px;
+        padding-top: 41px;
         width: 90%;
      }
      .footer_menu{
@@ -1329,7 +1327,7 @@ header{
      .address_text{
         font-size: 12px;
         color: #878787;
-        margin-bottom: 9px;
+        margin-bottom: 11px;
      }
      .list a{
         line-height: 2;
@@ -1358,7 +1356,8 @@ header{
         color: #2874f0;
      }
      .footer_nav_container{
-        padding: 25px 0;
+        padding-top: 24px;
+        padding-bottom: 27px;
         margin-top: 40px;
         border-top: 1px solid #454d5e;
         display: flex;
@@ -1827,4 +1826,9 @@ header{
     {
         font-size: 14px;
     }
+    .footer_nav_container{
+        margin-left: 1px;
+    }
+
 }
+
