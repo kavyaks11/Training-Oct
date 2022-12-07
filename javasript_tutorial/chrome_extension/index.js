@@ -348,21 +348,23 @@ inputBtn.addEventListener("click", function() {
 // }
 
 
-let number = 12
-let prime = "Prime number"
-let nonPrime = "Not a prime number"
+let number = 5
+let a = 0
 
-function primeNumber(){
 
-    for(let i = 0; i < number; i++){
-        if (number % i === 0){
-               console.log(number % i)
-               return nonPrime
-                    
-        } else{
-            return prime
+
+for(let i = 1; i <= number; i++){
         
-        }
-    }
+        if (number % i === 0){
+            a++      
+    } 
 }
-console.log(primeNumber())
+console.log(a)  
+if(number <= 1){
+    console.log( number + " is not a prime number")
+}
+else if(a < 3){
+    console.log(number + " is a prime number")
+} else {
+    console.log( number + " is not a prime number")
+}
