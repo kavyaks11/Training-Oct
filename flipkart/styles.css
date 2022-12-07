@@ -2,6 +2,10 @@
     font-family: 'roboto';
     src: url(font/roboto-regular.woff2);
 }
+@font-face {
+    font-family: 'roboto-medium';
+    src: url(font/roboto-medium-webfont.woff2);
+}
 body{
     
     margin:0;
@@ -75,6 +79,10 @@ header{
 .sort_and_filter{
     display: flex;
     align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 5;
+    background-color: white;
 }
 .sort{
     display: flex;
@@ -160,34 +168,57 @@ header{
 }
 .border_image{
     margin-top: -1px;
+    position: sticky;
+    top: 38px;
 }
 .border_image img{
     width: 100%;
     height: 4px;
     opacity: 1;
 }
+
+.card{
+    position: relative;
+    border-bottom: 1px solid #ebebeb;
+    margin-top: 9px;
+}
+.card:first-child{
+    margin-top: 0;
+}
 .item{
     padding: 12px 0px 12px 5px;
     display: flex;
-
 }
 .item_image{
-    padding-top: 8px;
+    padding-top: 9px;
 }
 .item_image img{
     width: 96px;
-    height: 120px;
+    height: 114px;
+}
+.card:nth-child(2) .item_image{
+    padding-top: 10px;
+}
+.card:nth-child(2) .item_image img{
+    height: 112px;
+}
+.card:nth-child(4) .item_image{
+    padding-top: 8px;
+}
+.card:last-child .item_image{
+    padding-top: 20px;
+}
+.card:last-child .item_image img{
+    height: 88px;
 }
 .item_details{
     display: flex;
     flex-direction: column;
     margin: 2px 0px 6px;
     padding: 0px 20px 0px 12px;
-    /* flex: 1 1 0%; */
-    /* gap: 5px; */
 }
 .item_name{
-    width: 163px;
+    width: 50.94vw;
     line-height: 15.9px;
 }
 .item_name span{
@@ -212,7 +243,6 @@ header{
     width: 38.88px;
 }
 .star button a{
-    /* font-family: 'roboto'; */
     font-family:  Medium,Roboto-Medium,Droid Sans,HelveticaNeue-Medium,Helvetica Neue Medium,sans-serif-medium;
     text-decoration: none;
     font-size: 12px;
@@ -238,9 +268,25 @@ header{
     padding-top: 3px;
     padding-left: 1px;
 }
-.price span{
-    font-size: 16px;
+.price{
+    display: flex;
+    align-items: center;
+}
+.old_price span{
+    font-size: 12px;
+    color: #878787;
+    text-decoration: line-through;
     
+}
+.new_price span{
+    font-size: 16px;
+    margin-left: 7px;
+}
+.card:nth-child(2) .new_price span{
+    margin-left: 0;
+}
+.price .offer{
+    margin-left: 4px;
 }
 .delivery{
     margin-top: 2px;
@@ -250,13 +296,12 @@ header{
     font-family: 'roboto';
     font-size: 12px;
 }
-.bank_offer span{
+.offer span{
     font-size: 12px;
     color: #26a541;
 }
 .details{
     display: flex;
-    max-width: 304px;
     flex-wrap: wrap;
     margin-top: -1px;
 }
@@ -275,7 +320,7 @@ header{
 }
 .like_button img{
     width: 18px;
-    height: 17px;
+    height: 16px;
     text-align: center;
 }
 .like_button{
@@ -284,6 +329,1506 @@ header{
     justify-content: center;
     box-shadow: 0px 1px 3px rgb(0 0 0 / 16%);
     border-radius: 20px;
-    height: 36px;
+    height: 35px;
     width: 36px;
+    position: absolute;
+    top: 0;
+    right: 8px;
 }
+.card:first-child .like_button span{
+    height: 16px;
+}
+.card .like_button span{
+    height: 14px;
+}
+.card_limited{
+    padding: 8px 0px 9px 0px;
+    background: #f0f0f0;
+}
+.card_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 16px 11px 16px;
+    background: #fff;
+}
+.card_body{
+    display: flex;
+    align-items: center;
+}
+.card_limited img{
+    width: 70px;
+    height: 70px;
+}
+.card_text{
+    padding: 0 20px 4px 18px;
+}
+.card_text span{
+    color: #212121;
+    font-size: 16px;
+}
+.card_text p{
+    font-family: 'roboto';
+    font-size: 12px;
+    color: #878787;
+    margin: 0;
+    margin-top: 2px;
+}
+.arrow{
+    width: 7px;
+    padding-bottom: 2px;
+}
+.arrow img{
+    width: 6px;
+    height: 10px;
+}
+.desktop_view{
+    display: none;
+}
+
+@media screen and (min-width: 911px) {
+    .mobile_view{
+        display: none;
+    }
+    .desktop_view{
+        display: flex;
+        flex-direction: column;
+    }
+    .desktop_header{
+        height: 52px;
+        width: 100%;
+        position: fixed;
+        top: 0;
+        z-index: 5;
+        font-family: 'roboto';
+        background: rgba(40, 116, 240);
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        
+    }
+    .blank{
+        min-width: 124px;
+    }
+    .header{
+        overflow: hidden;
+        width: 100%;
+        display: flex;
+    }
+    .header_container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        max-width: 1248px;
+        margin: 0 auto;
+        width: 100%;
+    }
+    .logo_container{
+        min-width: 125px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-top: 0;
+        
+    }
+    .flipkart_text_one img{
+        width: 70px;
+        height: 18.07px;
+    } 
+    .flipkart_text_two{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: -10px;
+    }
+    .explore span, 
+    .plus_text span{
+        font-size: 10px;
+        letter-spacing: 0;
+        font-style: italic;
+    }
+    .explore span{
+        font-weight: 400;
+        color: #fff;
+        margin-right: 3px;
+        margin-left: -6px;
+    }
+    .plus_logo{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .plus_text span{
+        font-weight: 500;
+        color: #ffe500;
+        margin-right: 2px;
+    }
+    .plus_logo img{
+        width: 9px;
+        height: 9px;
+        margin-top: 2px;
+    }
+    .search_bar{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-left: 11px;
+        border-radius: 2px;
+        background-color: #fff;
+        width: 100%;
+        max-width: 564px;
+        margin-right: auto;
+    }
+    .search_bar input{
+        font-family: 'roboto';
+        padding: 0 16px;
+        border: none;
+        font-size: 13px;
+        height: 34px;
+        width: 100%;
+        min-width: 198px;
+        background: none;
+        border-radius: 2px;
+    }
+    .icon{
+        padding: 4px 12px 0 22px;
+    }
+    .icon svg{
+        width: 19px;
+        height: 19px;
+    }
+    .log_in{
+        background: #fff;
+        padding: 4px 40px 3px 40px;
+        border: 1px solid #dbdbdb;
+        margin: 0 20px 2px 20px;
+        border-radius: 2px;
+    }
+    .log_in span{
+        font-family: 'roboto-medium';
+        font-size: 14px;
+        letter-spacing: .5px;
+        line-height: 20px;
+        color: #2874f0;
+        font-weight: 500;
+    }
+    .header_text{
+        margin:  0 20px;
+        margin-bottom: 2px;
+    }
+    .header_text span,
+    .more_text span,
+    .cart_text span{
+        font-family: 'roboto-medium';
+        font-size: 14px;
+        font-weight: 500;
+        color: #fff;
+        letter-spacing: .1px;
+        white-space: nowrap;
+    }
+    .more,
+    .cart{
+        display: flex;
+        align-items: center;
+        margin: 0 20px;
+    }
+    .more{
+        margin-bottom: 2px;
+    }
+    .drop_down{
+        transform: rotate(-90deg);
+        margin: 4px 0 0 8px;
+    }
+    .drop_down svg{
+        opacity: .8;
+    }
+    .bag{
+        margin: 0 8px;
+    }
+    nav{
+        width: 100%;
+        border-bottom: 1px solid #ebebeb;
+        padding-top: 52px;
+    }
+    .nav_container{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        max-width: 1248px;
+        margin-inline: auto;
+        padding: 0 1px;
+        height: 39px;
+        margin-top: -2px;
+        box-shadow: 0 1px 1px 0 rgb(0 0 0 / 16%);
+        
+    }
+    .category{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    .category span{
+        font-family: 'roboto-medium';
+        font-size: 13px;
+        letter-spacing: .01px;
+    }
+    .category .arrow_down svg{
+       width: 7px;
+       height: 7px;
+       transform: rotate(270deg);
+       margin-left: 6px;
+       opacity: .5;
+    }
+    .desktop_main{
+        display: flex;
+        background: #f1f3f6;
+        padding-top: 6.37px;
+        padding-left: 7.4px;
+    }
+    .main_container{
+        display: flex;
+        min-width: 903px;
+    }
+    .filter_info{
+        padding-right: 10px;
+      
+    }
+    .filter_info_card{
+        padding-bottom: 9px;
+      
+    }
+    .main_card_container{
+        background-color: #fff;
+        box-shadow: 0 1px 8px 0 rgb(0 0 0 / 6%);
+    }
+    .card_image{
+        height: 135px;
+        width: 252px;
+     
+    }
+    .card_image img{
+       width: 100%;
+       height: 100%;
+    }
+    .card_text{
+        padding: 13px 16px 15px 14.5px;
+        border-top: 1px solid #f1f3f6;
+    }
+    .card_text h3{
+        font-family: 'roboto-medium';
+        font-weight: 500;
+        font-size: 15px;
+        margin: 0;
+        letter-spacing: -0.003ch;
+        line-height: 1.2;
+        color: #212121;
+    }
+    .card_text p{
+        color: #212121;
+        letter-spacing: -0.055ch;
+        font-size: 12px;
+    }
+    .aside_container{
+        background: #fff;
+        width: 252px;
+        box-shadow: 0 1px 8px 0 rgb(0 0 0 / 6%);
+    }
+    .filter_text{
+        padding: 18px 12px 12px 14px;
+        border-bottom: 1px solid #f1f3f6;
+    }
+    .filter_text span{
+        font-family: 'roboto-medium';
+        font-size: 16.5px;
+        letter-spacing: .5px;
+    }
+    .categories{
+        background: #fff;
+        padding: 12px 14px 20px 15px;
+        border-bottom: 1px solid #f1f3f6;
+        width: 223px;
+    }
+    .category_text span{
+        font-family: 'roboto-medium';
+        font-size: 11px;
+        color: #212121;
+        letter-spacing: .1px;
+        
+        
+    }
+    .category_list{
+        display: flex;
+        align-items: center;
+        padding-top: 10px;
+        padding-bottom: 7px;
+    }
+    .category_one{
+        margin-top: -4px;
+    }
+    .category_one span{
+        font-family: 'roboto';
+        font-size: 13px;
+        color: #878787;
+        margin-left: 7px;
+    }
+    .category_list .arrow{
+        margin-top: -1px;
+    }
+    .category_list .arrow svg{
+        width: 9.5px;
+        height: 9.5px;
+    }
+    .category_name span{
+        font-family: 'roboto-medium';
+        font-size: 13px;
+        color: #212121;
+        margin-left: 14px;
+        padding-bottom: 7px;
+    }
+    .price_range{
+        background-color: #fff;
+        width: 222px;
+        padding: 14px 16px 16px 14px;
+        border-bottom: 1px solid #f1f3f6;
+    }
+    .heading_text{
+        margin-bottom: 5px;
+    }
+    .heading_text span{
+        font-family: 'roboto-medium';
+        font-size: 13px;
+        letter-spacing: -.2px;
+        color: #212121;
+    }
+    .range_graph{
+        margin-left: -1px;
+    }
+    .graph{
+        display: flex;
+        align-items: center;
+        margin-left: 2px;
+    }
+    .value{
+        height: 22px;
+        width: 44.5px;
+        background-color: #e0e0e0;
+    }
+    .value:nth-child(4){
+        height: 21px;
+        margin-bottom: -5px;
+        margin-left: -2px;
+    }
+    .value_selector{
+        display: flex;
+        align-items: center;
+        margin-top: -4px;
+        width: 232px;
+        margin-left: -3px;
+    }
+    .price_min{
+        width: 10.5px;
+        height: 10.5px;
+        background-color: #fff;
+        border: 1px solid #bababa;
+        border-radius: 20px;
+    }
+    .line_border{
+        width: 219px;
+        background-color: #2874f0;
+        height: 5.8px;
+    }
+    .doted_line{
+        display: flex;
+        gap: 40.5px;
+        margin-top: -5px;
+        margin-left: 1px;
+        
+    }
+    .dot{
+        color: #c2c2c2;
+    }
+    .price_range_selector{
+        display: flex;
+        align-items: center;
+        margin-top: 6px;
+        margin-left: -3px;
+        margin-right: -2px;
+    }
+    .price_value_selector{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 5px;
+        border: 1px solid #e0e0e0;
+        border-radius: 1px;
+        height: 20px;
+    }
+    .price_value_selector:first-child{
+        width: 78px;
+    }
+    .price_value_selector:last-child{
+        width: 87px;
+    }
+    .value_text span{
+        font-family: 'roboto';
+        font-size: 13px;
+        line-height: 1px;
+        color: #212121;
+    }
+    .down_arrow{
+        margin-bottom: 3px;
+    }
+    .to_text span{
+        font-family: 'roboto';
+        font-size: 13px;
+        color: #878787;
+        margin: 0 14px;
+    }
+    .type_selector{
+        padding: 13px 16px 16px 15px;
+        background-color: #fff;
+        width: 221px;
+        border-bottom: 1px solid #f1f3f6;
+    }
+    .section_text{
+        display: flex;
+        justify-content: space-between;
+        margin-right: -4px;
+        
+    }
+    .up_arrow svg{
+        transform: rotate(90deg);
+        margin-top: 4.5px;
+        margin-right: 1px;
+    }
+
+    .selection_name,
+    .selection_name1{
+        display: flex;
+        align-items: center;
+        padding: 9px 0;
+        margin-left: -3px;
+        margin-top: -1px;
+    }
+    .selection_name label,
+    .selection_name1 label{
+        font-family: 'roboto';
+        font-size: 13px;
+        color: #212121;
+        padding-left: 8px;
+    }
+    input[type="checkbox"]{
+         appearance: none;
+         border: none;
+         outline: 1px solid #c2c2c2;
+         width: 11px;
+         height: 11px;
+         border-radius: 1.5px;
+    }
+    .flip_assured{
+        display: flex;
+        align-items: center;
+        background-color: #fff;
+        padding: 16px 16px 16px 16px;
+        width: 220px;
+        border-bottom: 1px solid #f1f3f6;
+    }
+    .assured{
+        width: 72px;
+        height: 22px;
+        padding-left: 7px;
+        padding-right: 95px;
+    }
+    .assured img{
+        width: 100%;
+    }
+    .question{
+        width: 13px;
+        height: 13px;
+        border-radius: 20px;
+        margin: 0px 2px 0px 8px;
+        color: #878787;
+        border: 1px solid #e0e0e0;
+        box-shadow: 0 0 1px 0 rgb(0 0 0 / 20%);
+        font-family: 'roboto-medium';
+        font-size: 11px;
+        display: flex;
+        justify-content: center;
+
+    }
+    .flip_assured .input{
+        margin-left: -4px;
+    }
+  
+    .selector{
+        padding: 14px 16px 16px 16px;
+        background-color: #fff;
+        width: 220px;
+        border-bottom: 1px solid #f1f3f6;
+    }
+     .selector .up_arrow svg{
+        transform: rotate(270deg);
+
+    }
+    .help_box{
+        padding-top: 30px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .help_text{
+        display: flex;
+        align-items: center;
+    }
+    .help_text span{
+        font-family: 'roboto';
+        font-size: 13px;
+        color: #212121;
+    }
+    .help_text p{
+        font-family: 'roboto';
+        font-size: 17;
+        color: #2874f0;
+        margin-top: 5px;
+        margin-bottom: 20px;
+    }
+    .help_text svg{
+        width: 9px;
+        height: 9px;
+        margin-left: 4px;
+        transform: rotate(180deg);
+        margin-bottom: 12px;
+    }
+   
+    .section_header{
+        padding: 12px 16px 0px;
+        border-bottom: 1px solid #f1f3f6;
+        background: #fff;
+    }
+    .path svg{
+        width: 15px;
+        height: 7px;
+        transform: rotate(180deg);
+    }
+    .path span{
+       font-family: 'roboto';
+       font-size: 12px;
+       color: #878787;
+    }
+    .item_links a{
+        font-family: 'roboto';
+        color: #2874f0;
+        font-size: 11px;
+        text-decoration: none;
+        letter-spacing: 0;
+    }
+    .item_links{
+        padding: 12px 5px 4px 0px;
+    }
+    .item_links p{
+        margin: 0;
+        line-height: 1.4;
+        font-size: 12px;
+    }
+    .item_links span{
+        font-family: 'roboto-medium';
+        font-size: 11px;
+        color: #878787;
+    }
+    .mi_mobiles{
+        display: flex;
+        margin-top: 9px;
+    }
+    .mi_mobiles_text span{
+        font-family: 'roboto-medium';
+        font-size: 15px;
+        color: #212121;
+        margin-top: 8px;
+    }
+    .products span{
+        font-family: 'roboto';
+        font-size: 11px;
+        color: #878787;
+        margin-left: 10px;
+    }
+    .sort_list{
+        display: flex;
+
+    }
+    .sort_by{
+        font-family: 'roboto-medium';
+        font-size: 14px;
+        color: #212121;
+        padding: 8px 10px 4px 0px;
+    }
+    .sort_item{
+        font-family: 'roboto';
+        font-size: 13px;
+        color: #212121;
+        padding: 8px 0px 4px;
+        margin: 0 10px;
+    }
+    .sort_item:hover{
+        color: #2874f0;
+        border-bottom: 2px solid #2874f0;
+        font-family: 'roboto-medium';
+       
+    }
+    .main_cards{
+        padding: 24px 0px 30px 24px;
+        border-bottom: 1px solid #f1f3f6;
+        background: #fff;
+    }
+    .main_cards_container{
+        display: flex;
+    }
+    .main_card_content{
+        display: flex;
+    }
+    .main_card_text{
+        padding-left: 25px;
+        width: 25vw;
+    }
+    .main_card_image{
+        width: 158px;
+        height: 185px;
+        margin-left: 10px;
+    }
+    .main_card_image img{
+        width: 100%;
+        height: 100%;
+    }
+    .card_item_name{
+        font-family: 'roboto-medium';
+        font-size: 16px;
+        color: #212121;
+        letter-spacing: 0;
+    }
+    .rating_text span{
+        font-family: 'roboto-medium';
+        font-size: 13px;
+        color: #878787;
+        padding-left: 8px;
+    }
+    .star button{
+        height: 19px;
+    }
+    .item_specialities{
+        margin-top: 13px;
+    }
+    ul{
+        padding: 0;
+        margin: 0;
+    }
+    .item_specialities li{
+        display: table-row;
+        font-family: 'roboto';
+        font-size: 13px;
+        color: #212121;
+        padding-right: 8px;
+        line-height: 22px;
+        text-align: l;
+    }
+    li::before{
+        content: '•';
+        color: rgb(194, 194, 194);
+        padding-right: 8px;
+        font-size: 15px;
+        display:table-cell;
+    }
+    .price_details{
+        padding-left: 25px;
+    }
+    .price_and_offer{
+        display: flex;
+    }
+    .price_and_offer .old_price span{
+        font-family: 'roboto';
+        font-size: 14px;
+        margin-left: 0;
+        margin-right: 5px;
+    }
+    .price_and_offer .offer span{
+        font-family: 'roboto-medium';
+        font-size: 13px;
+    }
+    .flipkart_assured_image img{
+        width: 100%;
+        height: 100%;
+    }
+    .flipkart_assured_image{
+        width: 77px;
+        height: 22px;
+        padding-bottom: 4px;
+    }
+    .card_image_container{
+        position: relative;
+    }
+    .like{
+        position: absolute;
+        top: 0;
+        right: -20px;
+    }
+    .price_value span{
+        font-family: 'roboto-medium';
+        font-size: 23px;
+        color: #212121;
+        letter-spacing: 0;
+    }
+    .free_delivery_text{
+        font-family: 'roboto';
+        font-size: 12px;
+        color: #000000;
+        margin-top: 6px;
+    }
+    .offer_text{
+        font-family: 'roboto-medium';
+        font-size: 13px;
+        color: #26A541;
+        font-weight: 700;
+        margin-top: 5px;
+    }
+    .compare{
+        margin-top: 15px;
+        display: flex;
+        align-items: center;
+        margin-left: -6px;
+    }
+    .compare label{
+        font-family: 'roboto';
+        font-size: 13px;
+        color: #212121;
+        margin-left: 8px;
+    }
+    .assured_price .flip_assured_image{
+        display: none;
+    }
+    .pages{
+        margin: 0;
+        padding: 0;
+    }
+    .pages_content{
+        background: #fff;
+        border-top: 1px solid #e0e0e0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px;
+        line-height: 32px;
+        max-width: 1384px;
+    }
+    .page_number_text span{
+        font-size: 16px;
+        color: #212121;
+        font-family: 'roboto';
+        white-space: nowrap;
+    }
+    .page_number{
+        padding: 4px 0;
+        text-align: center;
+        font-family: 'roboto-medium';
+        display: flex;
+    }
+    .page_number a{
+        text-decoration: none;
+        padding: 0 8px;
+        border-radius: 20px;
+        height: 32px;
+        width: 16px;
+        color: #212121;
+    }
+    .page_number a:hover{
+        background: #2874f0;
+        color: #fff;
+    }
+    .page_number span{
+        font-family: 'roboto-medium';
+        color: #2874f0;
+        text-transform: uppercase;
+        padding: 0 25px;
+    }
+    .looking_for{
+        margin-top: 10px;
+        background: #f1f3f6
+    }
+    .looking_for_content{
+        background: #fff;
+        padding: 16px;
+        display: flex;
+    }
+    .looking_for_text span{
+        font-family: 'roboto-medium';
+        font-size: 16px;
+        color: #212121;
+    }
+    .btn_group{
+        margin-left: 24px;
+    }
+    .btn_group span{
+        font-family: 'roboto-medium';
+        font-size: 16px;
+        border-radius: 2px;
+        padding: 6px 28px;
+        margin-right: 8px;
+        border: 1px solid #d7d7d7;
+    }
+    .review_cards{
+        background: #f1f3f6;
+    }
+    .review_cards_container{
+        max-width: 1624px;
+        margin: 0 auto;
+        background: #fff;
+    }
+    .review_card{
+        display: flex;
+     
+    }
+    .review_cards h1{
+        margin: 0;
+        padding: 15px 20px;
+        font-family: 'roboto';
+        font-size: 20px;
+        color: #212121;
+        border-bottom: 1px solid #e0e0e0;
+    }
+    .review_card{
+        padding: 20px 0;
+        border-bottom: 1px solid #e0e0e0;
+    }
+    .review_item_image{
+        width: 70.5px;
+        height: 150px;
+        margin: 0px 60px;
+    }
+    .review_item_image img{
+        width: 100%;
+        height: 100%;
+    }
+    .review_item_details{
+        width: 20%;
+    }
+    .review_card .item_details{
+        margin: 0;
+        padding: 0;
+
+    }
+    .item_price_and_offer{
+        display: flex;
+        margin-bottom: 5px;
+    }
+    .review_card .price span{
+        font-family: 'roboto-medium';
+       font-size: 13px;
+    }
+    .review_card .offer span{
+        font-size: 14px;
+        color: #878787;
+        margin-left: 12px;
+    }
+    .review_card .item_details span{
+        font-family: 'roboto';
+        font-size: 13px;
+        padding-bottom: 8px;
+        color: #212121;
+    }
+    .reviews{
+        padding: 0 24px;
+        font-family: 'roboto';
+        width: 30%;
+    }
+    .review_type {
+        font-size: 13px;
+        font-family: 'roboto';
+        color: #878787;
+    }
+    .review_rating{
+        display: flex;
+        margin-top: 4px;
+    }
+    .review_rating button{
+        width: 29.52px;
+        height: 19.59px;
+    }
+    .review_text span{
+        font-family: 'roboto-medium';
+        font-size: 13px;
+        color: #212121;
+        padding: 3px 0px 0px 12px;
+    }
+    .review{
+        margin-bottom: 10px;
+    }
+    .review p{
+        margin-bottom: 0;
+        margin-top: 10px;
+        font-size: 13px;
+        color: #212121;
+        line-height: 1.4;
+    }
+    .review span{
+        font-family: 'roboto-medium';
+        font-size: 13px;
+        color: #2874f0;
+       
+    }
+    .reviewer{
+        display: flex;
+        flex-wrap: wrap;
+        color: #878787;
+        font-size: 12px;
+        font-family: 'roboto';
+    }
+    .reviewer_name{
+        font-family: 'roboto-medium';
+    }
+    .reviewer p{
+        margin: 0 8px 0 0 ;
+    }
+    .reviewer svg{
+        margin-right: 3px;
+    }
+    .review_card:nth-child(4) .review_item_image{
+        width: 140px;
+        margin: 0 27px
+     }
+     .review_card:nth-child(5)  .reviews:nth-child(4) button{
+        background-color: #ff9f00;
+     }
+     .certified{
+        margin-left: 4px;
+     }
+     footer{
+        background: #172337;
+        font-family: 'roboto';
+     }
+     .footer_container{
+        display: flex;
+        margin-left: 65px;
+        padding-top: 41px;
+        width: 90%;
+     }
+     .footer_menu{
+        flex: 1;
+     }
+     
+     .list{
+        display: flex;
+        flex-direction: column;
+       
+     }
+     .menu_name,
+     .address_text{
+        font-size: 12px;
+        color: #878787;
+        margin-bottom: 11px;
+     }
+     .list a{
+        line-height: 2;
+     }
+
+     .list a,
+     .list p{
+        font-size: 12px;
+        color: #ffff;
+        text-decoration: none;
+     }
+     .list p{
+        margin: 0;
+        line-height: 1.5;
+     }
+     .address:nth-child(5){
+        padding: 0 25px;
+        border-left: 1px solid #454d5e;
+        height: 138px;
+     }
+     .address:nth-child(6){
+        padding-left: 14px;
+        padding-bottom: 10px;
+     }
+     .list span{
+        color: #2874f0;
+     }
+     .footer_nav_container{
+        padding-top: 24px;
+        padding-bottom: 27px;
+        margin-top: 40px;
+        border-top: 1px solid #454d5e;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+     }
+     .nav_element span{
+        font-family: 'roboto';
+        color: #fff;
+        margin-left: 4px;
+        font-size: 14px;
+     }
+}
+
+@media screen and (min-width: 960px) {
+    .desktop_header{
+        height: 55px;
+    }
+    .logo_container{
+        min-width: 137px;
+    }
+    .flipkart_text_one img{
+        width: 75px;
+        height: 20.11px;
+    }
+    .explore span, 
+    .plus_text span{
+        font-size: 11px;
+    }
+    .plus_logo img{
+        width: 10px;
+        height: 10px;
+    }
+    
+    .search_bar input{
+        height: 35px;
+       letter-spacing: .3px;
+
+    }
+    .icon svg{
+        width: 19px;
+        height: 19px;
+        margin-top: 1px;
+    }
+    .log_in{
+      
+        padding-bottom: 4px;
+    }
+    .log_in span{
+        font-size: 15px;
+        letter-spacing: .5px;
+    }
+    .header_text span, 
+    .more_text span,
+     .cart_text span{
+        font-size: 15.5px;
+
+     }
+     .header_text{
+        margin-right: 20px;
+        
+     }
+     .header_text,
+     .more_text{
+        margin-bottom: 3px;
+     }
+     .drop_down {
+        margin-top: 1px;
+     }
+   
+}
+
+@media screen and (min-width: 1024px) {
+    .desktop_header{
+        height: 56px;
+    }
+    .flipkart_text_one img{
+        height: 20px;
+    }
+    .flipkart_text_two{
+        margin-top: -9px;
+    }
+    .explore span{
+        margin-left: -4px;
+    }
+    .plus_logo img{
+        margin-top: 0;
+    }
+    .search_bar{
+        height: 36px;
+        margin-left: 12px;
+        min-width: 304px;
+    }
+    .search_bar input{
+        font-size: 14px;
+        letter-spacing: 0;
+        min-width: 216px;
+    }
+    .icon{
+        padding-right: 13px;
+        margin-left: -1px;
+    }
+    .icon svg{
+        width: 20px;
+        height: 20px;
+      
+    }
+    .log_in{
+        padding-top: 5px;
+        padding-bottom: 4px;
+       
+    }
+    .log_in span{
+        font-size: 16px;
+        letter-spacing: .1px;
+    }
+    .header_text{
+        margin-bottom: 2px;
+    }
+    .more_text,
+    .cart_text{
+        margin-bottom: 0;
+    }
+    .header_text span,
+    .more_text span,
+    .cart_text span{
+        font-size: 16px;
+    
+    }
+    .more{
+        margin-right: -2px;
+    }
+    .cart_text{
+        margin-bottom: 2px;
+    }
+    .drop_down {
+        margin-left: 7px;
+        margin-top: 2px;
+    }
+    nav{
+        padding-top: 56px;
+    }
+    .nav_container{
+        height: 40px;
+        margin-top: 0;
+        padding-left: 16px;
+        padding-right: 30px;
+    }
+    .category span{
+        font-size: 14px;
+        letter-spacing: 0;
+    }
+    .arrow svg{
+        margin-left: 3px;
+    }
+    .desktop_main{
+        padding: 7px 8px;
+    }
+    .filter_info{
+        max-width: 270px;
+    }
+    .card_image{
+        width: 270px;
+        height: 144.63px;
+    }
+    .card_text{
+        padding: 14px 16px 16px 16px;
+    }
+    .card_text h3{
+        font-size: 16px;
+        letter-spacing: 0;
+    }
+    .card_text p{
+        letter-spacing: 0;
+        margin-top: 3px;
+    }
+    .filter_info_card{
+        padding-bottom: 10px;
+    }
+    .filter_text{
+        padding: 18px 16px 13px 16px;
+    }
+    .aside_container,
+    .categories,
+    .price_range,
+    .value_selector,
+    .type_selector,
+    .selector,
+    .flip_assured{
+        width: auto;
+    }
+    .filter_text span{
+        font-size: 18px;
+        letter-spacing: .3px;
+    }
+    .categories{
+        padding: 15px 14px 22px 16px;
+    }
+    .category_text span{
+        font-size: 12px;
+        letter-spacing: 0;
+    }
+    .category_one span{
+        font-size: 14px;
+        margin-left: 8px;
+    }
+    .category_list{
+        padding-top: 13px;
+        padding-bottom: 8px;
+    }
+    .category_list .arrow svg{
+        margin-left: 0;
+        margin-bottom: 1px;
+    }
+    .category_name span{
+        font-size: 14px;
+        margin-left: 15px;
+    }
+    .price_range{
+        padding: 16px;
+    }
+    .heading_text span{
+        letter-spacing: .3px;
+    }
+    .graph{
+        margin-left: .8px;
+    }
+    .value{
+        width: 47.8px;
+        height: 23px;
+    }
+    .price_min{
+        width: 11.5px;
+        height: 11.5px;
+    }
+    .value_selector{
+        margin-left: -5px;
+        margin-right: -6px;
+    }
+    .line_border{
+        height: 6px;
+        width: 240px;
+        margin-bottom: -1px;
+    }
+    .price_range .heading_text{
+        margin-bottom: 6px;
+    }
+    .doted_line{
+        gap: 42.9px;
+        margin-top: -7px;
+        margin-left: -.08px;
+    }
+    .dot{
+        font-size: 18px;
+    }
+    .value_text span{
+        font-size: 14px;
+        margin-top: 2px;
+    }
+    .price_range_selector{
+        margin: 7px -4px 0px -4px;
+    }
+    .price_value_selector:first-child{
+        width: 92.43px;
+        height: 22px;
+    }
+    .price_value_selector:last-child{
+        width: 100.74px;
+        height: 22px;
+    }
+    .value_text,
+    .to_text{
+        margin-top: 1px;
+    }
+    .down_arrow{
+        margin-bottom: 4px;
+        margin-right: 4px;
+    }
+    .to_text span{
+        font-size: 14px;
+        margin-left: 13px;
+        margin-right: 15px;
+    }
+    .type_selector{
+        padding: 16px 16px 18px 16px;
+    }
+    .selection_name label,
+    .selection_name1 label{
+        font-size: 14px;
+        padding-left: 9px;
+    }
+    input[type="checkbox"]{
+        width: 12px;
+        height: 12px;
+    }
+    .selection_name1{
+        padding: 11px 0;
+    }
+    .up_arrow svg{
+        margin-top: 4.17px;
+        margin-right: 2px;
+    }
+    .assured{
+        width: 77px;
+        height: 21px;
+        padding-left: 9px;
+        padding-right: 110px;
+    }
+    .flip_assured{
+        padding-top: 15px;
+    }
+    .question{
+        width:14px;
+        height: 13px;
+        padding-top: 1px;
+    }
+    .flip_assured input{
+        margin-left: 5px;
+        margin-top: 2px;
+    }
+    .selection_name{
+        padding: 10px 0px;
+    }
+    .selector{
+        padding: 16px;
+    }
+    .help_text span{
+        font-size: 14px;
+        
+    }
+    .help_text p{
+        font-size: 18px;
+    }
+    .help_box svg{
+        width: 11px;
+        height: 11px;
+        margin-bottom: 13px;
+    }
+    .main_container{
+        max-width: 1680px;
+        margin-inline: auto;
+    }
+    .section_header{
+        padding-top: 13px;
+    }
+    .path svg{
+        width: 12.5px;
+    }
+    .path span:nth-child(3){
+        margin-left: 1px;
+        margin-right: 2px;
+    }
+    .path span:last-child{
+        margin-left: .5px;
+    }
+    .item_links{
+        padding-top: 13px;
+    }
+    .item_links a{
+        font-size: 12px;
+    }  
+    .space{
+        margin-right: 3px;
+    }
+  
+    .mi_mobiles_text span{
+        font-size: 16px;
+    }
+    .products{
+        margin-top: 2px;
+    }
+    .products span{
+        font-size: 12px;
+        margin-bottom: px;
+    }
+    .sort_list{
+        margin-top: 3px;
+    }
+    .sort_item{
+        font-size: 14px;
+    }
+    .main_card_image{
+        width: 172px;
+        height: 200px;
+        margin-left: 14px;
+        margin-top: 4px;
+    }
+    .like{
+        right: -22px;
+    }
+    .main_card_text{
+        padding-left: 39px;
+    }
+    .card_item_name{
+        font-size: 18px;
+        line-height: 1;
+    }
+    .rating_text span{
+        font-size: 14px;
+    }
+    .item_specialities li{
+        font-size: 14px;
+    }
+    .like{
+        top: 6px;
+        right: -25px;
+    }
+    .main_card_text{
+        padding-top: 4px;
+        padding-left: 42px;
+        /* width: 58.33%; */
+        width: 50%;
+    }
+    .assured_price{
+        display: flex;
+    }
+    .assured_price .flip_assured_image{
+        display: flex;
+    }
+    .flipkart_assured_image{
+        display: none;
+    }  
+    .flip_assured_image{
+        width: 77px;
+        height: 21px;
+        padding-left: 20px;
+    } 
+    .flip_assured_image img{
+        width: 100%;
+        height: 100%;
+    }
+    .price_and_offer .old_price{
+        font-family: 14px;
+    }
+    .compare{
+        margin-top: 16px;
+        margin-left: -3px;
+    }
+    .compare label{
+        font-size: 14px;
+        margin-left: 6px;
+    }
+    .star button{
+        align-items: flex-start;
+    }
+    .star button span{
+        font-size: 13.5px;
+        margin-left: 1px;
+        margin-bottom: .5px;
+    }
+    .rating{
+        margin-top: 6px;
+    }
+    .rating_text span{
+        padding-left: 8.9px;
+    }
+    .price_value span{
+        font-size: 25px;
+    }
+    .review_card .price span,
+    .review_card .item_details span,
+    .review_type,
+    .review span,
+    .review p,
+    .review_text span
+    {
+        font-size: 14px;
+    }
+    .footer_nav_container{
+        margin-left: 1px;
+    }
+
+}
+
