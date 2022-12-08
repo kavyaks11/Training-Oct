@@ -83,6 +83,33 @@ ourArr[2] = 10
 console.log(ourArr)
 
 var  myArr = [[1,2,3], [4,5,6], [7,8,9], [[10,11,12], 13,14]]
-var myData = myArr[2][1]
+var myData = myArr[3][1]
 console.log(myData)
 
+var ourArray = ["Stimpson", "J", "cat"]
+ourArray.push(["happy", "joy"])
+ourArray.push("hello")
+console.log(ourArray)
+
+var myArray = [["john", 23], ["cat", 2]]
+// myArray.push(["dog", 3])
+myArray.push("hello")
+myArray.unshift("hi")
+console.log(myArray)  
+
+var arrayPop = [1, 2, 3,4 ,5]
+//  arrayPop.pop()
+//  arrayPop.shift()
+//  arrayPop.splice([2])
+ arrayPop.slice(3,1)
+ console.log(arrayPop)
+
+ function myFunction(){
+    console.log("hello world")
+ }
+ myFunction()
+
+ function functionWithArgs(a, b){
+    console.log(a - b)
+ }
+ functionWithArgs(10,8)
