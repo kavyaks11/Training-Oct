@@ -100,8 +100,8 @@ console.log(myArray)
 var arrayPop = [1, 2, 3,4 ,5]
 //  arrayPop.pop()
 //  arrayPop.shift()
-//  arrayPop.splice([2])
- arrayPop.slice(3,1)
+ arrayPop.splice(3,1,20)
+ arrayPop.splice(1,0,30)
  console.log(arrayPop)
 
  function myFunction(){
@@ -113,3 +113,194 @@ var arrayPop = [1, 2, 3,4 ,5]
     console.log(a - b)
  }
  functionWithArgs(10,8)
+
+ function myScope(){
+    var myVar = 5
+    console.log(myVar)
+ }
+ myScope()
+//  console.log(myVar)   
+
+ function minusSeven(num){
+    return num -7
+ }
+ console.log(minusSeven(89))
+
+function eightTimes(num){
+    return num * 8
+}
+console.log(eightTimes(4))
+
+// var sum = 0
+// function add(){
+//     sum += 4
+//     return sum
+// }
+// console.log(add)
+
+var changed = 0
+function change(num){
+    return (num + 5) / 3
+}
+changed = change(100)
+console.log(changed)
+
+var processed = 0
+function process(num){
+    return (num + 4) / 6
+}
+processed = process(20)
+console.log(processed)
+
+function nextLine(arr, item){
+    arr.push(item)
+    return arr.shift()
+}
+var testArr = [1,2,3,4,5,6]
+console.log("Before: " + JSON.stringify(testArr))
+console.log(nextLine(testArr, 6))
+console.log("After : " + JSON.stringify(testArr))
+
+
+function trueOrFalse(isTrue){
+    if (isTrue){
+        return "yes, it's true"
+    }
+    return "No, it's false"
+}
+console.log(trueOrFalse(true))
+
+function falseorTrue(wasTrue){
+    if (wasTrue){
+        return "yes, that was true"
+    }
+    return "No, that was false"
+}
+console.log(falseorTrue(false))
+
+
+function testEqual(val){
+    if(val == '10'){
+        return "Equal"
+    }
+    return "not equal"
+}
+console.log(testEqual(10))
+
+function testStrict(val){
+    if(val === '10'){
+        return "equal"
+    }
+    return "not equal"
+}
+console.log(testStrict(10))
+
+function compareEquality(a, b){
+    if(a == b){
+        return "Equal"
+    }
+    return "not equal"
+}
+console.log(compareEquality(10, "10"))
+
+function compareEquality(a, b){
+    if(a === b){
+        return "Equal"
+    }
+    return "not equal"
+}
+console.log(compareEquality(4, "4"))
+
+function testGreaterThan(val){
+    if(val > 100){
+        return "Over 100"
+    }
+    if(val > 10){
+        return "Over 10"
+    }
+    return "10 0r under"
+}
+console.log(testGreaterThan(101))
+
+// function logicalAnd(val){
+//     if(val <= 50){
+//         if (val >= 25){
+//             return "yes"
+//         }
+//     }
+//     return "no"
+
+// }
+// console.log(logicalAnd(34))
+
+function logicalAnd(val){
+    if (val >= 25 && val <= 50){
+
+        return "yes"
+    }
+    return "no"
+}
+console.log(logicalAnd(77))
+
+
+function testSize(num){
+    if(num < 5){
+        return "tiny"
+    } else if(num < 10){
+        return "small"
+    } else if (num < 15){
+        return "medium"
+    } else if  (num < 20){
+        return "large"
+    } else {
+        return "huge"
+    } 
+}
+console.log(testSize(100))
+
+
+var names = ["hole-in-one", "eagle", "birdie", "par", "bogey", "double-bogey", "go-home"]
+function golfScore(par, strokes){
+
+    if(strokes == 1){
+        return names[0]
+    } else if (strokes <= par - 2){
+        return names[1]
+    } else if (strokes == par - 1){
+        return names[2]
+    } else if (strokes == par){
+        return names[3]
+    } else if (strokes == par + 1){
+        return names[4]
+    } else if (strokes == par + 2){
+        return names[5]
+    } else if (strokes >= par + 3){
+        return names[6]
+    }
+}
+console.log(golfScore(5 ,2))
+
+
+function caseInswitch(val){
+    var answer = ""
+    switch(val){
+        case 1:
+            answer = "alpha"
+            break
+        case 2:
+            answer = "beta"
+            break
+        case 3:
+            answer = "gamma"
+            break
+        case 4:
+            answer = "delta"
+            break 
+        default:
+            answer = "none"     
+    }
+
+    return answer
+}
+console.log(caseInswitch(8))
+
