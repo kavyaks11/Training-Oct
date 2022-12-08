@@ -306,51 +306,62 @@ inputBtn.addEventListener("click", function() {
 // console.log(sentence)
 
 // // task6
-// const imgs = [
-//     "img/img1.jpg",
-//     "img/img2.jpeg",
-//     "img/img3.jpeg"
-// ]
-// const container = document.getElementById("container")
+const imgs = [
+    "img/img1.jpg",
+    "img/img2.jpeg",
+    "img/img3.jpeg"
+]
+const container = document.getElementById("container")
 
-// function renderImages() {
-//     // let imgsDOM = ""
-//     for (let i = 0; i < imgs.length; i++){
-//         container.innerHTML += `<img class="team-img" src="${imgs[i]}">`
-//         // imgsDOM +=`<img class="team-img" src="${imgs[i]}"`
-//     }
-//     // container.innerHTML = imgsDOM
-// }
-// renderImages()
+function renderImages() {
+    let imgsDOM = ""
+    for (let i = 0; i < imgs.length; i++){
+        // container.innerHTML += `<img class="team-img" src="${imgs[i]}">`
+        imgsDOM +=`<img class="team-img" src="${imgs[i]}">`
+    }
+    container.innerHTML = imgsDOM
+}
+renderImages()
 
 
 // FIND GREATEST OF THREE NUMBERS
+let num1 = document.getElementById("num1")
+let num2 = document.getElementById("num2")
+let num3 = document.getElementById("num3")
 
-// let num1 = 22
-// let num2 = 20
-// let num3 = 4
+let number1 = 22
+let number2 = 55
+let number3 = 100
+num1.textContent = "num1 : " + number1
+num2.textContent = "num1 : " + number2
+num3.textContent = "num1 : " + number3
 
-// if (num1 > num2 && num1 > num3){
-//     console.log("num1 is greatest number")
-// } else if (num2 > num1 && num2 > num3){
-//     console.log("num2 is greatest nmber")
-// } else{
-//     console.log("num3 is greatest number")
-// }
+let greatestNum = document.getElementById("greatest-num")
+if (number1 > number2 && number1 > number3){
+//     console.log("num1 is greatest number" )
+     greatestNum.textContent = number1 + " is greatest number"
+} else if (number2 > number1 && number2 > number3){
+//     console.log("num2 is greatest number")
+     greatestNum.textContent = number2 + " is greatest number"
+} else{
+    console.log("num3 is greatest number")
+     greatestNum.textContent = number3 + " is greatest number"
+}
 
 
 
 // PRIME NUMBERS
-// let number = 1
 
-// if (number === 1){
-//     console.log("Not a prime number")
-// }
+let num = document.getElementById("num")
+let number = 21
+num.textContent = "Number : " + number
+let result = document.getElementById("result")
 
-
-let number = 5
 let a = 0
-
+if(number <= 1){
+    // console.log(number + " is not a prime number")
+    result.textContent = number + " is not a prime number"
+}else{
 
 
 for(let i = 1; i <= number; i++){
@@ -359,12 +370,13 @@ for(let i = 1; i <= number; i++){
             a++      
     } 
 }
-console.log(a)  
-if(number <= 1){
-    console.log( number + " is not a prime number")
-}
-else if(a < 3){
-    console.log(number + " is a prime number")
+// console.log(a)  
+
+if(a < 3){
+    // console.log(number + " is a prime number")
+    result.textContent = number + " is  a prime number"
 } else {
-    console.log( number + " is not a prime number")
+    // console.log( number + " is not a prime number")
+    result.textContent = number + " is not a prime number"
+}
 }

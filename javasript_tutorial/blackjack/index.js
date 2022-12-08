@@ -27,6 +27,7 @@ playerEl.textContent = player.name + ": $" + player.chips
 function getRandomCard(){
 
     return Math.floor( Math.random()*13) + 1
+    
     if (randomNumber > 10){
         return 10
     } else if (randomNumber === 1){
