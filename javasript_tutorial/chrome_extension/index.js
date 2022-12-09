@@ -380,3 +380,6 @@ if(a < 3){
     result.textContent = number + " is not a prime number"
 }
 }
+
+
+

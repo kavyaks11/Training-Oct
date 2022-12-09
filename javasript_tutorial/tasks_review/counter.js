@@ -507,14 +507,62 @@ console.log(sum(1,2,3))
 const [z, x, , y] = [1,2,3,4,5,6]
 console.log(z, x, y)
 
-// let a = 8
-// let b = 6
+
+
+// import subtract from "math_functiions"
+// subtract(7,4)
+function greet(){
+    console.log("hello world")
+}
+greet()
+
+// arrow functions
+// var magic = function(){
+//     return new Date(j)
+// }
+var magic = () => new Date()
+
+const arr1 = ["jan","feb", "march", "apr", "may"]
+let arr2
+(function(){
+    // arr2 = arr1
+    arr2 = [...arr1]
+
+arr1[0] = 'potato'
+})()
+console.log(arr2)
+
+// structuring
+const avg_temp = {
+    today : 77.5,
+    tomorrow:79
+}
+function getTempOfTmrw(avgTemperatures){
+    const { tomorrow : tempOfTomorrow } =avgTemperatures
+    return tempOfTomorrow
+}
+console.log(getTempOfTmrw(avg_temp))
+
+// let a = 8, b = 6
 // (() => {
 //     "use strict"
 //     [a, b] = [b, a]
 // }) ()
 // console.log(a)
-// console.log(b)
+// console.log(b)      3:02
 
-// import subtract from "math_functiions"
-// subtract(7,4)
+const result = {
+    success:["max-length", "no-amd", "prefer-arrow-functions"],
+    failure:["no-war", "var-on-top","linebreak"],
+    skipped: ["id-blacklist","no-dup-keys"]
+}
+function makeList(arr){
+    const resultDisplayArray = []
+     for(let i = 0; i < arr.length; i++){
+        resultDisplayArray.push(`<li class="text-warning">${arr[i]}</li>`)
+    }
+     
+    return resultDisplayArray
+}
+const resultDisplayArray = makeList(result.failure)
+console.log(resultDisplayArray)

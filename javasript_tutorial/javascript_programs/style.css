@@ -1,0 +1,17 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+button{
+    padding: 10px;
+    background-color: rgb(35, 214, 155);
+    border: none;
+    color: rgb(225, 72, 11);
+}
+h2{
+    font-size: 20px;
+    color: rgb(129, 9, 109);
+}
+img{
+    width: 100px;
+    height: 100px;
+}
