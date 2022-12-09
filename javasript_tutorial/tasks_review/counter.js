@@ -304,3 +304,217 @@ function caseInswitch(val){
 }
 console.log(caseInswitch(8))
 
+function isLess (a, b){
+    return a < b
+}
+console.log(isLess(9,6))
+
+function abTest(a, b){
+    if(a < 0 || b < 0){
+        return undefined
+    }
+    return Math.round(Math.pow(Math.sqrt(a) + Math.sqrt(b), 2))
+}
+console.log(abTest(2,2))
+
+// card count
+var count = 0
+function cardCount(card){
+
+    switch(card){
+    case 2:
+    case 3:
+    case 4:
+    case 5:
+    case 6:
+        count++
+        break
+    case 10:
+    case "J":
+    case "Q":
+    case "K":
+    case "A":
+        count--
+        break
+
+    }
+    var holdbet = 'Hold'
+    if (count > 0){
+        holdbet = 'Bet'
+    }
+    return count + " " + holdbet
+}
+
+console.log(cardCount("J"))
+
+var testObj = { 
+    "hat": "ballcap",
+    "shirt": "jersey",
+    "shoes": "cleats",
+    "cap": {
+        "capone" : "cap1",
+        "captwo" : "cap2"
+    }
+}
+var hatValue = testObj.hat
+console.log(hatValue) 
+var shirtValue = testObj["shirt"]
+console.log(shirtValue)
+testObj.shoes = "aaa"
+console.log(testObj.shoes)
+
+
+var collection = {
+    "2548": {
+        "album": "Slippery when wet",
+        "artist": "bo Jovi",
+        "tracks": [
+            "Let it Rock",
+            "You give love a bad name"
+        ]
+    },
+    "2468": {
+        "album": "1999",
+        "artist":"prince",
+        "tracks": [
+            "1999",
+            "Little red corvette"
+        ]
+    },
+    "5439": {
+        "album":"ABBA Gold"
+    }
+}
+// keep a copy of the collection for tests
+var collectionCopy = JSON.parse(JSON.stringify(collection))
+function updateRecords(id , prop, value){
+    if (value === ""){
+        delete collection[id][prop]
+    } else if (prop === "tracks"){
+        collection[id][prop]
+    }
+    return collection
+}
+console.log(updateRecords(5439, "artist", "ABBA"))
+
+// while loop
+
+var array = []
+var i = 0
+while(i < 5){
+    array.push(i)
+    i++
+}
+console.log(array)
+
+var forLoop = []
+for (let i = 0; i <=10; i++){
+    forLoop.push(i)
+}
+console.log(forLoop)
+for (let i = 0; i < 6;i++){
+    forLoop.pop(i)
+}
+console.log(forLoop)
+for (let i = 20; i > 0; i -= 2){
+    forLoop.push(i)
+}
+console.log(forLoop)
+
+var arrayOne = [9, 10, 11, 12]
+var arrayTotal = 0
+for (let i = 0; i < arrayOne.length; i++){
+    arrayTotal += arrayOne[i] 
+}
+console.log(arrayTotal)
+
+// nexted for loop
+
+function multiplyAll(arr){
+    var product = 1
+
+    for(var i = 0;i < arr.length; i++){
+
+        for (var j = 0; j < arr[i].length; j++){
+            product *= arr[i][j]
+        }
+    } 
+    return product
+}
+var product = multiplyAll([[1, 2], [3, 4], [5, 6, 7]])
+console.log(product)
+
+// do while loop
+
+var whileArr = []
+var i = 10 
+
+do {
+    whileArr.push(i)
+    i++
+} while(i < 5)
+console.log(i, whileArr)
+
+function randomRange(min, max){
+    return Math.floor(Math.random() * (max - min + 1)) + min
+}
+var random = randomRange(5, 15)
+console.log(random)
+
+// convert to integer
+// function convert(str){
+//     return parseInt(str)
+// }
+// console.log(convert("55"))
+
+function convert(str){
+    return parseInt(str,2)
+}
+console.log(convert("11"))
+
+function checkSign(num){
+    if (num > 0){
+        return "positive"
+    } else if (num < 0){
+    return "negative"
+    } else{
+        return "zero"
+    }
+}
+console.log(checkSign(0))
+
+const s = [5, 7, 12]
+function edit(){
+    s[0] = 1
+    s[1] = 2
+    s[2] = 3
+}
+console.log(s)
+
+var concat = function(arr1, arr2){
+    return arr1.concat(arr2)
+}
+console.log(concat([1,2], [3,4]))
+
+const sum = (function(){
+    return function sum(...args){
+        // const args = [x, y, z]
+        return args.reduce((a, b) => a + b, 0)
+    }
+}) ()
+console.log(sum(1,2,3))
+
+const [z, x, , y] = [1,2,3,4,5,6]
+console.log(z, x, y)
+
+// let a = 8
+// let b = 6
+// (() => {
+//     "use strict"
+//     [a, b] = [b, a]
+// }) ()
+// console.log(a)
+// console.log(b)
+
+// import subtract from "math_functiions"
+// subtract(7,4)
