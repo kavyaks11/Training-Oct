@@ -338,10 +338,10 @@ num3.textContent = "num1 : " + number3
 
 let greatestNum = document.getElementById("greatest-num")
 if (number1 > number2 && number1 > number3){
-//     console.log("num1 is greatest number" )
+
      greatestNum.textContent = number1 + " is greatest number"
 } else if (number2 > number1 && number2 > number3){
-//     console.log("num2 is greatest number")
+
      greatestNum.textContent = number2 + " is greatest number"
 } else{
     console.log("num3 is greatest number")
@@ -359,12 +359,12 @@ let result = document.getElementById("result")
 
 let a = 0
 if(number <= 1){
-    // console.log(number + " is not a prime number")
+    
     result.textContent = number + " is not a prime number"
-}else{
+} else{
 
 
-for(let i = 1; i <= number; i++){
+   for(let i = 1; i <= number; i++){
         
         if (number % i === 0){
             a++      
@@ -373,10 +373,10 @@ for(let i = 1; i <= number; i++){
 // console.log(a)  
 
 if(a < 3){
-    // console.log(number + " is a prime number")
+   
     result.textContent = number + " is  a prime number"
 } else {
-    // console.log( number + " is not a prime number")
+
     result.textContent = number + " is not a prime number"
 }
 }

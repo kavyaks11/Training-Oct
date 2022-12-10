@@ -6,12 +6,20 @@ button{
     background-color: rgb(35, 214, 155);
     border: none;
     color: rgb(225, 72, 11);
+    border-radius: 4px;
+    font-size: 14px;
 }
 h2{
-    font-size: 20px;
+    font-size: 24px;
     color: rgb(129, 9, 109);
+    
 }
 img{
     width: 100px;
     height: 100px;
+}
+p{
+    font-size: 18px;
+    color: rgb(15, 132, 103);
+    font-style: italic;
 }
