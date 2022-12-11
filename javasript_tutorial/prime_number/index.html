@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h2> Prime number ckecking</h2>
+    <br>
+    <span id="result"></span>
+</body>
+
+<script>
+
+
+    let result = document.getElementById("result")
+    let a = 0
+    function getPrime(num) {
+        if (num <= 1) {
+
+            result.innerHTML = num + " is not a prime number"
+        } else {
+            for (let i = 1; i <= num; i++) {
+
+                if (num % i === 0) {
+                    a++
+                }
+            }
+            if (a < 3) {
+
+                result.textContent = num + " is  a prime number"
+            } else {
+
+                result.textContent = num + " is not a prime number"
+            }
+        }
+    }
+    getPrime(11)
+</script>
+
+</html>
