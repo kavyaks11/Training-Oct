@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+   <h2>What Can JavaScript Do?</h2>
+   <p id="change-content">JavaScript can change HTML content. </p>
+   <button id="change-btn">click</button>
+    
+   <br><br>..............................
+   <p>JavaScript can change HTML attributes values.</p>
+   <button onclick="document.getElementById('my-image').src='img/on.webp'">Turn on the light</button>
+   <img src="img/off.png" id="my-image">
+   <button onclick="document.getElementById('my-image').src='img/off.png'">Turn off the light</button>
+
+   <br><br>..............................
+
+   <p id="change-style">JavaScript can change the style of an HTML element.</p>
+   <button id="style-btn">Click</button>
+
+   <br><br>..............................
+
+   <p>JavaScript can show hidden HTML elements</p>
+   <p id="hide-element">Hello JavaScript</p>
+   <button id="show-btn">click</button>
+
+   <br><br>..............................
+
+
+   <h2>JavaScript in body</h2>
+   <p id="body-demo"></p>
+
+   ..............................
+
+   <h2>My first Web page</h2>
+   <p id="inner-demo"></p>
+
+   
+   <button id="write-btn">click</button>
+   <p id="wrtie-demo"></p>
+   
+   
+
+   <button onclick="window.print()">Print this page</button>
+
+   <h2>JavaScript statements</h2>
+   <p id="statement-demo"></p>
+   <p id="execution-demo"></p>
+    ..............................
+
+   <h2>JavaScript const</h2>
+   <p>Declaring a constant array does not make the elements unchangable</p>
+   <p id="const-array"></p>
+   
+
+   ..............................
+
+   <p>Cannot reassign a constant array</p>
+   <p id="reassign"></p>
+
+   ..............................
+
+   <p>Constant objects</p>
+   <p id="const-obj"></p>
+
+   ..............................
+
+   <h2>JavaScript assignments</h2>
+   <p>Left Shift Assignment</p>
+   <p id="left-assgn"></p>
+
+   ..............................
+
+   <p>right shift assignment</p>
+   <p id="right-assgn"></p>
+    
+
+   ..............................
+   <p>Bitwise AND assignmnet</p>
+   <p id="and-assgn"></p>
+
+   ..............................
+
+   <p>Bitwise OR assignment</p>
+   <p id="or-assgn"></p>
+ 
+   ..............................
+
+   <h2>JavaScript data types</h2>
+
+   <p>JavaScript string</p>
+   <p id="string"></p>
+
+   
+
+   <script src="index.js"></script>
+    <!-- <script>
+        window.alert(1 + 1);
+    </script> -->
+</body>
+</html>
