@@ -134,3 +134,21 @@ let ans1 = "It's alright";
 let ans2 = "He is called 'Johnny'";
 let ans3 = 'He is called "Johnny"';
 document.getElementById("string").innerHTML = ans1 + "<br>" + ans2 + "<br>" + ans3;
+
+// functions
+
+function myFunction(p1, p2){
+    return p1 * p2;
+}
+document.getElementById("function-demo1").innerHTML = myFunction(4, 5);
+
+var variable1 = myFunction1(4,3);
+document.getElementById("function-demo2").innerHTML = "product is " + variable1;
+function myFunction1(a ,b){
+    return a * b;
+}
+
+document.getElementById("temperature").innerHTML = "The temperature is " + toCelsius(77) + "Celsius";
+function toCelsius(fahrenheit){
+    return(5 / 9) * (fahrenheit - 32);
+}
