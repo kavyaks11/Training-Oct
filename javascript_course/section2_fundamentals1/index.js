@@ -373,7 +373,7 @@ console.log(lastName);   */
 // }
 // console.log(drink2 );
 
-// coding challen ge 4
+// coding challenge 4
 let tip, bill;
 bill = 275;
 bill >= 50 && bill <= 300 ? tip = bill * (15 / 100):
