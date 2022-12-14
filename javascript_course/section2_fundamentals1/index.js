@@ -374,10 +374,12 @@ console.log(lastName);   */
 // console.log(drink2 );
 
 // coding challenge 4
-let tip, bill;
-bill = 275;
-bill >= 50 && bill <= 300 ? tip = bill * (15 / 100):
-tip = bill * (20 / 100) ;
-console.log(tip);
+// let tip, bill;
+// bill = 275;
+// bill >= 50 && bill <= 300 ? tip = bill * (15 / 100):
+// tip = bill * (20 / 100) ;
+// console.log(tip);
 
-console.log(`bill value is ${bill}, the tip is ${tip}, and the total value is ${bill + tip}`);
+// console.log(`bill value is ${bill}, the tip is ${tip}, and the total value is ${bill + tip}`);
+
+
