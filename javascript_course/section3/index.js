@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 // functions
 
@@ -21,8 +21,7 @@
 // const num = Number('23');
 // console.log(num)
 
-
-// function declaration vs expressions 
+// function declaration vs expressions
 
 // function declaration
 // function calcAge1(birthYear) {
@@ -86,7 +85,7 @@
 //         return retirement;
 //     } else {
 //         console.log(`${firstName} has already retired`);
-//         return -1; 
+//         return -1;
 //     }
 // }
 // console.log(yearsUntilRetirement(1991, 'Jonas'));
@@ -306,7 +305,7 @@ console.log(jonas.getSummary()); */
 // } else if (john.BMI > mark.BMI) {
 //     console.log(`${john.fullName}'s BMI (${john.calcBMI()}) is higher than
 //     ${mark.fullName}'s (${mark.calcBMI()}).`);
-// } 
+// }
 
 // for loop
 
@@ -384,7 +383,6 @@ console.log(jonas.getSummary()); */
 //     rep++;
 // };
 
-
 // let dice = Math.trunc(Math.random() * 6) + 1;
 // console.log(dice);
 
@@ -397,39 +395,40 @@ console.log(jonas.getSummary()); */
 
 // coding challenge
 
- let bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
+let bills = [22, 295, 176, 440, 37, 105, 10, 1100, 86, 52];
 let tips = [];
 let totals = [];
 let tip;
 
-for(let i = 0; i < bills.length; i++){
-    if(bills[i] >= 50 && bills[i] <= 300){
-        // tips[i] = bills[i] * .15;
-         tip = bills[i] * .15;
-    } else {
-        // tips[i] = bills[i] * 0.2;
-         tip = bills[i] * 0.2;
-    }
-    tips.push(tip);
-    // tips.push(tips[i]);
-    totals.push(bills[i] + tips[i]);
- 
+for (let i = 0; i < bills.length; i++) {
+  if (bills[i] >= 50 && bills[i] <= 300) {
+    tips[i] = bills[i] * 0.15;
+
+    //  tip = bills[i] * .15;
+  } else {
+    tips[i] = bills[i] * 0.2;
+
+    //  tip = bills[i] * 0.2;
+  }
+  // tips.push(tip);
+  tips.push(tips[i]);
+  totals.push(bills[i] + tips[i]);
 }
 console.log(tips);
 console.log(totals);
 
 // avg of any array
-let sum = 0, avg;
-function calcAverage(arr){
- for(let i = 0; i < arr.length; i++){
-    
+let sum = 0,
+  avg;
+function calcAverage(arr) {
+  for (let i = 0; i < arr.length; i++) {
     sum = sum + arr[i];
- }
- avg = sum / arr.length;
+  }
+  avg = sum / arr.length;
 }
 calcAverage(totals);
 console.log(sum);
-console.log(avg);   
+console.log(avg);
 
 /* const calcTip = function (bill){
     return bill >= 50 && bill <= 300 ? bill * .15:
