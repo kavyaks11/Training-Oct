@@ -55,6 +55,7 @@ if (restaurant.openingHours && restaurant.openingHours.mon)
 // if (restaurant.openingHours.fri) console.log(restaurant.openingHours.fri.open);
 
 console.log(restaurant.openingHours.mon?.open);
+console.log(restaurant.openingHours.thu?.open);
 
 // const rest1 = {
 //   name: "Capri",
