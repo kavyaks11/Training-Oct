@@ -1,5 +1,21 @@
 "use strict";
 
+const weekdays = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
+const openingHours = {
+  [weekdays[3]]: {
+    open: 12,
+    close: 22,
+  },
+  [weekdays[4]]: {
+    open: 11,
+    close: 23,
+  },
+  [weekdays[5]]: {
+    open: 0,
+    close: 24,
+  },
+};
+
 const restaurant = {
   name: "Classico Italiano",
   location: "Via Angelo Tavanti 23, Firenze, Italy",
@@ -42,6 +58,145 @@ const restaurant = {
   },
 };
 
+/////////// 118) maps iteration
+
+/*const question = new Map([
+  ["question", "What is the best programming language in the world?"],
+  [1, "C"],
+  [2, "Java"],
+  [3, "JavaScript"],
+  ["correct", 3],
+  [true, "correct"],
+  [false, "Try again"],
+]);
+console.log(question);
+
+// convert object to map
+
+console.log(Object.entries(openingHours));
+
+const hoursMap = new Map(Object.entries(openingHours));
+console.log(hoursMap);
+
+// quiz app
+console.log(question.get("question"));
+for (const [key, value] of question) {
+  if (typeof key === "number") console.log(`Answer ${key}: ${value}`);
+}
+const answer = Number(prompt("Your answer"));
+console.log(answer);
+
+console.log(question.get(question.get("correct") === answer));
+
+console.log([...question]);
+console.log([...question.keys()]);
+console.log([...question.values()]);*/
+///////////// 117) maps
+
+/*const rest = new Map();
+rest.set("name", "Classico Italiano");
+rest.set(1, "Firenze, Italy");
+rest.set(2, "Lisbon, Portugal");
+console.log(rest);
+
+rest
+  .set("categories", ["Italian", "Pizzeria", "vegetarian", "Organic"])
+  .set("open,11")
+  .set("close", 23)
+  .set(true, "we are open :D")
+  .set(false, "we are closed :(");
+
+console.log(rest.get("name"));
+console.log(rest.get(true));
+console.log(rest.get("1"));
+
+const time = 8;
+console.log(rest.get(time > rest.get("open") && time < rest.get("close")));
+
+console.log(rest.has("categories"));
+
+rest.delete(2);
+// rest.set([1, 2], "Test");
+const arr = [1, 2];
+rest.set(arr, "Test");
+rest.set(document.querySelector("h1"), "Heading");
+console.log(rest);
+console.log(rest.size);
+console.log(rest.get(arr));/*
+
+
+
+///////////// 116)Sets
+
+/*const orderSet = new Set([
+  "pasta",
+  "pizza",
+  "pizza",
+  "risotto",
+  "pasta",
+  "pizza",
+]);
+console.log(orderSet);
+console.log(new Set("jonas"));
+console.log(orderSet.size);
+console.log(orderSet.has("pizza"));
+console.log(orderSet.has("bread"));
+
+orderSet.add("garlic bread");
+orderSet.add("garlic bread");
+console.log(orderSet);
+
+orderSet.delete("risotto");
+console.log(orderSet);
+// orderSet.clear();
+// console.log(orderSet);
+
+for (const order of orderSet) console.log(order);
+
+//example
+
+const staff = ["waiter", "chef", "waiter", "manager", "chef", "waiter"];
+
+// const staffUnique = new Set(staff);
+const staffUnique = [...new Set(staff)];
+console.log(staffUnique);
+
+console.log(
+  new Set(["waiter", "chef", "waiter", "manager", "chef", "waiter"]).size
+);
+
+console.log(new Set("jonasschmedtmann").size);*/
+
+////////////// 114)looping objects
+
+// property name
+/*const properties = Object.keys(openingHours);
+console.log(properties);
+// console.log(`We are open on ${properties.length} days`);
+
+// for (const day of Object.keys(openingHours)) {
+//   console.log(day);
+// }
+
+let openStr = `We are open on ${properties.length} days:`;
+for (const day of properties) {
+  openStr += `${day}, `;
+}
+console.log(openStr);
+
+// property values
+
+const values = Object.values(openingHours);
+console.log(values);
+
+// entries object
+const entries = Object.entries(openingHours);
+// console.log(entries);
+
+for (const [key, { open, close }] of entries) {
+  console.log(`On ${key} we open ate ${open} and close at ${close}`);
+}*/
+
 // const menu = [restaurant.starterMenu, ...restaurant.mainMenu];
 
 // for (const item of menu) console.log(item);
@@ -50,12 +205,41 @@ const restaurant = {
 //   console.log(item);
 // }
 
-if (restaurant.openingHours && restaurant.openingHours.mon)
+/*if (restaurant.openingHours && restaurant.openingHours.mon)
   console.log(restaurant.openingHours.mon.open);
 // if (restaurant.openingHours.fri) console.log(restaurant.openingHours.fri.open);
 
+// optional chaining
 console.log(restaurant.openingHours.mon?.open);
-console.log(restaurant.openingHours.thu?.open);
+console.log(restaurant.openingHours?.mon?.open);
+
+// optional chaining example
+const days = ["mon", "tue", "wed", "thu", "fri", "sat", "sun"];
+
+for (const day of days) {
+  //   console.log(day);
+  //   const open = restaurant.openingHours[day]?.open || "closed";
+  const open = restaurant.openingHours[day]?.open ?? "closed";
+  console.log(`On ${day}, we open at ${open}`);
+}
+
+//methods
+console.log(restaurant.order?.(0, 1) ?? "methods does not exist");
+console.log(restaurant.orderRisotto?.(0, 1) ?? "method does not exist");
+
+// optional chaining on arrays
+const users = [
+  {
+    name: "Jonas",
+    email: "hellojonas.io",
+  },
+];
+console.log(users[0]?.name ?? "Users array empty");
+
+if (users.length > 0) console.log(users[0].name);
+else console.log("user array empty");*/
+
+// console.log(restaurant.openingHours.thu?.open);
 
 // const rest1 = {
 //   name: "Capri",
@@ -319,3 +503,264 @@ printGoals(...game.scored);
 
 team1 < team2 && console.log("Team 1 is more likely to win");
 team1 > team2 && console.log("Team 2 is more likely to win");*/
+
+// 115)coding challenge 2
+
+const game = {
+  team1: "Bayern Munich",
+  team2: "Borrussia Dortmund",
+  players: [
+    [
+      "Neuer",
+      "Pavard",
+      "Martinez",
+      "Alaba",
+      "Davies",
+      "Kimmich",
+      "Goretzka",
+      "Coman",
+      "Muller",
+      "Gnarby",
+      "Lewandowski",
+    ],
+    [
+      "Burki",
+      "Schulz",
+      "Hummels",
+      "Akanji",
+      "Hakimi",
+      "Weigl",
+      "Witsel",
+      "Hazard",
+      "Brandt",
+      "Sancho",
+      "Gotze",
+    ],
+  ],
+  score: "4.0",
+  scored: ["Lewandowski", "Gnarby", "Lewandowski", "Hummels"],
+  date: "Nov 9th, 2037",
+  odds: {
+    team1: 1.33,
+    x: 3.25,
+    team2: 6.5,
+  },
+};
+// #1
+/*let i = 0;
+for (const values of Object.values(game.scored)) {
+  console.log(`Goal ${i + 1} : ${values}`);
+  i += 1;
+}
+
+// #2
+let sum = 0;
+for (const values of Object.values(game.odds)) {
+  sum += values;
+}
+console.log(sum);
+
+const properties = Object.keys(game.odds);
+
+const avg = sum / properties.length;
+console.log(avg);
+
+// #3
+
+// const entries = Object.entries(game.odds);
+// for (const [key, value] of entries) {
+//   console.log(` Odd of victory ${key}:  ${value}`);
+// }
+console.log(`Odd of victory ${game.team1}: ${game.odds.team1}`);
+console.log(`Odd of draw: ${game.odds.x}`);
+console.log(`Odd of victory ${game.team2}: ${game.odds.team2}`);
+
+// #4 bonus
+
+const scores = {
+    
+}
+*/
+
+// 1.
+/*for (const [i, player] of game.scored.entries())
+  console.log(`Goal ${i + 1}: ${player}`);
+
+//2.
+const odds = Object.values(game.odds);
+let average = 0;
+for (const odd of odds) average += odd;
+average /= odds.length;
+console.log(average);
+
+// 3.
+for (const [team, odd] of Object.entries(game.odds)) {
+  const teamStr = team === "x" ? "draw" : `victory ${game[team]}`;
+  console.log(`Odd of ${teamStr} ${odd}`);
+}*/
+
+// coding challenge 3
+const gameEvents = new Map([
+  [17, "⚽️ GOAL"],
+  [36, "🔁 Substitution"],
+  [47, "⚽️ GOAL"],
+  [61, "🔁 Substitution"],
+  [64, "🔶 Yellow card"],
+  [69, "🔴 Red card"],
+  [70, "🔁 Substitution"],
+  [72, "🔁 Substitution"],
+  [76, "⚽️ GOAL"],
+  [80, "⚽️ GOAL"],
+  [92, "🔶 Yellow card"],
+]);
+
+// #1
+/*const events = new Set(gameEvents.values());
+
+console.log(events);
+
+// 2#
+gameEvents.delete(64);
+console.log(gameEvents);
+
+// 3#
+let avg = 90 / gameEvents.size;
+console.log(avg);
+
+console.log(`An event happend , on average, every ${avg} minutes`);
+
+// #4
+
+for (const [key, value] of gameEvents) {
+  if (key <= 45) console.log(`[FIRST HALF] ${[key, value]}`);
+  console.log(`[SECOND HALF] ${[key, value]}`);
+}*/
+
+//1.
+// console.log(gameEvents.values());
+/*const events = [...new Set(gameEvents.values())];
+console.log(events);
+
+//2.
+gameEvents.delete(64);
+
+//3.
+console.log(
+  `An event happened , on average, every ${90 / gameEvents.size} minutes`
+);
+
+const time = [...gameEvents.keys()].pop();
+console.log(time);
+console.log(
+  `An event happened , on average, every ${time / gameEvents.size} minutes`
+);
+
+//4.
+for (const [min, value] of gameEvents) {
+  const half = min <= 45 ? "FIRST" : "SECOND";
+  console.log(`[${half} HALLF] ${min}: ${event} `);
+}*/
+
+// 121) working with strings
+
+/*const airline = "TAP Air Portugal";
+const plane = "A320";
+
+console.log(plane[0]);
+console.log(plane[1]);
+console.log(plane[2]);
+console.log("B737"[0]);
+
+console.log(airline.length);
+console.log("B737".length);
+
+console.log(airline.indexOf("r"));
+console.log(airline.lastIndexOf("r"));
+console.log(airline.indexOf("portugal"));
+
+console.log(airline.slice(4, 7));
+
+console.log(airline.slice(0, airline.indexOf(" ")));
+console.log(airline.slice(airline.lastIndexOf(" ") + 1));
+
+console.log(airline.slice(-2));
+console.log(airline.slice(1, -1));*/
+
+const checkMiddleSeat = function (seat) {
+  //B and E are middle seats
+  const s = seat.slice(-1);
+  if (s === "B" || s === "E") console.log("You got the middle seat");
+  else console.log("You got lucky");
+};
+
+checkMiddleSeat("11B");
+checkMiddleSeat("23C");
+checkMiddleSeat("3E");
+
+console.log(new String("jonas"));
+console.log(typeof new String("jonas"));
+console.log(typeof new String("jonas").slice(1));
+
+// 122)
+
+// console.log(airline.toLowerCase());
+// console.log(airline.toUpperCase());
+
+console.log("kavya".toUpperCase());
+
+// fix capitalization in name
+const passenger = "jOnAS";
+const passengerLower = passenger.toLowerCase();
+const passengerCorrect =
+  passengerLower[0].toUpperCase() + passengerLower.slice(1);
+console.log(passengerCorrect);
+
+// check email
+const email = "hello@jonas.io";
+const logEmail = " Hello@Jonas.Io \n";
+// console.log(logEmail);
+// const emailLower = logEmail.toLowerCase(email[2], email[8], email[14]);
+// console.log(emailLower);
+
+// const emailCorrect = emailLower.slice(0, -1);
+// console.log(emailCorrect);
+// const lowerEmail = logEmail.toLowerCase();
+// const trimmedEmail = lowerEmail.trim();
+// console.log(trimmedEmail);
+
+const normalizedEmail = logEmail.toLowerCase().trim();
+console.log(normalizedEmail);
+console.log(email === normalizedEmail);
+
+// replacing
+const priceGB = "288,97£";
+const priceUS = priceGB.replace("£", "$").replace(",", ".");
+console.log(priceUS);
+
+const announcement =
+  "All passengers come to boarding door 23. Boarding door 23!";
+console.log(announcement.replace(/ door/g, " gate"));
+
+// booleans
+const plane = "Airbus A320neo";
+console.log(plane.includes("A320"));
+console.log(plane.includes("Boening"));
+console.log(plane.startsWith("Air"));
+
+if (plane.startsWith("Airbus") && plane.endsWith("neo")) {
+  console.log("part of the new airbus family");
+}
+
+// practice exercise
+
+const checkBaggage = function (items) {
+  const baggage = items.toLowerCase();
+  if (baggage.includes("knife") || baggage.includes("gun")) {
+    console.log("Y0u are NOT allowed on board");
+  } else {
+    console.log("Welcome aboard");
+  }
+};
+checkBaggage("I have a laptop, some Food and a pocket Knife");
+checkBaggage("Socks and camera");
+checkBaggage("Got some snacks and a gun for protection");
