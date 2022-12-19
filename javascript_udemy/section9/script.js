@@ -686,7 +686,7 @@ console.log(airline.slice(airline.lastIndexOf(" ") + 1));
 console.log(airline.slice(-2));
 console.log(airline.slice(1, -1));*/
 
-const checkMiddleSeat = function (seat) {
+/*const checkMiddleSeat = function (seat) {
   //B and E are middle seats
   const s = seat.slice(-1);
   if (s === "B" || s === "E") console.log("You got the middle seat");
@@ -763,4 +763,95 @@ const checkBaggage = function (items) {
 };
 checkBaggage("I have a laptop, some Food and a pocket Knife");
 checkBaggage("Socks and camera");
-checkBaggage("Got some snacks and a gun for protection");
+checkBaggage("Got some snacks and a gun for protection");*/
+
+// split and join
+/*console.log("a+very+nice+string".split("+"));
+console.log("Jonas Schemdtmann".split(" "));
+
+const [firstName, lastName] = "Jonas Schmedtmann".split(" ");
+
+const newName = ["Mr.", firstName, lastName.toUpperCase()].join(" ");
+console.log(newName);
+
+const capitalizeName = function (name) {
+  const names = name.split(" ");
+  const namesUpper = [];
+
+  for (const n of names) {
+    //    namesUpper.push(n[0].toUpperCase() + n.slice(1));
+    //   }
+    namesUpper.push(n.replace(n[0], n[0].toUpperCase()));
+  }
+  console.log(namesUpper.join(" "));
+};
+capitalizeName("jessica ann smith davis");
+capitalizeName("jonas schmedtmann");
+
+// padding
+const message = "Go to gate 23!";
+console.log(message.padStart(25, "+").padEnd(30, "+"));
+
+console.log("jonas".padStart(25, "-"));
+
+const maskCreditCard = function (number) {
+  const str = number + "";
+  const last = str.slice(-4);
+  return last.padStart(str.length, "*");
+};
+
+console.log(maskCreditCard(1234567));
+console.log(maskCreditCard(634736487357));
+
+//repeat
+const message2 = "Bad weather... All Departures Delayed...";
+console.log(message2.repeat(5));
+
+const planesInline = function (n) {
+  console.log(`There are ${n} planes in line ${"✈️".repeat(n)}`);
+};
+planesInline(5);
+planesInline(12);*/
+
+// coding challenge 4
+// document.body.append(document.createElement("textarea"));
+
+// document.body.append(document.createElement("button"));
+
+// document.querySelector("button").addEventListener("click", function () {
+//   const text = document.querySelector("textarea").value;
+//   const rows = text.split("\n");
+
+//   for (const [i, row] of rows.entries()) {
+//     const [first, second] = row.toLowerCase().trim().split("_");
+//     // console.log(row, first, second);
+//     const output = `${first}${second.replace(
+//       second[0],
+//       second[0].toUpperCase()
+//     )}`;
+//     console.log(`${output.padEnd(20)}${"✅".repeat(i + 1)}`);
+//   }
+// });
+
+// string method practice
+
+const flights =
+  "_Delayed_Departure;fao93766109;txl2133758440;11:25+_Arrival;bru0943384722;fao93766109;11:45+_Delayed_Arrival;hel7439299980;fao93766109;12:05+_Departure;fao93766109;lis2323639855;12:30";
+
+// 🔴 Delayed Departure from FAO to TXL (11h25)
+//              Arrival from BRU to FAO (11h45)
+//   🔴 Delayed Arrival from HEL to FAO (12h05)
+//            Departure from FAO to LIS (12h30)
+
+const getCode = (str) => str.slice(0, 3).toUpperCase();
+for (const flight of flights.split("+")) {
+  const [type, from, to, time] = flight.split(";");
+  const output = `${type.startsWith("_Delayed") ? "🔴" : ""}${type.replaceAll(
+    "_",
+    " "
+  )} from ${getCode(from)} to ${getCode(to)} (${time.replace(
+    ":",
+    "h"
+  )})`.padStart(50);
+  console.log(output);
+}
