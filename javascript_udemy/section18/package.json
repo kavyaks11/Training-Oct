@@ -1,0 +1,14 @@
+{
+  "name": "fortyfi",
+  "version": "1.0.0",
+  "description": "recipe application",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.8.2"
+  }
+}
