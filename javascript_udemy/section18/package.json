@@ -1,14 +1,20 @@
 {
-  "name": "fortyfi",
+  "name": "aaa",
   "version": "1.0.0",
   "description": "recipe application",
-  "main": "index.html",
   "scripts": {
-    "start": "parcel"
+    "start": "parcel index.html",
+    "build": "parcel bulid index.html"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.2",
     "parcel": "^2.8.2"
+  },
+  "dependencies": {
+    "core-js": "^3.27.1",
+    "regenerator-runtime": "^0.13.11",
+    "sass": "^1.57.1"
   }
 }
