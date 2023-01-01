@@ -1,33 +1,26 @@
 import * as model from "./model.js";
 import recipeView from "./view/recipeView.js";
+import searchView from "./view/searchView.js";
+import resultsView from "./view/resultsView.js";
 
 import "core-js/stable";
 import "regenerator-runtime/runtime";
+import { async } from "regenerator-runtime";
+
+if (module.hot) {
+  module.hot.accept();
+}
 // console.log(icons);
 
-const recipeContainer = document.querySelector(".recipe");
-
-const timeout = function (s) {
-  return new Promise(function (_, reject) {
-    setTimeout(function () {
-      reject(
-        new Error(`Request  took too long!
-            Timeout after ${s} second`)
-      );
-    }, s * 1000);
-  });
-};
+// const recipeContainer = document.querySelector(".recipe");
 
 /////////////////////////////////////////////
-
-console.log("hello world");
 
 const controlRecipes = async function () {
   try {
     const id = Number(window.location.hash.slice(1));
-    // id = 47161;
-    console.log(window.location.hash);
-    console.log(id);
+
+    // console.log(id);
 
     if (!id) return;
 
@@ -40,14 +33,29 @@ const controlRecipes = async function () {
     //2) rendering recipe
     recipeView.render(model.state.recipe);
   } catch (err) {
-    alert(err);
+    // console.log(err);
+    recipeView.renderError();
   }
 };
-controlRecipes();
 
-["hashchange", "load"].forEach((ev) =>
-  window.addEventListener(ev, controlRecipes)
-);
+const controlSearchResults = async function () {
+  try {
+    resultsView.renderSpinner();
 
-// window.addEventListener("hashchange", showRecipe);
-// window.addEventListener("load", showRecipe);
+    const query = searchView.getQuery();
+    if (!query) return;
+
+    await model.loadSearchResults(query);
+    // console.log(model.state.search.results);
+    resultsView.render(model.state.search.results);
+  } catch (err) {
+    console.log(err);
+  }
+};
+// controlSearchResults();
+
+const init = function () {
+  recipeView.addHandlerRender(controlRecipes);
+  searchView.addHandlerSearch(controlSearchResults);
+};
+init();

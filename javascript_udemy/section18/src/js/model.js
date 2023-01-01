@@ -1,20 +1,23 @@
 import { async } from "regenerator-runtime";
+import { API_URL } from "./config.js";
+import { getJSON } from "./view/helpers.js";
 
 export const state = {
   recipe: {},
+  search: {
+    query: "",
+    results: [],
+  },
 };
 export const loadRecipe = async function (id) {
   try {
-    const res = await fetch(
-      `https://forkify-api.herokuapp.com/api/get?rId=${id}`
-      //   `https://forkify-api.herokuapp.com/api/get?rId=47161`
-    );
+    const data = await getJSON(`${API_URL}get?rId=${id}`);
+    // const res = await fetch(
+    //   `https://forkify-api.herokuapp.com/api/get?rId=${id}`
+    //   //   `https://forkify-api.herokuapp.com/api/get?rId=47161`
+    // );
 
-    const data = await res.json();
-
-    if (!res.ok) throw new Error(`${data.message} (${res.status})`);
-
-    console.log(res, data);
+    // console.log(res, data);
 
     const { recipe } = data; //since data contains underscore , destructuring the data,
 
@@ -30,6 +33,29 @@ export const loadRecipe = async function (id) {
     };
     console.log(state.recipe);
   } catch (err) {
-    alert(err);
+    console.error(`${err}`);
+    throw err;
   }
 };
+
+export const loadSearchResults = async function (query) {
+  try {
+    state.search.query = query;
+    const data = await getJSON(`${API_URL}search?q=${query}`);
+    console.log(data);
+
+    state.search.results = data.recipes.map((rec) => {
+      return {
+        id: rec.recipe_id,
+        title: rec.title,
+        publisher: rec.publisher,
+        image: rec.image_url,
+      };
+    });
+   
+  } catch (err) {
+    console.error(`${err}`);
+    throw err;
+  }
+};
+// loadSearchResults("pizza");
