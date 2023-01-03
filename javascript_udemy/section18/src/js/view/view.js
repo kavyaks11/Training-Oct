@@ -1,8 +1,13 @@
 import icons from "../../img/icons.svg";
 export default class View {
   _data;
-  //   _errorMessage = "We could not find that recipe.Please try another one!";
-  //   _message = "";
+  /**
+   *
+   * @param {Object | Object[]} data
+   * @param {boolean} [render = true]
+   * @returns {undefined | string}
+   * @this {Object} View instance
+   */
 
   render(data, render = true) {
     if (!data || (Array.isArray(data) && data.length === 0))
